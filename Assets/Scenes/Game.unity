@@ -607,8 +607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3bdacb77bf9438d960a2cbf2c4efe15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data:
-    value: {fileID: 11400000, guid: afec2e7b3e80e714aa9e2bc8a6e5b3c7, type: 2}
 --- !u!1001 &53499846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9119,8 +9117,8 @@ Camera:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -9133,7 +9131,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -16512,6 +16510,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba8d08520f0a6d4c8d92ba718c5844e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentMoves:
+    value: 0
+  levelToLoad: {fileID: 11400000, guid: afec2e7b3e80e714aa9e2bc8a6e5b3c7, type: 2}
 --- !u!1 &996944460
 GameObject:
   m_ObjectHideFlags: 0
@@ -36630,6 +36631,36 @@ PrefabInstance:
     - target: {fileID: 5539945835712995315, guid: e5eea5fe61313be469809d14bfd45d7a,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5539945834962638231, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158889978273893068, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158889978273893068, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158889978273893068, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158889978273893068, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158889978273893068, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

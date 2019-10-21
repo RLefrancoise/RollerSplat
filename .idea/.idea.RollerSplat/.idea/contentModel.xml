@@ -983,7 +983,6 @@
           </e>
           <e p="Level.cs" t="Include" />
           <e p="Player.cs" t="Include" />
-          <e p="PlayerInput.cs" t="Include" />
           <e p="Wall.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

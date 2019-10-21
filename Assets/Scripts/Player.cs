@@ -94,8 +94,8 @@ namespace RollerSplat
             {
                 //Get move direction
                 var moveDirection = (wall.transform.position - transform.position).normalized;
-                //Because we have the wall position for now, we need to substract half of the wall size to have the final point for the player to move at
-                var destination = wall.transform.position - moveDirection * wall.Extents.magnitude;
+                //Because we have the wall position for now, we need to subtract half of the wall size to have the final point for the player to move at
+                var destination = wall.transform.position - moveDirection * _gameSettings.blockSize / 2f;
                 var distance = Vector3.Distance(transform.position, destination);
                 //Apply the movement
                 _moveTween = _rigidBody.DOMove(destination, distance / _gameSettings.playerSpeed);

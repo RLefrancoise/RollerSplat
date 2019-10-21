@@ -9,9 +9,8 @@ namespace RollerSplat
     {
         private Camera _levelCamera;
         private ReactiveCommand<LevelData> _loadCommand;
-        [SerializeField] private LevelDataReactiveProperty data;
 
-        public LevelData Data => data.Value;
+        public LevelData Data { get; private set; }
 
         public ReactiveCommand<LevelData> Load
         {
@@ -31,30 +30,20 @@ namespace RollerSplat
         public void Construct(Camera levelCamera)
         {
             _levelCamera = levelCamera;
-            data.Subscribe(ListenLevelDataChanged);
         }
 
-        private void Start()
+        private void ExecuteLoad(LevelData levelData)
         {
-            //If data are set, load them
-            if (Data != null) Load.Execute(Data);
-        }
-
-        private void ListenLevelDataChanged(LevelData levelData)
-        {
+            Data = levelData;
+            
             if (levelData == null)
             {
-                Debug.LogErrorFormat("Level:ListenLevelDataChanged - Level data is null");
+                Debug.LogErrorFormat("Level:ExecuteLoad - Level data is null");
                 return;
             }
 
             _levelCamera.transform.position = levelData.cameraPosition;
             _levelCamera.transform.rotation = Quaternion.Euler(levelData.cameraRotation);
-        }
-
-        private void ExecuteLoad(LevelData levelData)
-        {
-            data.Value = levelData;
         }
     }
 }

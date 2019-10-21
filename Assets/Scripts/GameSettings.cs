@@ -10,5 +10,7 @@ namespace RollerSplat
         [BoxGroup("Colors")] public Color defaultWallColor;
 
         [BoxGroup("Player")] public float playerSpeed = 0.25f;
+
+        [BoxGroup("Level")] public float blockSize = 1f;
     }
 }

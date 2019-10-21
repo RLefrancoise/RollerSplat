@@ -11,8 +11,9 @@ namespace RollerSplat
         private HUD _hud;
         private Level _level;
 
-        private IntReactiveProperty _currentMoves;
-
+        [SerializeField] private IntReactiveProperty currentMoves;
+        [SerializeField] private LevelData levelToLoad;
+        
         [Inject]
         public void Construct(Player player, HUD hud, Level level)
         {
@@ -21,19 +22,26 @@ namespace RollerSplat
             _level = level;
 
             //Current moves
-            _currentMoves = new IntReactiveProperty();
-            _currentMoves.Subscribe(UpdateNumberOfMoves);
+            currentMoves = new IntReactiveProperty();
+            currentMoves.Subscribe(UpdateNumberOfMoves);
             
             //Listen player movement
             _player.Move.Subscribe(ListenPlayerMove);
 
             //Listen level load
-            _level.Load.Subscribe(OnLoadLevel);
+            _level.Load.Subscribe(ListenLoadLevel);
+        }
+        
+        private void Start()
+        {
+            //If data are set, load them
+            if (levelToLoad) _level.Load.Execute(levelToLoad);
         }
         
         private void Update()
         {
             if(!_player.CanMove) return;
+            if(currentMoves.Value == 0) return;
             
             if (Input.GetKeyDown(KeyCode.UpArrow)) _player.Move.Execute(Player.MoveDirection.Up);
             if (Input.GetKeyDown(KeyCode.DownArrow)) _player.Move.Execute(Player.MoveDirection.Down);
@@ -44,13 +52,13 @@ namespace RollerSplat
         private void ListenPlayerMove(Player.MoveDirection direction)
         {
             //Update number of moves
-            _currentMoves.Value = Mathf.Max(0, _currentMoves.Value - 1);
+            currentMoves.Value = Mathf.Max(0, currentMoves.Value - 1);
         }
 
-        private void OnLoadLevel(LevelData level)
+        private void ListenLoadLevel(LevelData level)
         {
             //Update current moves
-            _currentMoves.Value = level.numberOfMoves;
+            currentMoves.Value = level.numberOfMoves;
             //Update level name
             _hud.LevelName = level.levelName;
         }
@@ -58,7 +66,10 @@ namespace RollerSplat
         private void UpdateNumberOfMoves(int numberOfMoves)
         {
             if(_level.Data != null)
-                _hud.SetNumberOfMoves(_currentMoves.Value, _level.Data.numberOfMoves);
+                _hud.SetNumberOfMoves(currentMoves.Value, _level.Data.numberOfMoves);
+
+            //If no more moves, game over
+            _hud.GameOver = numberOfMoves == 0;
         }
     }
 }
