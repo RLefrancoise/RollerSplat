@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2379116761109865922}
   - component: {fileID: 841129533064008316}
   - component: {fileID: 6638495764916907559}
+  - component: {fileID: 6679159100573361242}
   m_Layer: 0
   m_Name: GroundTile
   m_TagString: Untagged
@@ -153,6 +154,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6679159100573361242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912327436591237677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _containerSource: 0
 --- !u!1 &3869523470471048607
 GameObject:
   m_ObjectHideFlags: 0

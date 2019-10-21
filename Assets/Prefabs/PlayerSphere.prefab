@@ -125,8 +125,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     value: {r: 0, g: 1, b: 0, a: 1}
-  movesLeft:
-    value: 0
 --- !u!114 &5928481024084614939
 MonoBehaviour:
   m_ObjectHideFlags: 0

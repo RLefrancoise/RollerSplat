@@ -38,7 +38,7 @@ namespace RollerSplat
         public void SetNumberOfMoves(int currentMoves, int maxMoves)
         {
             _numberOfMoves.text = $"{currentMoves}/{maxMoves}";
-            _gauge.fillAmount = (float) currentMoves / maxMoves;
+            _gauge.fillAmount = 1f - (float) currentMoves / maxMoves;
         }
     }
 }

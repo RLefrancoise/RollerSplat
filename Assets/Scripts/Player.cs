@@ -33,6 +33,7 @@ namespace RollerSplat
         private TweenerCore<Vector3, Vector3, VectorOptions> _moveTween;
         [SerializeField] private ColorReactiveProperty color;
         private ReactiveCommand<MoveDirection> _moveCommand;
+        private ReactiveCommand<Vector2> _placeOnTile;
 
         /// <summary>
         /// Can the player move ?
@@ -58,6 +59,20 @@ namespace RollerSplat
                 }
 
                 return _moveCommand;
+            }
+        }
+
+        public ReactiveCommand<Vector2> PlaceOnTile
+        {
+            get
+            {
+                if (_placeOnTile == null)
+                {
+                    _placeOnTile = new ReactiveCommand<Vector2>();
+                    _placeOnTile.Subscribe(ExecutePlaceOnTile);
+                }
+
+                return _placeOnTile;
             }
         }
 
@@ -100,6 +115,16 @@ namespace RollerSplat
                 //Apply the movement
                 _moveTween = _rigidBody.DOMove(destination, distance / _gameSettings.playerSpeed);
             }
+        }
+
+        private void ExecutePlaceOnTile(Vector2 tile)
+        {
+            transform.localPosition = Vector3.right * tile.x * _gameSettings.blockSize +
+                                      Vector3.forward * tile.y * _gameSettings.blockSize +
+                                      Vector3.up * _gameSettings.blockSize / 2f;
+            _rigidBody.position = transform.position;
+            _rigidBody.velocity = Vector3.zero;
+            _rigidBody.angularVelocity = Vector3.zero;
         }
     }
 }

@@ -1,4 +1,7 @@
+using System;
 using RollerSplat.Data;
+using TouchScript.Gestures;
+using TouchScript.Gestures.TransformGestures;
 using UnityEngine;
 using Zenject;
 using UniRx;
@@ -11,6 +14,10 @@ namespace RollerSplat
         private HUD _hud;
         private Level _level;
 
+        private Vector2 _swipeStartScreenPosition;
+        
+        [SerializeField] private ScreenTransformGesture swipeGesture;
+        
         [SerializeField] private IntReactiveProperty currentMoves;
         [SerializeField] private LevelData levelToLoad;
         
@@ -30,6 +37,18 @@ namespace RollerSplat
 
             //Listen level load
             _level.Load.Subscribe(ListenLoadLevel);
+        }
+
+        private void OnEnable()
+        {
+            swipeGesture.TransformStarted += StartSwipe;
+            swipeGesture.StateChanged += SwipeGesture;
+        }
+
+        private void OnDisable()
+        {
+            swipeGesture.TransformStarted -= StartSwipe;
+            swipeGesture.StateChanged -= SwipeGesture;
         }
         
         private void Start()
@@ -70,6 +89,36 @@ namespace RollerSplat
 
             //If no more moves, game over
             _hud.GameOver = numberOfMoves == 0;
+        }
+
+        private void StartSwipe(object sender, EventArgs e)
+        {
+            _swipeStartScreenPosition = swipeGesture.NormalizedScreenPosition;
+        }
+        
+        private void SwipeGesture(object sender, GestureStateChangeEventArgs e)
+        {
+            if (e.State != Gesture.GestureState.Recognized) return;
+            
+            var swipeLength = swipeGesture.NormalizedScreenPosition - _swipeStartScreenPosition;
+            if(Mathf.Abs(swipeLength.x) < 0.2f && Mathf.Abs(swipeLength.y) <= 0.2f) return;
+                
+            if (swipeLength.x >= 0.2f)
+            {
+                _player.Move.Execute(Player.MoveDirection.Right);
+            }
+            else if (swipeLength.x <= -0.2f)
+            {
+                _player.Move.Execute(Player.MoveDirection.Left);
+            }
+            else if (swipeLength.y >= 0.2f)
+            {
+                _player.Move.Execute(Player.MoveDirection.Up);
+            }
+            else if (swipeLength.y <= -0.2f)
+            {
+                _player.Move.Execute(Player.MoveDirection.Down);
+            }
         }
     }
 }
