@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultGroundColor: {r: 0.28627452, g: 0.61960787, b: 0.6431373, a: 1}
   defaultWallColor: {r: 1, g: 1, b: 1, a: 1}
-  playerMoveTime: 0.25
+  playerSpeed: 5

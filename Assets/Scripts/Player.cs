@@ -1,8 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
+using NaughtyAttributes;
 using UniRx;
 using UnityEngine;
 using Zenject;
@@ -14,23 +14,53 @@ namespace RollerSplat
     /// </summary>
     public class Player : MonoBehaviour
     {
-        private static readonly Dictionary<KeyCode, Quaternion> RotationsFromInput = new Dictionary<KeyCode, Quaternion>
+        public enum MoveDirection
         {
-            {KeyCode.UpArrow, Quaternion.LookRotation(Vector3.forward, Vector3.up)},
-            {KeyCode.DownArrow, Quaternion.LookRotation(-Vector3.forward, Vector3.up)},
-            {KeyCode.RightArrow, Quaternion.LookRotation(Vector3.right, Vector3.up)},
-            {KeyCode.LeftArrow, Quaternion.LookRotation(-Vector3.right, Vector3.up)},
+            Up, Down, Left, Right
+        }
+        
+        private static readonly Dictionary<MoveDirection, Quaternion> RotationsByDirection = new Dictionary<MoveDirection, Quaternion>
+        {
+            {MoveDirection.Up, Quaternion.LookRotation(Vector3.forward, Vector3.up)},
+            {MoveDirection.Down, Quaternion.LookRotation(-Vector3.forward, Vector3.up)},
+            {MoveDirection.Left, Quaternion.LookRotation(-Vector3.right, Vector3.up)},
+            {MoveDirection.Right, Quaternion.LookRotation(Vector3.right, Vector3.up)}
         };
         
         private GameSettings _gameSettings;
         private Renderer _renderer;
         private Rigidbody _rigidBody;
-        [SerializeField] private ColorReactiveProperty color;
-
         private TweenerCore<Vector3, Vector3, VectorOptions> _moveTween;
+        [SerializeField] private ColorReactiveProperty color;
+        private ReactiveCommand<MoveDirection> _moveCommand;
+
+        /// <summary>
+        /// Can the player move ?
+        /// </summary>
+        [ShowNativeProperty] public bool CanMove => _moveTween == null || !_moveTween.active;
         
-        public ColorReactiveProperty Color => color;
-        
+        /// <summary>
+        /// Current player color
+        /// </summary>
+        public Color Color => color.Value;
+
+        /// <summary>
+        /// Move the player in the given direction
+        /// </summary>
+        public ReactiveCommand<MoveDirection> Move
+        {
+            get
+            {
+                if (_moveCommand == null)
+                {
+                    _moveCommand = new ReactiveCommand<MoveDirection>();
+                    _moveCommand.Subscribe(ExecuteMove);
+                }
+
+                return _moveCommand;
+            }
+        }
+
         [Inject]
         public void Construct(
             GameSettings gameSettings, 
@@ -43,26 +73,13 @@ namespace RollerSplat
             _renderer.material.color = color.Value;
         }
 
-        private void Update()
+        private void ExecuteMove(MoveDirection dir)
         {
-            //If player is already moving, don't do anything
-            if(_moveTween != null && _moveTween.active) return;
+            if(!CanMove) return;
             
-            var move = false;
-
-            //Check if any player move key is pressed
-            foreach (var key in RotationsFromInput.Keys)
-            {
-                if (!Input.GetKeyDown(key)) continue;
-                
-                move = true;
-                transform.rotation = RotationsFromInput[key];
-                break;
-            }
-
-            //If no move, return
-            if (!move) return;
-
+            //Rotate to the right direction
+            transform.rotation = RotationsByDirection[dir];
+            
             //If no wall was hit, return
             if (!Physics.Raycast(
                 new Ray(transform.position, transform.forward),
@@ -79,11 +96,10 @@ namespace RollerSplat
                 var moveDirection = (wall.transform.position - transform.position).normalized;
                 //Because we have the wall position for now, we need to substract half of the wall size to have the final point for the player to move at
                 var destination = wall.transform.position - moveDirection * wall.Extents.magnitude;
+                var distance = Vector3.Distance(transform.position, destination);
                 //Apply the movement
-                _moveTween = _rigidBody.DOMove(destination, _gameSettings.playerMoveTime);
+                _moveTween = _rigidBody.DOMove(destination, distance / _gameSettings.playerSpeed);
             }
         }
-
-        
     }
 }

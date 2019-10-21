@@ -30,7 +30,7 @@ namespace RollerSplat
             //If player rolls on tile, apply player color to tile
             if (other.CompareTag("Player"))
             {
-                color.Value = other.GetComponent<Player>().Color.Value;
+                color.Value = other.GetComponent<Player>().Color;
             }
         }
     }
