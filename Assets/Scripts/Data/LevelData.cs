@@ -16,7 +16,6 @@ namespace RollerSplat.Data
         [BoxGroup("Camera")] public Vector3 cameraRotation;
 
         [BoxGroup("Level")] public string levelName;
-        [BoxGroup("Level")] public Vector2 size;
         [BoxGroup("Level")] public Vector2 startPosition;
         [BoxGroup("Level")] public int numberOfMoves;
         [BoxGroup("Level")] public CellData[] cells;

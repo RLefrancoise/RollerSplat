@@ -70,6 +70,8 @@ namespace RollerSplat
             //read level file
             var levelContent = levelData.levelFile.text.Trim().Split('\n');
             
+            var levelSize = new Vector2(levelContent[0].Trim().Length, levelContent.Length);
+            
             //for each line
             var currentColumn = 0;
             var currentRow = 0;
@@ -99,7 +101,9 @@ namespace RollerSplat
             }
             
             //Adjust the level position according to its size to center it on the screen
-            transform.position = transform.position - (Vector3.forward * Mathf.FloorToInt(levelData.size.y / 2f)) - (Vector3.right * Mathf.FloorToInt(levelData.size.x / 2f));
+            transform.position = transform.position 
+                                 - (Vector3.forward * Mathf.FloorToInt(levelSize.y / 2f)) 
+                                 - (Vector3.right * (levelSize.x - 1f) / 2f);
             
             //Place player 
             _player.PlaceOnTile.Execute(levelData.startPosition);
