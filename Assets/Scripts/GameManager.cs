@@ -239,21 +239,27 @@ namespace RollerSplat
             var swipeLength = swipeGesture.NormalizedScreenPosition - _swipeStartScreenPosition;
             if(Mathf.Abs(swipeLength.x) < 0.05f && Mathf.Abs(swipeLength.y) <= 0.05f) return;
                 
-            if (swipeLength.x >= 0.05f)
+            if(Mathf.Abs(swipeLength.x) > Mathf.Abs(swipeLength.y))
             {
-                MovePlayer(Player.MoveDirection.Right);
+                if (swipeLength.x >= 0.05f)
+                {
+                    MovePlayer(Player.MoveDirection.Right);
+                }
+                else if (swipeLength.x <= -0.05f)
+                {
+                    MovePlayer(Player.MoveDirection.Left);
+                }
             }
-            else if (swipeLength.x <= -0.05f)
+            else
             {
-                MovePlayer(Player.MoveDirection.Left);
-            }
-            else if (swipeLength.y >= 0.05f)
-            {
-                MovePlayer(Player.MoveDirection.Up);
-            }
-            else if (swipeLength.y <= -0.05f)
-            {
-                MovePlayer(Player.MoveDirection.Down);
+                if (swipeLength.y >= 0.05f)
+                {
+                    MovePlayer(Player.MoveDirection.Up);
+                }
+                else if (swipeLength.y <= -0.05f)
+                {
+                    MovePlayer(Player.MoveDirection.Down);
+                }
             }
         }
 
