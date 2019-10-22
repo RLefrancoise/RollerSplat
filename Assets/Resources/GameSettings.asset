@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315638fe092c43559ecfca229da57301, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  defaultGroundColor: {r: 0.28627452, g: 0.61960787, b: 0.6431373, a: 1}
-  defaultWallColor: {r: 1, g: 1, b: 1, a: 1}
-  playerSpeed: 10
+  defaultGroundColor: {r: 0.58459413, g: 0.80518365, b: 0.8207547, a: 1}
+  defaultWallColor: {r: 0.81501424, g: 0.9184473, b: 0.9339623, a: 1}
+  playerSpeed: 20
+  blockSize: 1

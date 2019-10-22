@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using RollerSplat.Data;
 using TouchScript.Gestures;
 using TouchScript.Gestures.TransformGestures;
@@ -60,12 +58,6 @@ namespace RollerSplat
         /// </summary>
         private bool CanPlayerMove => !_hud.TapToContinue && _player.CanMove && currentMoves.Value > 0 && !_level.IsLevelComplete.Value;
 
-        /// <summary>
-        /// Is game over ?
-        /// </summary>
-        private ReadOnlyReactiveProperty<bool> IsGameOver => _level.IsLevelComplete.CombineLatest(currentMoves,
-            (levelComplete, moves) => !levelComplete && moves == 0).ToReadOnlyReactiveProperty();
-
         #endregion
         
         [Inject]
@@ -74,10 +66,6 @@ namespace RollerSplat
             _player = player;
             _hud = hud;
             _level = level;
-
-            //Current moves
-            currentMoves = new IntReactiveProperty();
-            currentMoves.Subscribe(UpdateNumberOfMoves);
         }
 
         #region Monobehaviour Callbacks
@@ -98,11 +86,6 @@ namespace RollerSplat
         {
             //Get all levels
             _levels = Resources.LoadAll<LevelData>("Levels");
-            
-            //Listen level load
-            //_level.Load.Subscribe(ListenLevelLoaded);
-            //Listen level completed status
-            _level.IsLevelComplete.Subscribe(ListenLevelCompleted);
 
             //No game over at start
             _hud.GameOver = false;
@@ -114,10 +97,11 @@ namespace RollerSplat
             //Listen if player has touched the screen when tap to continue is displayed
             _hud.TapToContinueTouched += ListenTapToContinueTouched;
             
+            //Current moves
+            currentMoves.SkipLatestValueOnSubscribe().Subscribe(UpdateNumberOfMoves);
+            
             //Listen current level index
             currentLevel.Subscribe(GoToLevel);
-            //Listen is game over
-            IsGameOver.Subscribe(ListenIsGameOver);
         }
 
 #if UNITY_EDITOR
@@ -173,24 +157,10 @@ namespace RollerSplat
             
                 //Ask the player to tap to continue
                 _hud.TapToContinue = true;
+                _hud.LevelComplete = false;
+                _hud.GameOver = false;
             }
         }
-        
-        /*
-        /// <summary>
-        /// Listen when the level has been loaded
-        /// </summary>
-        /// <param name="level">Data of the loaded level</param>
-        private void ListenLevelLoaded(LevelData level)
-        {
-            //Place player on start tile
-            _player.PlaceOnTile.Execute(level.startPosition);
-            
-            //Update current moves
-            currentMoves.Value = level.numberOfMoves;
-            //Update level name
-            _hud.LevelName = level.levelName;
-        }*/
 
         /// <summary>
         /// Called when the level completed flag is changed
@@ -209,25 +179,6 @@ namespace RollerSplat
                 currentLevel.Value = currentLevel.Value + 1;
             }
         }
-
-        /// <summary>
-        /// Called when game over conditions are changed
-        /// </summary>
-        /// <param name="gameOver">Is game over ?</param>
-        private void ListenIsGameOver(bool gameOver)
-        {
-            _hud.GameOver = gameOver;
-
-            //If game over, replay the level after 3s
-            if (gameOver)
-            {
-                UniTask.Delay(TimeSpan.FromSeconds(3f)).ToObservable().Subscribe(_ =>
-                {
-                    //Replay the level
-                    GoToLevel(currentLevel.Value);
-                });
-            }
-        }
         
         /// <summary>
         /// Called when the number of moves left has changed
@@ -237,6 +188,31 @@ namespace RollerSplat
         {
             if(_level.Data != null)
                 _hud.SetNumberOfMoves(currentMoves.Value, _level.Data.numberOfMoves);
+            
+            if (numberOfMoves == 0)
+            {
+                if (!_level.IsLevelComplete.Value)
+                {
+                    _hud.GameOver = true;
+                    
+                    Debug.Log("Game Over");
+                    UniTask.Delay(TimeSpan.FromSeconds(3f)).ToObservable().Subscribe(_ =>
+                    {
+                        //Replay the level
+                        GoToLevel(currentLevel.Value);
+                    });
+                }
+                else
+                {
+                    _hud.GameOver = false;
+                    ListenLevelCompleted(true);
+                    
+                }
+            }
+            else
+            {
+                _hud.GameOver = false;
+            }
         }
 
         /// <summary>

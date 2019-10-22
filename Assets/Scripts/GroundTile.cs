@@ -47,7 +47,7 @@ namespace RollerSplat
             if (other.CompareTag("Player"))
             {
                 color.Value = other.GetComponent<Player>().Color;
-                isPaintedByPlayer.Value = true;
+                isPaintedByPlayer.SetValueAndForceNotify(true);
             }
         }
         
