@@ -10,7 +10,8 @@ namespace RollerSplat
         private TMP_Text _levelName;
         private TMP_Text _numberOfMoves;
         private Image _gauge;
-        private Canvas _gameOver;
+        [SerializeField] private GameObject _gameOver;
+        [SerializeField] private GameObject levelComplete;
 
         public string LevelName
         {
@@ -19,20 +20,23 @@ namespace RollerSplat
 
         public bool GameOver
         {
-            set => _gameOver.enabled = value;
+            set => _gameOver.SetActive(value);
+        }
+
+        public bool LevelComplete
+        {
+            set => levelComplete.SetActive(value);
         }
         
         [Inject]
         public void Construct(
             [Inject(Id = "LevelName")] TMP_Text levelName,
             [Inject(Id = "NumberOfMoves")] TMP_Text numberOfMoves,
-            Image gauge,
-            Canvas gameOver)
+            Image gauge)
         {
             _levelName = levelName;
             _numberOfMoves = numberOfMoves;
             _gauge = gauge;
-            _gameOver = gameOver;
         }
 
         public void SetNumberOfMoves(int currentMoves, int maxMoves)

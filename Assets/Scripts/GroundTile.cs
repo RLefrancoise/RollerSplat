@@ -1,28 +1,29 @@
-﻿using UniRx;
+﻿using RollerSplat.Data;
+using UniRx;
 using UnityEngine;
-using Zenject;
 
 namespace RollerSplat
 {
     /// <summary>
     /// A ground tile. It changes color when the player is rolling on it
     /// </summary>
-    public class GroundTile : MonoBehaviour
+    public class GroundTile : LevelBlock
     {
-        private Renderer _renderer;
+        [SerializeField] private BoolReactiveProperty isPaintedByPlayer;
         [SerializeField] private ColorReactiveProperty color;
-
-        [Inject]
-        public void Construct(GameSettings gameSettings, Renderer r)
+        
+        public override LevelData.CellType CellType => LevelData.CellType.Ground;
+        public BoolReactiveProperty IsPaintedByPlayer => isPaintedByPlayer;
+        
+        private void Start()
         {
-            _renderer = r;
             color.Subscribe(ListenColorChanged);
-            color.Value = gameSettings.defaultGroundColor;
+            color.Value = GameSettings.defaultGroundColor;
         }
-
+        
         private void ListenColorChanged(Color c)
         {
-            _renderer.material.color = c;
+            Renderer.material.color = c;
         }
         
         private void OnTriggerEnter(Collider other)
@@ -31,6 +32,7 @@ namespace RollerSplat
             if (other.CompareTag("Player"))
             {
                 color.Value = other.GetComponent<Player>().Color;
+                isPaintedByPlayer.Value = true;
             }
         }
     }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Lean.Pool;
@@ -20,10 +21,26 @@ namespace RollerSplat
         private Camera _levelCamera;
 
         private Player _player;
+        
         /// <summary>
         /// Load command. It loads the given level
         /// </summary>
         private ReactiveCommand<LevelData> _loadCommand;
+
+        /// <summary>
+        /// Is level complete ?
+        /// </summary>
+        private BoolReactiveProperty _isLevelComplete;
+        
+        /// <summary>
+        /// All the blocks of the level (Walls, Ground, ...)
+        /// </summary>
+        public ReactiveCollection<LevelBlock> Blocks { get; private set; }
+
+        /// <summary>
+        /// Is level complete ?
+        /// </summary>
+        public ReadOnlyReactiveProperty<bool> IsLevelComplete => _isLevelComplete.ToReadOnlyReactiveProperty();
 
         /// <summary>
         /// Data of the current level
@@ -52,8 +69,40 @@ namespace RollerSplat
             _gameSettings = gameSettings;
             _levelCamera = levelCamera;
             _player = player;
+            
+            _isLevelComplete = new BoolReactiveProperty();
+            
+            Blocks = new ReactiveCollection<LevelBlock>();
+            Blocks.ObserveAdd().Subscribe(ListenBlockAdded);
         }
 
+        private void ListenBlockAdded(CollectionAddEvent<LevelBlock> addEvent)
+        {
+            var block = addEvent.Value;
+            switch (block.CellType)
+            {
+                case LevelData.CellType.Wall:
+                    break;
+                case LevelData.CellType.Ground:
+                    var groundBlock = (GroundTile) block;
+                    groundBlock.IsPaintedByPlayer.Subscribe(ListenGroundBlockPaintedByPlayer);
+                    break;
+            }
+        }
+        
+        private void ListenGroundBlockPaintedByPlayer(bool painted)
+        {
+            if (painted)
+            {
+                _isLevelComplete.Value = Blocks.Where(b => b.CellType == LevelData.CellType.Ground).Select(b => (GroundTile) b)
+                    .All(g => g.IsPaintedByPlayer.Value);
+            }
+            else
+            {
+                _isLevelComplete.Value = false;
+            }
+        }
+        
         private void ExecuteLoad(LevelData levelData)
         {
             Data = levelData;
@@ -69,30 +118,45 @@ namespace RollerSplat
             
             //read level file
             var levelContent = levelData.levelFile.text.Trim().Split('\n');
-            
+            //level size
             var levelSize = new Vector2(levelContent[0].Trim().Length, levelContent.Length);
             
-            //for each line
             var currentColumn = 0;
             var currentRow = 0;
 
+            //assign each level file letter to the right prefab
             var levelPrefabs = new Dictionary<char, GameObject>
             {
                 {'G', levelData.cells.First(c => c.type == LevelData.CellType.Ground).prefab},
                 {'W', levelData.cells.First(c => c.type == LevelData.CellType.Wall).prefab},
             };
             
+            //Clear blocks list
+            foreach (var block in Blocks)
+            {
+                LeanPool.Despawn(block.gameObject);
+            }
+            Blocks.Clear();
+            
+            //for each column
             foreach (var column in levelContent)
             {
+                //for each row
                 foreach (var cell in column.Trim())
                 {
-                    var tile = LeanPool.Spawn(
+                    //instantiate the level block
+                    var levelBlock = LeanPool.Spawn(
                         levelPrefabs[cell], 
                         transform.position + (Vector3.forward * currentColumn * _gameSettings.blockSize) + (Vector3.right * currentRow * _gameSettings.blockSize), 
-                        Quaternion.identity);
-                    tile.transform.localScale = Vector3.one * _gameSettings.blockSize;
-                    tile.transform.SetParent(transform);
-
+                        Quaternion.identity).GetComponentInChildren<LevelBlock>();
+                    
+                    //apply the right scale to the level block
+                    levelBlock.Root.localScale = Vector3.one * _gameSettings.blockSize;
+                    //the level block is a child of the level
+                    levelBlock.Root.SetParent(transform);
+                    //add the block to the list of blocks of the level
+                    Blocks.Add(levelBlock);
+                    
                     currentRow++;
                 }
 

@@ -20,6 +20,8 @@ namespace RollerSplat
         
         [SerializeField] private IntReactiveProperty currentMoves;
         [SerializeField] private LevelData levelToLoad;
+
+        private bool CanPlayerMove => _player.CanMove && currentMoves.Value > 0 && !_level.IsLevelComplete.Value;
         
         [Inject]
         public void Construct(Player player, HUD hud, Level level)
@@ -31,12 +33,6 @@ namespace RollerSplat
             //Current moves
             currentMoves = new IntReactiveProperty();
             currentMoves.Subscribe(UpdateNumberOfMoves);
-            
-            //Listen player movement
-            _player.Move.Subscribe(ListenPlayerMove);
-
-            //Listen level load
-            _level.Load.Subscribe(ListenLoadLevel);
         }
 
         private void OnEnable()
@@ -53,14 +49,25 @@ namespace RollerSplat
         
         private void Start()
         {
+            //Listen player movement
+            _player.Move.Subscribe(ListenPlayerMove);
+            //Listen level load
+            _level.Load.Subscribe(ListenLoadLevel);
+            //Listen level completed status
+            _level.IsLevelComplete.Subscribe(ListenLevelCompleted);
+
+            //No game over at start
+            _hud.GameOver = false;
+            //No level complete at start
+            _hud.LevelComplete = false;
+            
             //If data are set, load them
             if (levelToLoad) _level.Load.Execute(levelToLoad);
         }
         
         private void Update()
         {
-            if(!_player.CanMove) return;
-            if(currentMoves.Value == 0) return;
+            if(!CanPlayerMove) return;
             
             if (Input.GetKeyDown(KeyCode.UpArrow)) _player.Move.Execute(Player.MoveDirection.Up);
             if (Input.GetKeyDown(KeyCode.DownArrow)) _player.Move.Execute(Player.MoveDirection.Down);
@@ -81,23 +88,30 @@ namespace RollerSplat
             //Update level name
             _hud.LevelName = level.levelName;
         }
+
+        private void ListenLevelCompleted(bool levelCompleted)
+        {
+            _hud.LevelComplete = levelCompleted;
+            
+            //If no more moves & level is not complete, game over
+            _hud.GameOver = currentMoves.Value == 0 && !levelCompleted;
+        }
         
         private void UpdateNumberOfMoves(int numberOfMoves)
         {
             if(_level.Data != null)
                 _hud.SetNumberOfMoves(currentMoves.Value, _level.Data.numberOfMoves);
-
-            //If no more moves, game over
-            _hud.GameOver = numberOfMoves == 0;
         }
 
         private void StartSwipe(object sender, EventArgs e)
         {
+            if(!CanPlayerMove) return;
             _swipeStartScreenPosition = swipeGesture.NormalizedScreenPosition;
         }
         
         private void SwipeGesture(object sender, GestureStateChangeEventArgs e)
         {
+            if(!CanPlayerMove) return;
             if (e.State != Gesture.GestureState.Recognized) return;
             
             var swipeLength = swipeGesture.NormalizedScreenPosition - _swipeStartScreenPosition;

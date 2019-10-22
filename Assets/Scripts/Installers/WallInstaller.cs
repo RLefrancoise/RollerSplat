@@ -8,7 +8,6 @@ namespace RollerSplat.Installers
         public override void InstallBindings()
         {
             Container.Bind<Renderer>().FromComponentOnRoot();
-            Container.Bind<Collider>().FromComponentOnRoot();
         }
     }
 }

@@ -1,22 +1,15 @@
-using UnityEngine;
-using Zenject;
+using RollerSplat.Data;
 
 namespace RollerSplat
 {
-    public class Wall : MonoBehaviour
+    public class Wall : LevelBlock
     {
-        private Renderer _renderer;
-        private Collider _collider;
-
-        public Vector3 Extents => _collider.bounds.extents;
+        public override LevelData.CellType CellType => LevelData.CellType.Wall;
         
-        [Inject]
-        public void Construct(GameSettings gameSettings, Renderer r, Collider col)
+        private void Start()
         {
-            _renderer = r;
-            _collider = col;
-
-            _renderer.material.color = gameSettings.defaultWallColor;
+            Renderer.material.color = GameSettings.defaultWallColor;
         }
+
     }
 }
