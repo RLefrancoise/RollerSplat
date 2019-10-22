@@ -643,7 +643,8 @@ MonoBehaviour:
   swipeGesture: {fileID: 993930446}
   currentMoves:
     value: 0
-  levelToLoad: {fileID: 11400000, guid: afec2e7b3e80e714aa9e2bc8a6e5b3c7, type: 2}
+  levelToLoad:
+    value: {fileID: 11400000, guid: afec2e7b3e80e714aa9e2bc8a6e5b3c7, type: 2}
 --- !u!114 &993930445
 MonoBehaviour:
   m_ObjectHideFlags: 0

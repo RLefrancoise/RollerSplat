@@ -3,6 +3,9 @@ using UniRx;
 
 namespace RollerSplat.Data
 {
+    /// <summary>
+    /// Reactive property for level data
+    /// </summary>
     [Serializable]
     public class LevelDataReactiveProperty : ReactiveProperty<LevelData>
     {

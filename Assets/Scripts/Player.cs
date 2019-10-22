@@ -14,10 +14,19 @@ namespace RollerSplat
     /// </summary>
     public class Player : MonoBehaviour
     {
+        #region Enums
+        
+        /// <summary>
+        /// Move direction of the player
+        /// </summary>
         public enum MoveDirection
         {
             Up, Down, Left, Right
         }
+        
+        #endregion
+
+        #region Fields
         
         private static readonly Dictionary<MoveDirection, Quaternion> RotationsByDirection = new Dictionary<MoveDirection, Quaternion>
         {
@@ -27,14 +36,40 @@ namespace RollerSplat
             {MoveDirection.Right, Quaternion.LookRotation(Vector3.right, Vector3.up)}
         };
         
+        /// <summary>
+        /// Game settings
+        /// </summary>
         private GameSettings _gameSettings;
+        /// <summary>
+        /// Player renderer
+        /// </summary>
         private Renderer _renderer;
+        /// <summary>
+        /// Player rigid body
+        /// </summary>
         private Rigidbody _rigidBody;
+        /// <summary>
+        /// Player move tween
+        /// </summary>
         private TweenerCore<Vector3, Vector3, VectorOptions> _moveTween;
-        [SerializeField] private ColorReactiveProperty color;
+        /// <summary>
+        /// Move command
+        /// </summary>
         private ReactiveCommand<MoveDirection> _moveCommand;
+        /// <summary>
+        /// Place on tile command
+        /// </summary>
         private ReactiveCommand<Vector2> _placeOnTile;
+        /// <summary>
+        /// Player current color
+        /// </summary>
+        [Tooltip("Player current color")]
+        [SerializeField] private ColorReactiveProperty color;
 
+        #endregion
+
+        #region Properties
+        
         /// <summary>
         /// Can the player move ?
         /// </summary>
@@ -62,6 +97,9 @@ namespace RollerSplat
             }
         }
 
+        /// <summary>
+        /// Place the player on the given tile position
+        /// </summary>
         public ReactiveCommand<Vector2> PlaceOnTile
         {
             get
@@ -76,6 +114,8 @@ namespace RollerSplat
             }
         }
 
+        #endregion
+        
         [Inject]
         public void Construct(
             GameSettings gameSettings, 
@@ -88,6 +128,12 @@ namespace RollerSplat
             _renderer.material.color = color.Value;
         }
 
+        #region Private Methods
+        
+        /// <summary>
+        /// Called when the move command is executed
+        /// </summary>
+        /// <param name="dir">Direction of the movement</param>
         private void ExecuteMove(MoveDirection dir)
         {
             if(!CanMove) return;
@@ -117,6 +163,10 @@ namespace RollerSplat
             }
         }
 
+        /// <summary>
+        /// Called when the place on tile command is executed
+        /// </summary>
+        /// <param name="tile">Tile position</param>
         private void ExecutePlaceOnTile(Vector2 tile)
         {
             transform.localPosition = Vector3.right * tile.x * _gameSettings.blockSize +
@@ -126,5 +176,7 @@ namespace RollerSplat
             _rigidBody.velocity = Vector3.zero;
             _rigidBody.angularVelocity = Vector3.zero;
         }
+        
+        #endregion
     }
 }

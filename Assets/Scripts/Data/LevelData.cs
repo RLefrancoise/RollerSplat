@@ -3,22 +3,77 @@ using UnityEngine;
 
 namespace RollerSplat.Data
 {
+    /// <summary>
+    /// Level data
+    /// </summary>
     [CreateAssetMenu(fileName = "Level Data", menuName = "Roller Splat/Data/Level Data", order = 0)]
     public class LevelData : ScriptableObject
     {
+        /// <summary>
+        /// Type of level cell
+        /// </summary>
         public enum CellType
         {
+            /// <summary>
+            /// Wall
+            /// </summary>
             Wall,
+            /// <summary>
+            /// Ground
+            /// </summary>
             Ground
         }
-        
-        [BoxGroup("Camera")] public Vector3 cameraPosition;
-        [BoxGroup("Camera")] public Vector3 cameraRotation;
 
-        [BoxGroup("Level")] public string levelName;
-        [BoxGroup("Level")] public Vector2 startPosition;
-        [BoxGroup("Level")] public int numberOfMoves;
-        [BoxGroup("Level")] public CellData[] cells;
-        [BoxGroup("Level")] public TextAsset levelFile;
+        #region Camera
+
+        /// <summary>
+        /// Position of the level camera
+        /// </summary>
+        [BoxGroup("Camera")]
+        [Tooltip("Position of the level camera")]
+        public Vector3 cameraPosition;
+        /// <summary>
+        /// Rotation of the level camera
+        /// </summary>
+        [BoxGroup("Camera")]
+        [Tooltip("Rotation of the level camera")]
+        public Vector3 cameraRotation;
+
+        #endregion
+
+        #region Level
+
+        /// <summary>
+        /// Name of the level
+        /// </summary>
+        [BoxGroup("Level")]
+        [Tooltip("Name of the level")]
+        public string levelName;
+        /// <summary>
+        /// Player start position in tile coordinates
+        /// </summary>
+        [BoxGroup("Level")]
+        [Tooltip("Player start position in tile coordinates")]
+        public Vector2 startPosition;
+        /// <summary>
+        /// Number of allowed moves to complete the level
+        /// </summary>
+        [BoxGroup("Level")]
+        [Tooltip("Number of allowed moves to complete the level")]
+        public int numberOfMoves;
+        /// <summary>
+        /// Cells data used to build the level
+        /// </summary>
+        [BoxGroup("Level")]
+        [Tooltip("Cells data used to build the level")]
+        public CellData[] cells;
+        /// <summary>
+        /// File containing the level structure
+        /// </summary>
+        [BoxGroup("Level")]
+        [Tooltip("File containing the level structure")]
+        public TextAsset levelFile;
+        
+        #endregion
     }
 }

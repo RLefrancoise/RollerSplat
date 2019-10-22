@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Lean.Pool;
@@ -14,13 +13,17 @@ namespace RollerSplat
     /// </summary>
     public class Level : MonoBehaviour
     {
+        #region Fields
+        
+        /// <summary>
+        /// Game settings
+        /// </summary>
         private GameSettings _gameSettings;
+        
         /// <summary>
         /// The camera used to display the level
         /// </summary>
         private Camera _levelCamera;
-
-        private Player _player;
         
         /// <summary>
         /// Load command. It loads the given level
@@ -31,6 +34,10 @@ namespace RollerSplat
         /// Is level complete ?
         /// </summary>
         private BoolReactiveProperty _isLevelComplete;
+        
+        #endregion
+
+        #region Properties
         
         /// <summary>
         /// All the blocks of the level (Walls, Ground, ...)
@@ -46,6 +53,7 @@ namespace RollerSplat
         /// Data of the current level
         /// </summary>
         public LevelData Data { get; private set; }
+        
         /// <summary>
         /// Load command. It loads the given level
         /// </summary>
@@ -62,13 +70,14 @@ namespace RollerSplat
                 return _loadCommand;
             }
         }
+        
+        #endregion
 
         [Inject]
-        public void Construct(GameSettings gameSettings, Camera levelCamera, Player player)
+        public void Construct(GameSettings gameSettings, Camera levelCamera)
         {
             _gameSettings = gameSettings;
             _levelCamera = levelCamera;
-            _player = player;
             
             _isLevelComplete = new BoolReactiveProperty();
             
@@ -76,6 +85,10 @@ namespace RollerSplat
             Blocks.ObserveAdd().Subscribe(ListenBlockAdded);
         }
 
+        /// <summary>
+        /// Called when a level block is added to the level
+        /// </summary>
+        /// <param name="addEvent">Add block event</param>
         private void ListenBlockAdded(CollectionAddEvent<LevelBlock> addEvent)
         {
             var block = addEvent.Value;
@@ -90,11 +103,16 @@ namespace RollerSplat
             }
         }
         
+        /// <summary>
+        /// Called when a ground block painted flag has changed
+        /// </summary>
+        /// <param name="painted">Is painted</param>
         private void ListenGroundBlockPaintedByPlayer(bool painted)
         {
             if (painted)
             {
-                _isLevelComplete.Value = Blocks.Where(b => b.CellType == LevelData.CellType.Ground).Select(b => (GroundTile) b)
+                _isLevelComplete.Value = Blocks.Where(b => b.CellType == LevelData.CellType.Ground)
+                    .Select(b => (GroundTile) b)
                     .All(g => g.IsPaintedByPlayer.Value);
             }
             else
@@ -103,6 +121,10 @@ namespace RollerSplat
             }
         }
         
+        /// <summary>
+        /// Called when load command is executed
+        /// </summary>
+        /// <param name="levelData">Level data to load</param>
         private void ExecuteLoad(LevelData levelData)
         {
             Data = levelData;
@@ -168,9 +190,6 @@ namespace RollerSplat
             transform.position = transform.position 
                                  - (Vector3.forward * Mathf.FloorToInt(levelSize.y / 2f)) 
                                  - (Vector3.right * (levelSize.x - 1f) / 2f);
-            
-            //Place player 
-            _player.PlaceOnTile.Execute(levelData.startPosition);
         }
     }
 }

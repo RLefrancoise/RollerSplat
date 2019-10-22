@@ -9,21 +9,36 @@ namespace RollerSplat
     /// </summary>
     public class GroundTile : LevelBlock
     {
+        #region Fields
+        
+        /// <summary>
+        /// Is tile painted by player ?
+        /// </summary>
         [SerializeField] private BoolReactiveProperty isPaintedByPlayer;
+        /// <summary>
+        /// Tile color
+        /// </summary>
         [SerializeField] private ColorReactiveProperty color;
         
+        #endregion
+
+        #region Properties
+
         public override LevelData.CellType CellType => LevelData.CellType.Ground;
-        public BoolReactiveProperty IsPaintedByPlayer => isPaintedByPlayer;
         
+        /// <summary>
+        /// Is tile painted by player ?
+        /// </summary>
+        public BoolReactiveProperty IsPaintedByPlayer => isPaintedByPlayer;
+
+        #endregion
+
+        #region Monobehaviour Callbacks
+
         private void Start()
         {
             color.Subscribe(ListenColorChanged);
             color.Value = GameSettings.defaultGroundColor;
-        }
-        
-        private void ListenColorChanged(Color c)
-        {
-            Renderer.material.color = c;
         }
         
         private void OnTriggerEnter(Collider other)
@@ -35,5 +50,20 @@ namespace RollerSplat
                 isPaintedByPlayer.Value = true;
             }
         }
+        
+        #endregion
+
+        #region Private Methods
+
+        /// <summary>
+        /// Called when tile color is changed
+        /// </summary>
+        /// <param name="c">New tile color</param>
+        private void ListenColorChanged(Color c)
+        {
+            Renderer.material.color = c;
+        }
+        
+        #endregion
     }
 }
