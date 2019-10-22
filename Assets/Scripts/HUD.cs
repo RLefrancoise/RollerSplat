@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,6 +25,12 @@ namespace RollerSplat
         /// Number of moves left gauge
         /// </summary>
         private Image _gauge;
+
+        /// <summary>
+        /// Level complete label
+        /// </summary>
+        private TMP_Text _levelCompleteText;
+        
         /// <summary>
         /// Game over display
         /// </summary>
@@ -32,6 +39,10 @@ namespace RollerSplat
         /// Level complete display
         /// </summary>
         [SerializeField] private GameObject levelComplete;
+        /// <summary>
+        /// Tap to continue display
+        /// </summary>
+        [SerializeField] private GameObject tapToContinue;
 
         #endregion
 
@@ -42,7 +53,11 @@ namespace RollerSplat
         /// </summary>
         public string LevelName
         {
-            set => _levelName.text = value;
+            set
+            {
+                _levelName.text = value;
+                _levelCompleteText.text = $"{value}\nCompleted!";
+            }
         }
 
         /// <summary>
@@ -60,19 +75,43 @@ namespace RollerSplat
         {
             set => levelComplete.SetActive(value);
         }
+
+        /// <summary>
+        /// Display tap to continue ?
+        /// </summary>
+        public bool TapToContinue
+        {
+            get => tapToContinue.activeInHierarchy;
+            set => tapToContinue.SetActive(value);
+        }
         
         #endregion
+
+        public event Action TapToContinueTouched;
+        
         [Inject]
         public void Construct(
             [Inject(Id = "LevelName")] TMP_Text levelName,
             [Inject(Id = "NumberOfMoves")] TMP_Text numberOfMoves,
-            Image gauge)
+            Image gauge,
+            [Inject(Id = "LevelComplete")] TMP_Text levelCompleteText)
         {
             _levelName = levelName;
             _numberOfMoves = numberOfMoves;
             _gauge = gauge;
+            _levelCompleteText = levelCompleteText;
         }
 
+        private void Update()
+        {
+            if(!tapToContinue.activeInHierarchy) return;
+            
+            if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
+            {
+                TapToContinueTouched?.Invoke();
+            }
+        }
+        
         #region Public Methods
         
         /// <summary>

@@ -15,7 +15,7 @@ MonoBehaviour:
   cameraPosition: {x: 0, y: 10, z: -1.5}
   cameraRotation: {x: 80, y: 0, z: 0}
   levelName: Level 1
-  startPosition: {x: 1, y: 1}
+  startPosition: {x: 1, y: 4}
   numberOfMoves: 4
   cells:
   - {fileID: 11400000, guid: b1008c3a073bb5944bea40473f4696ab, type: 2}

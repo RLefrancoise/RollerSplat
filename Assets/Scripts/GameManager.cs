@@ -1,10 +1,13 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using RollerSplat.Data;
 using TouchScript.Gestures;
 using TouchScript.Gestures.TransformGestures;
 using UnityEngine;
 using Zenject;
 using UniRx;
+using UniRx.Async;
 
 namespace RollerSplat
 {
@@ -14,6 +17,11 @@ namespace RollerSplat
     public class GameManager : MonoBehaviour
     {
         #region Fields
+
+        /// <summary>
+        /// All the levels of the game
+        /// </summary>
+        private LevelData[] _levels;
         /// <summary>
         /// The player
         /// </summary>
@@ -39,9 +47,9 @@ namespace RollerSplat
         /// </summary>
         [SerializeField] private IntReactiveProperty currentMoves;
         /// <summary>
-        /// Level data to load
+        /// Current level index
         /// </summary>
-        [SerializeField] private LevelDataReactiveProperty levelToLoad;
+        [SerializeField] private IntReactiveProperty currentLevel;
 
         #endregion
 
@@ -50,7 +58,13 @@ namespace RollerSplat
         /// <summary>
         /// Can the player move ?
         /// </summary>
-        private bool CanPlayerMove => _player.CanMove && currentMoves.Value > 0 && !_level.IsLevelComplete.Value;
+        private bool CanPlayerMove => !_hud.TapToContinue && _player.CanMove && currentMoves.Value > 0 && !_level.IsLevelComplete.Value;
+
+        /// <summary>
+        /// Is game over ?
+        /// </summary>
+        private ReadOnlyReactiveProperty<bool> IsGameOver => _level.IsLevelComplete.CombineLatest(currentMoves,
+            (levelComplete, moves) => !levelComplete && moves == 0).ToReadOnlyReactiveProperty();
 
         #endregion
         
@@ -82,10 +96,11 @@ namespace RollerSplat
         
         private void Start()
         {
-            //Listen player movement
-            _player.Move.Subscribe(ListenPlayerMove);
+            //Get all levels
+            _levels = Resources.LoadAll<LevelData>("Levels");
+            
             //Listen level load
-            _level.Load.Subscribe(ListenLevelLoaded);
+            //_level.Load.Subscribe(ListenLevelLoaded);
             //Listen level completed status
             _level.IsLevelComplete.Subscribe(ListenLevelCompleted);
 
@@ -93,46 +108,75 @@ namespace RollerSplat
             _hud.GameOver = false;
             //No level complete at start
             _hud.LevelComplete = false;
+            //No tap to continue at start
+            _hud.TapToContinue = false;
 
-            //Listen level data
-            levelToLoad.Subscribe(ListenLevelData);
+            //Listen if player has touched the screen when tap to continue is displayed
+            _hud.TapToContinueTouched += ListenTapToContinueTouched;
+            
+            //Listen current level index
+            currentLevel.Subscribe(GoToLevel);
+            //Listen is game over
+            IsGameOver.Subscribe(ListenIsGameOver);
         }
-        
-        #if UNITY_EDITOR
+
+#if UNITY_EDITOR
         private void Update()
         {
             if(!CanPlayerMove) return;
             
-            if (Input.GetKeyDown(KeyCode.UpArrow)) _player.Move.Execute(Player.MoveDirection.Up);
-            if (Input.GetKeyDown(KeyCode.DownArrow)) _player.Move.Execute(Player.MoveDirection.Down);
-            if (Input.GetKeyDown(KeyCode.LeftArrow)) _player.Move.Execute(Player.MoveDirection.Left);
-            if (Input.GetKeyDown(KeyCode.RightArrow)) _player.Move.Execute(Player.MoveDirection.Right);
+            if (Input.GetKeyDown(KeyCode.UpArrow)) MovePlayer(Player.MoveDirection.Up);
+            if (Input.GetKeyDown(KeyCode.DownArrow)) MovePlayer(Player.MoveDirection.Down);
+            if (Input.GetKeyDown(KeyCode.LeftArrow)) MovePlayer(Player.MoveDirection.Left);
+            if (Input.GetKeyDown(KeyCode.RightArrow)) MovePlayer(Player.MoveDirection.Right);
         }
-        #endif
+#endif
 
         #endregion
 
         #region Private Methods
-        
-        /// <summary>
-        /// Called when player has moved
-        /// </summary>
-        /// <param name="direction">Direction of the movement</param>
-        private void ListenPlayerMove(Player.MoveDirection direction)
-        {
-            //Update number of moves
-            currentMoves.Value = Mathf.Max(0, currentMoves.Value - 1);
-        }
 
         /// <summary>
-        /// Called when level data have changed
+        /// Called when HUD tap to continue is touched
         /// </summary>
-        /// <param name="level">New level data</param>
-        private void ListenLevelData(LevelData level)
+        private void ListenTapToContinueTouched()
         {
-            _level.Load.Execute(level);
+            _hud.TapToContinue = false;
         }
         
+        /// <summary>
+        /// Called when current level index is changed
+        /// </summary>
+        /// <param name="levelIndex">Index of the level to go to</param>
+        private void GoToLevel(int levelIndex)
+        {
+            if (levelIndex >= _levels.Length)
+            {
+                Debug.LogErrorFormat("GameManager:GoToLevel : No more levels. (index: {0})", levelIndex);
+                currentLevel.Value = 0;
+            }
+            else
+            {
+                var levelData = _levels[levelIndex];
+            
+                //Update level name
+                _hud.LevelName = levelData.levelName;
+            
+                //load the level
+                _level.Load.Execute(_levels[levelIndex]);
+            
+                //Update current moves
+                currentMoves.Value = levelData.numberOfMoves;
+                
+                //Place player on start tile
+                _player.PlaceOnTile.Execute(levelData.startPosition);
+            
+                //Ask the player to tap to continue
+                _hud.TapToContinue = true;
+            }
+        }
+        
+        /*
         /// <summary>
         /// Listen when the level has been loaded
         /// </summary>
@@ -146,18 +190,43 @@ namespace RollerSplat
             currentMoves.Value = level.numberOfMoves;
             //Update level name
             _hud.LevelName = level.levelName;
-        }
+        }*/
 
         /// <summary>
         /// Called when the level completed flag is changed
         /// </summary>
         /// <param name="levelCompleted">Is the level completed ?</param>
-        private void ListenLevelCompleted(bool levelCompleted)
+        private async void ListenLevelCompleted(bool levelCompleted)
         {
             _hud.LevelComplete = levelCompleted;
             
-            //If no more moves & level is not complete, game over
-            _hud.GameOver = currentMoves.Value == 0 && !levelCompleted;
+            //If level completed, make the player bounce & go to the next level
+            if (levelCompleted)
+            {
+                _player.Bounce.Execute();
+                await UniTask.WaitUntil(() => _player.Bounce.CanExecute.Value);
+                //Go to next level
+                currentLevel.Value = currentLevel.Value + 1;
+            }
+        }
+
+        /// <summary>
+        /// Called when game over conditions are changed
+        /// </summary>
+        /// <param name="gameOver">Is game over ?</param>
+        private void ListenIsGameOver(bool gameOver)
+        {
+            _hud.GameOver = gameOver;
+
+            //If game over, replay the level after 3s
+            if (gameOver)
+            {
+                UniTask.Delay(TimeSpan.FromSeconds(3f)).ToObservable().Subscribe(_ =>
+                {
+                    //Replay the level
+                    GoToLevel(currentLevel.Value);
+                });
+            }
         }
         
         /// <summary>
@@ -192,24 +261,37 @@ namespace RollerSplat
             if (e.State != Gesture.GestureState.Recognized) return;
             
             var swipeLength = swipeGesture.NormalizedScreenPosition - _swipeStartScreenPosition;
-            if(Mathf.Abs(swipeLength.x) < 0.2f && Mathf.Abs(swipeLength.y) <= 0.2f) return;
+            if(Mathf.Abs(swipeLength.x) < 0.05f && Mathf.Abs(swipeLength.y) <= 0.05f) return;
                 
-            if (swipeLength.x >= 0.2f)
+            if (swipeLength.x >= 0.05f)
             {
-                _player.Move.Execute(Player.MoveDirection.Right);
+                MovePlayer(Player.MoveDirection.Right);
             }
-            else if (swipeLength.x <= -0.2f)
+            else if (swipeLength.x <= -0.05f)
             {
-                _player.Move.Execute(Player.MoveDirection.Left);
+                MovePlayer(Player.MoveDirection.Left);
             }
-            else if (swipeLength.y >= 0.2f)
+            else if (swipeLength.y >= 0.05f)
             {
-                _player.Move.Execute(Player.MoveDirection.Up);
+                MovePlayer(Player.MoveDirection.Up);
             }
-            else if (swipeLength.y <= -0.2f)
+            else if (swipeLength.y <= -0.05f)
             {
-                _player.Move.Execute(Player.MoveDirection.Down);
+                MovePlayer(Player.MoveDirection.Down);
             }
+        }
+
+        /// <summary>
+        /// Move the player and decreases remaining moves
+        /// </summary>
+        /// <param name="direction">Direction of the movement</param>
+        private async void MovePlayer(Player.MoveDirection direction)
+        {
+            _player.Move.Execute(direction);
+            await UniTask.WaitUntil(() => _player.Move.CanExecute.Value);
+            
+            //Update number of moves
+            currentMoves.Value = Mathf.Max(0, currentMoves.Value - 1);
         }
         
         #endregion

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Lean.Pool;
 using RollerSplat.Data;
+using TouchScript.Gestures.TransformGestures;
 using UnityEngine;
 using Zenject;
 using UniRx;
@@ -111,13 +112,13 @@ namespace RollerSplat
         {
             if (painted)
             {
-                _isLevelComplete.Value = Blocks.Where(b => b.CellType == LevelData.CellType.Ground)
+                _isLevelComplete.SetValueAndForceNotify(Blocks.Where(b => b.CellType == LevelData.CellType.Ground)
                     .Select(b => (GroundTile) b)
-                    .All(g => g.IsPaintedByPlayer.Value);
+                    .All(g => g.IsPaintedByPlayer.Value));
             }
             else
             {
-                _isLevelComplete.Value = false;
+                _isLevelComplete.SetValueAndForceNotify(false);
             }
         }
         
@@ -156,7 +157,7 @@ namespace RollerSplat
             //Clear blocks list
             foreach (var block in Blocks)
             {
-                LeanPool.Despawn(block.gameObject);
+                Destroy(block.Root.gameObject);
             }
             Blocks.Clear();
             
@@ -167,15 +168,15 @@ namespace RollerSplat
                 foreach (var cell in column.Trim())
                 {
                     //instantiate the level block
-                    var levelBlock = LeanPool.Spawn(
+                    var levelBlock = Instantiate(
                         levelPrefabs[cell], 
-                        transform.position + (Vector3.forward * currentColumn * _gameSettings.blockSize) + (Vector3.right * currentRow * _gameSettings.blockSize), 
-                        Quaternion.identity).GetComponentInChildren<LevelBlock>();
+                        transform.position + (-Vector3.forward * currentColumn * _gameSettings.blockSize) + (Vector3.right * currentRow * _gameSettings.blockSize), 
+                        Quaternion.identity,
+                        transform).GetComponentInChildren<LevelBlock>();
                     
                     //apply the right scale to the level block
                     levelBlock.Root.localScale = Vector3.one * _gameSettings.blockSize;
-                    //the level block is a child of the level
-                    levelBlock.Root.SetParent(transform);
+
                     //add the block to the list of blocks of the level
                     Blocks.Add(levelBlock);
                     
@@ -187,8 +188,7 @@ namespace RollerSplat
             }
             
             //Adjust the level position according to its size to center it on the screen
-            transform.position = transform.position 
-                                 - (Vector3.forward * Mathf.FloorToInt(levelSize.y / 2f)) 
+            transform.position = (Vector3.forward * Mathf.FloorToInt(levelSize.y / 2f)) 
                                  - (Vector3.right * (levelSize.x - 1f) / 2f);
         }
     }

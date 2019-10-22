@@ -9,6 +9,7 @@ namespace RollerSplat.Installers
         {
             Container.Bind<Renderer>().FromComponentOnRoot();
             Container.Bind<Rigidbody>().FromComponentOnRoot();
+            Container.Bind<Animator>().FromComponentOnRoot();
         }
     }
 }

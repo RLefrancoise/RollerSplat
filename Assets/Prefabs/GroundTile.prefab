@@ -109,6 +109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   root: {fileID: 4643950621425004880}
+  isPaintedByPlayer:
+    value: 0
   color:
     value: {r: 0.28627452, g: 0.61960787, b: 0.6431373, a: 1}
 --- !u!114 &2379116761109865922

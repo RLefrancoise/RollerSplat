@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
 using NaughtyAttributes;
 using UniRx;
+using UniRx.Async;
 using UnityEngine;
 using Zenject;
 
@@ -49,22 +51,33 @@ namespace RollerSplat
         /// </summary>
         private Rigidbody _rigidBody;
         /// <summary>
+        /// Player animator
+        /// </summary>
+        private Animator _animator;
+        /// <summary>
         /// Player move tween
         /// </summary>
         private TweenerCore<Vector3, Vector3, VectorOptions> _moveTween;
         /// <summary>
         /// Move command
         /// </summary>
-        private ReactiveCommand<MoveDirection> _moveCommand;
+        private AsyncReactiveCommand<MoveDirection> _moveCommand;
         /// <summary>
         /// Place on tile command
         /// </summary>
         private ReactiveCommand<Vector2> _placeOnTile;
         /// <summary>
+        /// Bounce the player
+        /// </summary>
+        private AsyncReactiveCommand _bounce;
+        
+        /// <summary>
         /// Player current color
         /// </summary>
         [Tooltip("Player current color")]
         [SerializeField] private ColorReactiveProperty color;
+
+        private static readonly int BounceTrigger = Animator.StringToHash("Bounce");
 
         #endregion
 
@@ -83,14 +96,14 @@ namespace RollerSplat
         /// <summary>
         /// Move the player in the given direction
         /// </summary>
-        public ReactiveCommand<MoveDirection> Move
+        public AsyncReactiveCommand<MoveDirection> Move
         {
             get
             {
                 if (_moveCommand == null)
                 {
-                    _moveCommand = new ReactiveCommand<MoveDirection>();
-                    _moveCommand.Subscribe(ExecuteMove);
+                    _moveCommand = new AsyncReactiveCommand<MoveDirection>();
+                    _moveCommand.Subscribe(direction => ExecuteMove(direction).ToObservable().AsUnitObservable());
                 }
 
                 return _moveCommand;
@@ -114,17 +127,36 @@ namespace RollerSplat
             }
         }
 
+        /// <summary>
+        /// Bounce the player
+        /// </summary>
+        public AsyncReactiveCommand Bounce
+        {
+            get
+            {
+                if (_bounce == null)
+                {
+                    _bounce = new AsyncReactiveCommand();
+                    _bounce.Subscribe(_ => ExecuteBounce().ToObservable().AsUnitObservable());
+                }
+
+                return _bounce;
+            }
+        }
+        
         #endregion
         
         [Inject]
         public void Construct(
             GameSettings gameSettings, 
             Renderer r, 
-            Rigidbody rigidBody)
+            Rigidbody rigidBody,
+            Animator animator)
         {
             _gameSettings = gameSettings;
             _renderer = r;
             _rigidBody = rigidBody;
+            _animator = animator;
             _renderer.material.color = color.Value;
         }
 
@@ -134,9 +166,9 @@ namespace RollerSplat
         /// Called when the move command is executed
         /// </summary>
         /// <param name="dir">Direction of the movement</param>
-        private void ExecuteMove(MoveDirection dir)
+        private async UniTask ExecuteMove(MoveDirection dir)
         {
-            if(!CanMove) return;
+            if (!CanMove) return;
             
             //Rotate to the right direction
             transform.rotation = RotationsByDirection[dir];
@@ -156,10 +188,11 @@ namespace RollerSplat
                 //Get move direction
                 var moveDirection = (wall.transform.position - transform.position).normalized;
                 //Because we have the wall position for now, we need to subtract half of the wall size to have the final point for the player to move at
-                var destination = wall.transform.position - moveDirection * _gameSettings.blockSize / 2f;
+                var destination = wall.transform.position - moveDirection * _gameSettings.blockSize;
                 var distance = Vector3.Distance(transform.position, destination);
                 //Apply the movement
-                _moveTween = _rigidBody.DOMove(destination, distance / _gameSettings.playerSpeed);
+                _moveTween = transform.DOMove(destination, distance / _gameSettings.playerSpeed);
+                await _moveTween.ToUniTask();
             }
         }
 
@@ -170,11 +203,22 @@ namespace RollerSplat
         private void ExecutePlaceOnTile(Vector2 tile)
         {
             transform.localPosition = Vector3.right * tile.x * _gameSettings.blockSize +
-                                      Vector3.forward * tile.y * _gameSettings.blockSize +
+                                      -Vector3.forward * tile.y * _gameSettings.blockSize +
                                       Vector3.up * _gameSettings.blockSize / 2f;
             _rigidBody.position = transform.position;
             _rigidBody.velocity = Vector3.zero;
             _rigidBody.angularVelocity = Vector3.zero;
+        }
+
+        /// <summary>
+        /// Called when bounce is executed
+        /// </summary>
+        /// <returns></returns>
+        private async UniTask ExecuteBounce()
+        {
+            _animator.SetTrigger(BounceTrigger);
+            await UniTask.Delay(TimeSpan.FromSeconds(3f));
+            //await UniTask.WaitWhile(() => _animator.GetCurrentAnimatorStateInfo(0).IsTag("Bounce"));
         }
         
         #endregion

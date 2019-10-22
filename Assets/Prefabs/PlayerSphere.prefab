@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 462347259471004663}
   - component: {fileID: 2113525568379737310}
   - component: {fileID: 444152565031691152}
+  - component: {fileID: 2983481258237956045}
   - component: {fileID: 6174020232536235525}
   - component: {fileID: 5928481024084614939}
   - component: {fileID: 5330401440461644428}
@@ -106,11 +107,30 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &2983481258237956045
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5972884208249552887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ded3f32b31ed8984ba1b1cad013a61ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &6174020232536235525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color:
-    value: {r: 0, g: 1, b: 0, a: 1}
+    value: {r: 0.16487186, g: 0.5281132, b: 0.8962264, a: 1}
 --- !u!114 &5928481024084614939
 MonoBehaviour:
   m_ObjectHideFlags: 0
