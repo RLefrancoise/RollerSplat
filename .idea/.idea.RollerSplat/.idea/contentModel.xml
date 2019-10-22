@@ -1447,6 +1447,7 @@
           <e p="Levels" t="Include">
             <e p="Level01.txt" t="Include" />
             <e p="Level02.txt" t="Include" />
+            <e p="Level03.txt" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">

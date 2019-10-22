@@ -41,13 +41,13 @@ namespace RollerSplat
             color.Value = GameSettings.defaultGroundColor;
         }
         
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerStay(Collider other)
         {
             //If player rolls on tile, apply player color to tile
             if (other.CompareTag("Player"))
             {
                 color.Value = other.GetComponent<Player>().Color;
-                isPaintedByPlayer.SetValueAndForceNotify(true);
+                isPaintedByPlayer.Value = true;
             }
         }
         
