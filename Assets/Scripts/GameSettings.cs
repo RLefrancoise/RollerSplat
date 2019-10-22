@@ -39,5 +39,12 @@ namespace RollerSplat
         [BoxGroup("Level")] public float blockSize = 1f;
         
         #endregion
+
+        #region HUD
+
+        [BoxGroup("HUD")]
+        public float moveNumberGaugeFillDuration = 0.5f;
+
+        #endregion
     }
 }

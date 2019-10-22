@@ -1,4 +1,7 @@
 using System;
+using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +15,8 @@ namespace RollerSplat
     public class HUD : MonoBehaviour
     {
         #region Fields
+
+        private GameSettings _gameSettings;
         
         /// <summary>
         /// Level name label
@@ -30,7 +35,9 @@ namespace RollerSplat
         /// Level complete label
         /// </summary>
         private TMP_Text _levelCompleteText;
-        
+
+        private TweenerCore<float, float, FloatOptions> _fillAmountTween;
+
         /// <summary>
         /// Game over display
         /// </summary>
@@ -91,11 +98,13 @@ namespace RollerSplat
         
         [Inject]
         public void Construct(
+            GameSettings gameSettings,
             [Inject(Id = "LevelName")] TMP_Text levelName,
             [Inject(Id = "NumberOfMoves")] TMP_Text numberOfMoves,
             Image gauge,
             [Inject(Id = "LevelComplete")] TMP_Text levelCompleteText)
         {
+            _gameSettings = gameSettings;
             _levelName = levelName;
             _numberOfMoves = numberOfMoves;
             _gauge = gauge;
@@ -122,7 +131,11 @@ namespace RollerSplat
         public void SetNumberOfMoves(int currentMoves, int maxMoves)
         {
             _numberOfMoves.text = $"{currentMoves}/{maxMoves}";
-            _gauge.fillAmount = 1f - (float) currentMoves / maxMoves;
+            if (_fillAmountTween != null && _fillAmountTween.active)
+            {
+                _fillAmountTween.Complete();
+            }
+            _fillAmountTween = _gauge.DOFillAmount((float) currentMoves / maxMoves, _gameSettings.moveNumberGaugeFillDuration);
         }
         
         #endregion
