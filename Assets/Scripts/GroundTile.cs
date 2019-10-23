@@ -89,7 +89,7 @@ namespace RollerSplat
             }
         }
         
-        private void OnTriggerStay(Collider other)
+        private void OnTriggerEnter(Collider other)
         {
             //If player rolls on tile, apply player color to tile
             if (other.CompareTag("Player"))

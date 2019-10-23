@@ -198,7 +198,7 @@ namespace RollerSplat
                 QueryTriggerInteraction.Ignore)) return;
             
             //Get wall that has been hit
-            var wall = hit.collider.gameObject.GetComponent<Wall>();
+            var wall = hit.collider.gameObject.GetComponentInParent<Wall>();
             if (wall)
             {
                 //Get move direction

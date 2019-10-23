@@ -88,12 +88,7 @@ GameObject:
   - component: {fileID: 914791358599325308}
   - component: {fileID: 1288960664648266390}
   - component: {fileID: 3608007369421421742}
-  - component: {fileID: 3045851747736241882}
-  - component: {fileID: 3225884082444130919}
-  - component: {fileID: 2379116761109865922}
-  - component: {fileID: 841129533064008316}
   - component: {fileID: 6638495764916907559}
-  - component: {fileID: 6679159100573361242}
   m_Layer: 0
   m_Name: GroundTile
   m_TagString: Untagged
@@ -164,76 +159,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3045851747736241882
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912327436591237677}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.0000002, z: 1}
-  m_Center: {x: 0, y: 0, z: -0.5}
---- !u!114 &3225884082444130919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912327436591237677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe12c04a904501446a2dc222c0051317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  root: {fileID: 4643950621425004880}
-  isPaintedByPlayer:
-    value: 0
-  color:
-    value: {r: 0.28627452, g: 0.61960787, b: 0.6431373, a: 1}
-  expectedColor:
-    value: {r: 0.28627452, g: 0.61960787, b: 0.6431373, a: 1}
-  isPaintingPlayer:
-    value: 0
---- !u!114 &2379116761109865922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912327436591237677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60098207c3eb41b9b0798ec39d48772b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  border: {fileID: 1020353928959251875}
-  animator: {fileID: 2520112935054843791}
-  paintPlayerRenderer:
-  - {fileID: 9034150014812619390}
-  - {fileID: 3151863962568665666}
-  - {fileID: 3347278817539244778}
---- !u!114 &841129533064008316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912327436591237677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08eca9f7688a0a24685b89133b020c8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scriptableObjectInstallers: []
-  _monoInstallers:
-  - {fileID: 2379116761109865922}
-  _installerPrefabs: []
-  _autoRun: 1
-  _kernel: {fileID: 0}
 --- !u!64 &6638495764916907559
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -248,19 +173,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &6679159100573361242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912327436591237677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _containerSource: 0
 --- !u!1 &2691693311922472186
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +337,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4643950621425004880}
   - component: {fileID: 2520112935054843791}
+  - component: {fileID: 8420294271901695550}
+  - component: {fileID: 5506943885132308564}
+  - component: {fileID: 5592205876577630389}
+  - component: {fileID: 2439626281613127228}
+  - component: {fileID: 2182191682212440155}
   m_Layer: 0
   m_Name: GroundTile
   m_TagString: Untagged
@@ -466,6 +383,90 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8420294271901695550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869523470471048607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe12c04a904501446a2dc222c0051317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 4643950621425004880}
+  isPaintedByPlayer:
+    value: 0
+  color:
+    value: {r: 1, g: 1, b: 1, a: 1}
+  expectedColor:
+    value: {r: 0.28627452, g: 0.61960787, b: 0.6431373, a: 1}
+  isPaintingPlayer:
+    value: 0
+--- !u!114 &5506943885132308564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869523470471048607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60098207c3eb41b9b0798ec39d48772b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 3608007369421421742}
+  border: {fileID: 1020353928959251875}
+  animator: {fileID: 2520112935054843791}
+  paintPlayerRenderer:
+  - {fileID: 9034150014812619390}
+  - {fileID: 3151863962568665666}
+  - {fileID: 3347278817539244778}
+--- !u!114 &5592205876577630389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869523470471048607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08eca9f7688a0a24685b89133b020c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers: []
+  _monoInstallers:
+  - {fileID: 5506943885132308564}
+  _installerPrefabs: []
+  _autoRun: 1
+  _kernel: {fileID: 0}
+--- !u!114 &2439626281613127228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869523470471048607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _containerSource: 0
+--- !u!65 &2182191682212440155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869523470471048607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &4461401979451452201
 GameObject:
   m_ObjectHideFlags: 0
