@@ -94,6 +94,9 @@ namespace RollerSplat
             //No tap to continue at start
             _hud.TapToContinue = false;
 
+            //Listen level completed
+            _level.IsLevelComplete.SkipLatestValueOnSubscribe().Subscribe(ListenLevelCompleted);
+            
             //Listen if player has touched the screen when tap to continue is displayed
             _hud.TapToContinueTouched += ListenTapToContinueTouched;
             
@@ -168,11 +171,13 @@ namespace RollerSplat
         /// <param name="levelCompleted">Is the level completed ?</param>
         private async void ListenLevelCompleted(bool levelCompleted)
         {
-            _hud.LevelComplete = levelCompleted;
-            
-            //If level completed, make the player bounce & go to the next level
             if (levelCompleted)
             {
+                _hud.GameOver = false;
+                _hud.LevelComplete = true;
+                
+                //If level completed, make the player bounce & go to the next level
+                await _player.StopMove(_level.LastGroundTilePaintedByPlayer.Root.position);
                 _player.Bounce.Execute();
                 await UniTask.WaitUntil(() => _player.Bounce.CanExecute.Value);
                 //Go to next level
@@ -201,12 +206,6 @@ namespace RollerSplat
                         //Replay the level
                         GoToLevel(currentLevel.Value);
                     });
-                }
-                else
-                {
-                    _hud.GameOver = false;
-                    ListenLevelCompleted(true);
-                    
                 }
             }
             else

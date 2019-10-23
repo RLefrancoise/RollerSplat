@@ -3,11 +3,7 @@ using Zenject;
 
 namespace RollerSplat.Installers
 {
-    public class WallInstaller : MonoInstaller<WallInstaller>
+    public class WallInstaller : LevelBlockInstaller<WallInstaller>
     {
-        public override void InstallBindings()
-        {
-            Container.Bind<Renderer>().FromComponentOnRoot();
-        }
     }
 }

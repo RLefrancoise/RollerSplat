@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color:
-    value: {r: 0.16487186, g: 0.5281132, b: 0.8962264, a: 1}
+    value: {r: 0.28627452, g: 0.61960787, b: 0.6431373, a: 1}
 --- !u!114 &5928481024084614939
 MonoBehaviour:
   m_ObjectHideFlags: 0

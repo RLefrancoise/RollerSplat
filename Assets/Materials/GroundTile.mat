@@ -70,10 +70,12 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DetailTex: 0
+    - _DiffuseThreshold: 0.1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _LitOutlineThickness: 0.1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -82,11 +84,13 @@ Material:
     - _RimAmount: 0.7
     - _RimThreshold: 0.1
     - _Shadow: 0.4
+    - _Shininess: 5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _TintColor: 1
     - _UVSec: 0
+    - _UnlitOutlineThickness: 0.4
     - _VertexColor: 0
     - _ZWrite: 1
     m_Colors:
@@ -96,4 +100,6 @@ Material:
     - _OutlineColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecularColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    - _UnlitColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

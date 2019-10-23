@@ -10,6 +10,7 @@ namespace RollerSplat
         {
             var completed = false;
             tween.onComplete += () => completed = true;
+            tween.onKill += () => completed = true;
             return UniTask.WaitUntil(() => completed);
         }
     }

@@ -55,6 +55,10 @@ namespace RollerSplat
         /// </summary>
         private Animator _animator;
         /// <summary>
+        /// Player trail
+        /// </summary>
+        private TrailRenderer _trail;
+        /// <summary>
         /// Player move tween
         /// </summary>
         private TweenerCore<Vector3, Vector3, VectorOptions> _moveTween;
@@ -70,7 +74,7 @@ namespace RollerSplat
         /// Bounce the player
         /// </summary>
         private AsyncReactiveCommand _bounce;
-        
+
         /// <summary>
         /// Player current color
         /// </summary>
@@ -91,7 +95,7 @@ namespace RollerSplat
         /// <summary>
         /// Current player color
         /// </summary>
-        public Color Color => color.Value;
+        public ColorReactiveProperty Color => color;
 
         /// <summary>
         /// Move the player in the given direction
@@ -143,7 +147,7 @@ namespace RollerSplat
                 return _bounce;
             }
         }
-        
+
         #endregion
         
         [Inject]
@@ -151,13 +155,25 @@ namespace RollerSplat
             GameSettings gameSettings, 
             Renderer r, 
             Rigidbody rigidBody,
-            Animator animator)
+            Animator animator,
+            TrailRenderer trail)
         {
             _gameSettings = gameSettings;
             _renderer = r;
             _rigidBody = rigidBody;
             _animator = animator;
-            _renderer.material.color = color.Value;
+            _trail = trail;
+
+            color.Subscribe(ListenColor);
+        }
+
+        public async UniTask StopMove(Vector3 tilePosition)
+        {
+            _moveTween.Kill();
+            _moveTween = null;
+            var distance = Vector3.Distance(transform.position, tilePosition);
+            _moveTween = transform.DOMove(tilePosition, distance / _gameSettings.playerSpeed);
+            await _moveTween.ToUniTask();
         }
 
         #region Private Methods
@@ -202,12 +218,16 @@ namespace RollerSplat
         /// <param name="tile">Tile position</param>
         private void ExecutePlaceOnTile(Vector2 tile)
         {
+            _trail.enabled = false;
+            
             transform.localPosition = Vector3.right * tile.x * _gameSettings.blockSize +
                                       -Vector3.forward * tile.y * _gameSettings.blockSize +
                                       Vector3.up * _gameSettings.blockSize / 2f;
             _rigidBody.position = transform.position;
             _rigidBody.velocity = Vector3.zero;
             _rigidBody.angularVelocity = Vector3.zero;
+
+            _trail.enabled = true;
         }
 
         /// <summary>
@@ -218,7 +238,23 @@ namespace RollerSplat
         {
             _animator.SetTrigger(BounceTrigger);
             await UniTask.Delay(TimeSpan.FromSeconds(3f));
-            //await UniTask.WaitWhile(() => _animator.GetCurrentAnimatorStateInfo(0).IsTag("Bounce"));
+        }
+
+        /// <summary>
+        /// Called when player color is changed
+        /// </summary>
+        /// <param name="c"></param>
+        private void ListenColor(Color c)
+        {
+            _renderer.material.color = color.Value;
+
+            var trailGradient = new Gradient
+            {
+                colorKeys = new[] {new GradientColorKey(c, 0f), new GradientColorKey(c, 1f)},
+                alphaKeys = new[] {new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0f, 1f)}
+            };
+
+            _trail.colorGradient = trailGradient;
         }
         
         #endregion

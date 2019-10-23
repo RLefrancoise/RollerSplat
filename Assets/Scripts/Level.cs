@@ -55,6 +55,8 @@ namespace RollerSplat
         /// </summary>
         public LevelData Data { get; private set; }
         
+        public GroundTile LastGroundTilePaintedByPlayer { get; private set; }
+        
         /// <summary>
         /// Load command. It loads the given level
         /// </summary>
@@ -99,6 +101,10 @@ namespace RollerSplat
                     break;
                 case LevelData.CellType.Ground:
                     var groundBlock = (GroundTile) block;
+                    groundBlock.IsPaintedByPlayer.Subscribe(painted =>
+                    {
+                        if (painted) LastGroundTilePaintedByPlayer = groundBlock;
+                    });
                     groundBlock.IsPaintedByPlayer.Subscribe(ListenGroundBlockPaintedByPlayer);
                     break;
             }
