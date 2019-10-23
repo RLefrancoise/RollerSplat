@@ -1909,6 +1909,7 @@
           <e p="Level.cs" t="Include" />
           <e p="LevelBlock.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="TeleportTile.cs" t="Include" />
           <e p="TweenExtensions.cs" t="Include" />
           <e p="Wall.cs" t="Include" />
         </e>

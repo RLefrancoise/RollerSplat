@@ -1,6 +1,8 @@
-﻿using RollerSplat.Data;
+﻿using DG.Tweening;
+using RollerSplat.Data;
 using UniRx;
 using UnityEngine;
+using UnityQuery;
 
 namespace RollerSplat
 {
@@ -64,17 +66,19 @@ namespace RollerSplat
             color.Subscribe(ListenColorChanged);
             isPaintingPlayer.Subscribe(ListenIsPaintingPlayer);
             
-            color.Value = GameSettings.defaultGroundColor;
+            if(!isPaintedByPlayer.Value) color.Value = GameSettings.defaultGroundColor;
         }
 
         private void Update()
         {
+            border.material.color = expectedColor.Value;
             border.material.SetColor(EmissionColor, expectedColor.Value * Mathf.PingPong(Time.time, 1f));
 
             if (isPaintingPlayer.Value)
             {
                 foreach (var paintPlayerRenderer in paintPlayerRenderers)
                 {
+                    paintPlayerRenderer.material.color = expectedColor.Value;
                     paintPlayerRenderer.material.SetColor(EmissionColor, expectedColor.Value * Mathf.PingPong(Time.time, 1f));
                 }
             }
@@ -91,7 +95,19 @@ namespace RollerSplat
                 isPaintedByPlayer.Value = true;
             }
         }
-        
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = expectedColor.Value.WithAlpha(0.5f);
+            Gizmos.DrawCube(transform.position + Vector3.up * 0.01f, renderer.bounds.size);
+            
+            if (isPaintingPlayer.Value)
+            {
+                Gizmos.color = Color.white;
+                Gizmos.DrawSphere(transform.position + Vector3.up * renderer.bounds.extents.magnitude / 2f, renderer.bounds.extents.magnitude / 2f);
+            }
+        }
+
         #endregion
 
         #region Private Methods
@@ -102,7 +118,7 @@ namespace RollerSplat
         /// <param name="c">New tile color</param>
         private void ListenColorChanged(Color c)
         {
-            renderer.material.color = c;
+            renderer.material.DOColor(c, GameSettings.groundColorationDuration);
         }
 
         private void ListenIsPaintingPlayer(bool painting)

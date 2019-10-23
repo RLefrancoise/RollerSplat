@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdac08d06b214de690976ad323e78071, type: 3}
   m_Name: Level 03
   m_EditorClassIdentifier: 
-  cameraPosition: {x: 0, y: 18, z: -1.5}
+  cameraPosition: {x: 4, y: 18, z: -7}
   cameraRotation: {x: 80, y: 0, z: 0}
   levelName: Level 3
-  startPosition: {x: 1, y: 8}
-  numberOfMoves: 11
+  startPosition: {x: 2, y: 6}
+  numberOfMoves: 19
   cells:
   - {fileID: 11400000, guid: b1008c3a073bb5944bea40473f4696ab, type: 2}
   - {fileID: 11400000, guid: e6a1afb6d0c8ab948835e8f4cbbecae0, type: 2}
   levelFile: {fileID: 4900000, guid: 1bc7470e2cde9124e87b95ea33ecae75, type: 3}
+  levelPrefab: {fileID: 7426067204215692, guid: 8ed9aaa0864f46542acbc808d79f6116,
+    type: 3}

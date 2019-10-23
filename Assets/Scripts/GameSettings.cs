@@ -28,6 +28,10 @@ namespace RollerSplat
         /// Player speed
         /// </summary>
         [BoxGroup("Player")] public float playerSpeed = 0.25f;
+        /// <summary>
+        /// Player is using trail ?
+        /// </summary>
+        [BoxGroup("Player")] public bool playerTrail = true;
         
         #endregion
 
@@ -37,6 +41,10 @@ namespace RollerSplat
         /// Level block size
         /// </summary>
         [BoxGroup("Level")] public float blockSize = 1f;
+        /// <summary>
+        /// Ground coloration duration
+        /// </summary>
+        [BoxGroup("Level")] public float groundColorationDuration = 0.5f;
         
         #endregion
 

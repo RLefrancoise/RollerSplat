@@ -74,12 +74,16 @@ namespace RollerSplat
         /// Bounce the player
         /// </summary>
         private AsyncReactiveCommand _bounce;
-
         /// <summary>
         /// Player current color
         /// </summary>
         [Tooltip("Player current color")]
         [SerializeField] private ColorReactiveProperty color;
+        /// <summary>
+        /// Was the player teleported ?
+        /// </summary>
+        [SerializeField] private BoolReactiveProperty wasTeleported;
+
 
         private static readonly int BounceTrigger = Animator.StringToHash("Bounce");
 
@@ -96,7 +100,12 @@ namespace RollerSplat
         /// Current player color
         /// </summary>
         public ColorReactiveProperty Color => color;
-
+        
+        /// <summary>
+        /// Was the player teleported ?
+        /// </summary>
+        public BoolReactiveProperty WasTeleported => wasTeleported;
+        
         /// <summary>
         /// Move the player in the given direction
         /// </summary>
@@ -165,6 +174,8 @@ namespace RollerSplat
             _trail = trail;
 
             color.Subscribe(ListenColor);
+
+            _trail.enabled = _gameSettings.playerTrail;
         }
 
         public async UniTask StopMove(Vector3 tilePosition)
@@ -185,6 +196,9 @@ namespace RollerSplat
         private async UniTask ExecuteMove(MoveDirection dir)
         {
             if (!CanMove) return;
+
+            //Remove teleported flag
+            wasTeleported.Value = false;
             
             //Rotate to the right direction
             transform.rotation = RotationsByDirection[dir];
@@ -218,7 +232,10 @@ namespace RollerSplat
         /// <param name="tile">Tile position</param>
         private void ExecutePlaceOnTile(Vector2 tile)
         {
-            _trail.enabled = false;
+            //Set teleported flag to true
+            wasTeleported.Value = true;
+            
+            if(_gameSettings.playerTrail) _trail.enabled = false;
             
             transform.localPosition = Vector3.right * tile.x * _gameSettings.blockSize +
                                       -Vector3.forward * tile.y * _gameSettings.blockSize +
@@ -227,7 +244,7 @@ namespace RollerSplat
             _rigidBody.velocity = Vector3.zero;
             _rigidBody.angularVelocity = Vector3.zero;
 
-            _trail.enabled = true;
+            if(_gameSettings.playerTrail) _trail.enabled = true;
         }
 
         /// <summary>
@@ -246,15 +263,18 @@ namespace RollerSplat
         /// <param name="c"></param>
         private void ListenColor(Color c)
         {
-            _renderer.material.color = color.Value;
+            _renderer.material.DOColor(color.Value, 0.25f);
 
-            var trailGradient = new Gradient
+            if(_gameSettings.playerTrail)
             {
-                colorKeys = new[] {new GradientColorKey(c, 0f), new GradientColorKey(UnityEngine.Color.white, 1f)},
-                alphaKeys = new[] {new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0f, 1f)}
-            };
-
-            _trail.colorGradient = trailGradient;
+                var trailGradient = new Gradient
+                {
+                    colorKeys = new[] {new GradientColorKey(c, 0f), new GradientColorKey(UnityEngine.Color.white, 1f)},
+                    alphaKeys = new[] {new GradientAlphaKey(0.5f, 0f), new GradientAlphaKey(0f, 1f)}
+                };
+    
+                _trail.colorGradient = trailGradient;
+            }
         }
         
         #endregion

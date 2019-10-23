@@ -21,7 +21,11 @@ namespace RollerSplat.Data
             /// <summary>
             /// Ground
             /// </summary>
-            Ground
+            Ground,
+            /// <summary>
+            /// Teleport
+            /// </summary>
+            Teleport
         }
 
         #region Camera
@@ -73,7 +77,13 @@ namespace RollerSplat.Data
         [BoxGroup("Level")]
         [Tooltip("File containing the level structure")]
         public TextAsset levelFile;
-        
+        /// <summary>
+        /// Prefab containing the level structure
+        /// </summary>
+        [BoxGroup("Level")]
+        [Tooltip("Prefab containing the level structure")]
+        public GameObject levelPrefab;
+
         #endregion
     }
 }

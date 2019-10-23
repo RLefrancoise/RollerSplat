@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdac08d06b214de690976ad323e78071, type: 3}
   m_Name: Level 01
   m_EditorClassIdentifier: 
-  cameraPosition: {x: 0, y: 15, z: -1.5}
+  cameraPosition: {x: 2, y: 15, z: -3.5}
   cameraRotation: {x: 80, y: 0, z: 0}
   levelName: Level 1
   startPosition: {x: 1, y: 4}
@@ -21,3 +21,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b1008c3a073bb5944bea40473f4696ab, type: 2}
   - {fileID: 11400000, guid: e6a1afb6d0c8ab948835e8f4cbbecae0, type: 2}
   levelFile: {fileID: 4900000, guid: fd2f5443c1395be43b1e9119fea24589, type: 3}
+  levelPrefab: {fileID: 7426067204215692, guid: 4e2a1a849a034a34d9f769fc43e9b894,
+    type: 3}

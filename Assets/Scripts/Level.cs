@@ -67,7 +67,8 @@ namespace RollerSplat
                 if (_loadCommand == null)
                 {
                     _loadCommand = new ReactiveCommand<LevelData>();
-                    _loadCommand.Subscribe(ExecuteLoad);
+                    //_loadCommand.Subscribe(ExecuteLoad);
+                    _loadCommand.Subscribe(ExecuteLoadPrefab);
                 }
 
                 return _loadCommand;
@@ -125,6 +126,38 @@ namespace RollerSplat
             else
             {
                 _isLevelComplete.SetValueAndForceNotify(false);
+            }
+        }
+
+        private void ExecuteLoadPrefab(LevelData levelData)
+        {
+            Data = levelData;
+            
+            if (levelData == null)
+            {
+                Debug.LogErrorFormat("Level:ExecuteLoad - Level data is null");
+                return;
+            }
+
+            _levelCamera.transform.position = levelData.cameraPosition;
+            _levelCamera.transform.rotation = Quaternion.Euler(levelData.cameraRotation);
+
+            //Clear previous level content
+            Blocks.Clear();
+
+            for (var i = 0; i < transform.childCount; ++i)
+            {
+                var child = transform.GetChild(i);
+                if(child.GetComponent<Player>()) continue;
+                
+                Destroy(child.gameObject);
+            }
+            
+            //Instantiate new level structure
+            var level = Instantiate(levelData.levelPrefab, Vector3.zero, Quaternion.identity, transform);
+            foreach (var levelBlock in level.GetComponentsInChildren<LevelBlock>())
+            {
+                Blocks.Add(levelBlock);
             }
         }
         
