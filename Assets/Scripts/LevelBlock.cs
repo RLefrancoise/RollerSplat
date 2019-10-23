@@ -24,7 +24,7 @@ namespace RollerSplat
         /// <summary>
         /// Block renderer
         /// </summary>
-        protected Renderer Renderer;
+        [SerializeField] protected new Renderer renderer;
 
         #endregion
 
@@ -43,10 +43,9 @@ namespace RollerSplat
         #endregion
         
         [Inject]
-        public void Construct(GameSettings gameSettings, Renderer r)
+        public void Construct(GameSettings gameSettings)
         {
             GameSettings = gameSettings;
-            Renderer = r;
         }
     }
 }

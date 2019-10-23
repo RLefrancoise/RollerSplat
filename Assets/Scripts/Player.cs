@@ -250,7 +250,7 @@ namespace RollerSplat
 
             var trailGradient = new Gradient
             {
-                colorKeys = new[] {new GradientColorKey(c, 0f), new GradientColorKey(c, 1f)},
+                colorKeys = new[] {new GradientColorKey(c, 0f), new GradientColorKey(UnityEngine.Color.white, 1f)},
                 alphaKeys = new[] {new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0f, 1f)}
             };
 

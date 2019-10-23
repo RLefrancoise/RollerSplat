@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-using RollerSplat.Data;
+﻿using RollerSplat.Data;
 using UniRx;
 using UnityEngine;
-using Zenject;
 
 namespace RollerSplat
 {
@@ -16,11 +14,15 @@ namespace RollerSplat
         /// <summary>
         /// Border renderer
         /// </summary>
-        private Renderer _border;
-
-        private Animator _animator;
-        private IEnumerable<Renderer> _paintPlayerRenderer;
-
+        [SerializeField] private Renderer border;
+        /// <summary>
+        /// Tile animator
+        /// </summary>
+        [SerializeField] private Animator animator;
+        /// <summary>
+        /// Renderers for paint player animation
+        /// </summary>
+        [SerializeField] private Renderer[] paintPlayerRenderers;
         /// <summary>
         /// Is tile painted by player ?
         /// </summary>
@@ -56,17 +58,6 @@ namespace RollerSplat
         #endregion
 
         #region Monobehaviour Callbacks
-
-        [Inject]
-        public void Construct(
-            [Inject(Id = "Border")] Renderer border, 
-            Animator animator, 
-            IEnumerable<Renderer> paintPlayerRenderer)
-        {
-            _border = border;
-            _animator = animator;
-            _paintPlayerRenderer = paintPlayerRenderer;
-        }
         
         private void Start()
         {
@@ -78,11 +69,11 @@ namespace RollerSplat
 
         private void Update()
         {
-            _border.material.SetColor(EmissionColor, expectedColor.Value * Mathf.PingPong(Time.time, 1f));
+            border.material.SetColor(EmissionColor, expectedColor.Value * Mathf.PingPong(Time.time, 1f));
 
             if (isPaintingPlayer.Value)
             {
-                foreach (var paintPlayerRenderer in _paintPlayerRenderer)
+                foreach (var paintPlayerRenderer in paintPlayerRenderers)
                 {
                     paintPlayerRenderer.material.SetColor(EmissionColor, expectedColor.Value * Mathf.PingPong(Time.time, 1f));
                 }
@@ -111,12 +102,12 @@ namespace RollerSplat
         /// <param name="c">New tile color</param>
         private void ListenColorChanged(Color c)
         {
-            Renderer.material.color = c;
+            renderer.material.color = c;
         }
 
         private void ListenIsPaintingPlayer(bool painting)
         {
-            _animator.SetBool(PaintPlayer, painting);
+            animator.SetBool(PaintPlayer, painting);
         }
         
         #endregion

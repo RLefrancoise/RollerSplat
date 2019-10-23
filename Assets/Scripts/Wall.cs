@@ -11,7 +11,7 @@ namespace RollerSplat
         
         private void Start()
         {
-            Renderer.material.color = GameSettings.defaultWallColor;
+            renderer.material.color = GameSettings.defaultWallColor;
         }
 
     }

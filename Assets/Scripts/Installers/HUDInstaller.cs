@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
 
@@ -10,6 +11,7 @@ namespace RollerSplat.Installers
         public TMP_Text numberOfMoves;
         public Image gauge;
         public TMP_Text levelComplete;
+        public EventTrigger tapToContinueEventTrigger;
         
         public override void InstallBindings()
         {
@@ -17,6 +19,7 @@ namespace RollerSplat.Installers
             Container.Bind<TMP_Text>().WithId("NumberOfMoves").FromInstance(numberOfMoves);
             Container.Bind<Image>().FromInstance(gauge);
             Container.Bind<TMP_Text>().WithId("LevelComplete").FromInstance(levelComplete);
+            Container.Bind<EventTrigger>().FromInstance(tapToContinueEventTrigger);
         }
     }
 }

@@ -4,6 +4,7 @@ using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
 
@@ -30,12 +31,15 @@ namespace RollerSplat
         /// Number of moves left gauge
         /// </summary>
         private Image _gauge;
-
         /// <summary>
         /// Level complete label
         /// </summary>
         private TMP_Text _levelCompleteText;
-
+        /// <summary>
+        /// Event trigger for tap to continue
+        /// </summary>
+        private EventTrigger _tapToContinueEventTrigger;
+        
         private TweenerCore<float, float, FloatOptions> _fillAmountTween;
 
         /// <summary>
@@ -102,16 +106,32 @@ namespace RollerSplat
             [Inject(Id = "LevelName")] TMP_Text levelName,
             [Inject(Id = "NumberOfMoves")] TMP_Text numberOfMoves,
             Image gauge,
-            [Inject(Id = "LevelComplete")] TMP_Text levelCompleteText)
+            [Inject(Id = "LevelComplete")] TMP_Text levelCompleteText,
+            EventTrigger tapToContinueEventTrigger)
         {
             _gameSettings = gameSettings;
             _levelName = levelName;
             _numberOfMoves = numberOfMoves;
             _gauge = gauge;
             _levelCompleteText = levelCompleteText;
+            _tapToContinueEventTrigger = tapToContinueEventTrigger;
+
+            var pointerClickEvent = new EventTrigger.TriggerEvent();
+            pointerClickEvent.AddListener(TapToContinueClicked);
+            
+            _tapToContinueEventTrigger.triggers.Add(new EventTrigger.Entry
+            {
+                eventID = EventTriggerType.PointerClick,
+                callback = pointerClickEvent
+            });
         }
 
-        private void Update()
+        private void TapToContinueClicked(BaseEventData eventData)
+        {
+            TapToContinueTouched?.Invoke();
+        }
+        
+        /*private void Update()
         {
             if(!tapToContinue.activeInHierarchy) return;
             
@@ -119,7 +139,7 @@ namespace RollerSplat
             {
                 TapToContinueTouched?.Invoke();
             }
-        }
+        }*/
         
         #region Public Methods
         

@@ -1048,6 +1048,7 @@ MonoBehaviour:
   numberOfMoves: {fileID: 3158234926775853619}
   gauge: {fileID: 5445433977981429326}
   levelComplete: {fileID: 2560772719018783307}
+  tapToContinueEventTrigger: {fileID: 7324093646388953913}
 --- !u!114 &4945519108319106618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1570,6 +1571,7 @@ GameObject:
   - component: {fileID: 3567656917196204224}
   - component: {fileID: 419083035934159343}
   - component: {fileID: 2842411993419685219}
+  - component: {fileID: 7324093646388953913}
   m_Layer: 5
   m_Name: OpacityMask
   m_TagString: Untagged
@@ -1618,7 +1620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1631,6 +1633,24 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &7324093646388953913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7036658676974578402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+  delegates: []
 --- !u!1 &7510880191397432833
 GameObject:
   m_ObjectHideFlags: 0

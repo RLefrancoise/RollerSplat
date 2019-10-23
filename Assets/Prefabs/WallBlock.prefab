@@ -101,8 +101,6 @@ GameObject:
   m_Component:
   - component: {fileID: 654481957346605342}
   - component: {fileID: 3071637957673310805}
-  - component: {fileID: 606225168793575193}
-  - component: {fileID: 5913486469616133905}
   - component: {fileID: 6988844826346064895}
   m_Layer: 9
   m_Name: WallBlock
@@ -139,37 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   root: {fileID: 654481957346605342}
---- !u!114 &606225168793575193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8120214386952436598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9349023b4028432cb1b438a6b25de3e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   renderer: {fileID: 3887099726380806222}
---- !u!114 &5913486469616133905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8120214386952436598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08eca9f7688a0a24685b89133b020c8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scriptableObjectInstallers: []
-  _monoInstallers:
-  - {fileID: 606225168793575193}
-  _installerPrefabs: []
-  _autoRun: 1
-  _kernel: {fileID: 0}
 --- !u!114 &6988844826346064895
 MonoBehaviour:
   m_ObjectHideFlags: 0
