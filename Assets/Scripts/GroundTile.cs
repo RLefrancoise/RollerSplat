@@ -1,6 +1,8 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using RollerSplat.Data;
 using UniRx;
+using UniRx.Async;
 using UnityEngine;
 using UnityQuery;
 
@@ -17,18 +19,14 @@ namespace RollerSplat
         /// Border renderer
         /// </summary>
         [SerializeField] private Renderer border;
-        /*
         /// <summary>
-        /// Tile animator
+        /// Splat renderer
         /// </summary>
-        [SerializeField] private Animator animator;
-        /// <summary>
-        /// Renderers for paint player animation
-        /// </summary>
-        [SerializeField] private Renderer[] paintPlayerRenderers;*/
-
         [SerializeField] private Renderer splat;
-        
+        /// <summary>
+        /// Paint splash effect
+        /// </summary>
+        [SerializeField] private ParticleSystem paintSplash;
         /// <summary>
         /// Is tile painted by player ?
         /// </summary>
@@ -47,7 +45,6 @@ namespace RollerSplat
         [SerializeField] private BoolReactiveProperty isPaintingPlayer;
         
         private static readonly int EmissionColor = Shader.PropertyToID("_EmissionColor");
-        private static readonly int PaintPlayer = Animator.StringToHash("PaintPlayer");
 
         #endregion
 
@@ -67,6 +64,7 @@ namespace RollerSplat
         
         private void Start()
         {
+            isPaintedByPlayer.Subscribe(ListenIsPaintedByPlayer);
             color.Subscribe(ListenColorChanged);
             expectedColor.Subscribe(ListenExpectedColorChanged);
             isPaintingPlayer.Subscribe(ListenIsPaintingPlayer);
@@ -78,15 +76,6 @@ namespace RollerSplat
         {
             border.material.color = expectedColor.Value;
             border.material.SetColor(EmissionColor, expectedColor.Value * Mathf.PingPong(Time.time, 1f));
-
-            /*if (isPaintingPlayer.Value)
-            {
-                foreach (var paintPlayerRenderer in paintPlayerRenderers)
-                {
-                    paintPlayerRenderer.material.color = expectedColor.Value;
-                    paintPlayerRenderer.material.SetColor(EmissionColor, expectedColor.Value * Mathf.PingPong(Time.time, 1f));
-                }
-            }*/
         }
         
         private void OnTriggerEnter(Collider other)
@@ -124,6 +113,12 @@ namespace RollerSplat
         private void ListenColorChanged(Color c)
         {
             renderer.material.DOColor(c, GameSettings.groundColorationDuration);
+            var colorOverLifetime = paintSplash.colorOverLifetime;
+            colorOverLifetime.color = new ParticleSystem.MinMaxGradient(new Gradient()
+            {
+                colorKeys = new[] {new GradientColorKey(c, 0f), new GradientColorKey(c, 1f) },
+                alphaKeys = new[] {new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0f, 1f) }
+            });
         }
 
         /// <summary>
@@ -136,10 +131,22 @@ namespace RollerSplat
             splat.material.SetColor(EmissionColor, c);
         }
         
+        /// <summary>
+        /// Called when is painting player flag is changed
+        /// </summary>
+        /// <param name="painting"></param>
         private void ListenIsPaintingPlayer(bool painting)
         {
             splat.gameObject.SetActive(painting);
-            //animator.SetBool(PaintPlayer, painting);
+        }
+
+        /// <summary>
+        /// Called when is painted by player flag is changed
+        /// </summary>
+        /// <param name="painted"></param>
+        private void ListenIsPaintedByPlayer(bool painted)
+        {   
+            paintSplash.gameObject.SetActive(painted);
         }
         
         #endregion

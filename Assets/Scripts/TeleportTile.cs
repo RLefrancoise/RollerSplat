@@ -20,8 +20,12 @@ namespace RollerSplat
 
                 //Stop player
                 await player.StopMove(transform.position);
+                //Play teleport on
+                await player.Teleport(true);
                 //Teleport player to destination
                 player.PlaceOnTile.Execute(destination);
+                //Play teleport off
+                await player.Teleport(false);
             }
         }
     }

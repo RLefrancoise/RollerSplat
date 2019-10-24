@@ -178,8 +178,7 @@ namespace RollerSplat
                 
                 //If level completed, make the player bounce & go to the next level
                 await _player.StopMove(_level.LastGroundTilePaintedByPlayer.Root.position);
-                _player.Bounce.Execute();
-                await UniTask.WaitUntil(() => _player.Bounce.CanExecute.Value);
+                await _player.Bounce();
                 //Go to next level
                 currentLevel.Value = currentLevel.Value + 1;
             }

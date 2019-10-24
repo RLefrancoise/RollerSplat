@@ -61,6 +61,10 @@ namespace RollerSplat
         /// </summary>
         private TrailRenderer _trail;
         /// <summary>
+        /// Stop move flag
+        /// </summary>
+        private bool _stopMove;
+        /// <summary>
         /// Player move tween
         /// </summary>
         private TweenerCore<Vector3, Vector3, VectorOptions> _moveTween;
@@ -68,10 +72,6 @@ namespace RollerSplat
         /// Place on tile command
         /// </summary>
         private ReactiveCommand<Vector2> _placeOnTile;
-        /// <summary>
-        /// Bounce the player
-        /// </summary>
-        private AsyncReactiveCommand _bounce;
         /// <summary>
         /// Player current color
         /// </summary>
@@ -82,10 +82,8 @@ namespace RollerSplat
         /// </summary>
         [SerializeField] private BoolReactiveProperty wasTeleported;
 
-        private bool _stopMove;
-
-
         private static readonly int BounceTrigger = Animator.StringToHash("Bounce");
+        private static readonly int TeleportBool = Animator.StringToHash("Teleport");
 
         #endregion
 
@@ -123,23 +121,6 @@ namespace RollerSplat
             }
         }
 
-        /// <summary>
-        /// Bounce the player
-        /// </summary>
-        public AsyncReactiveCommand Bounce
-        {
-            get
-            {
-                if (_bounce == null)
-                {
-                    _bounce = new AsyncReactiveCommand();
-                    _bounce.Subscribe(_ => ExecuteBounce().ToObservable().AsUnitObservable());
-                }
-
-                return _bounce;
-            }
-        }
-
         #endregion
 
         #region Public Methods
@@ -163,13 +144,18 @@ namespace RollerSplat
             _trail.enabled = _gameSettings.playerTrail;
         }
 
+        /// <summary>
+        /// Stop the player at tile position
+        /// </summary>
+        /// <param name="tilePosition">Position in world space</param>
+        /// <returns></returns>
         public async UniTask StopMove(Vector3 tilePosition)
         {
             _stopMove = true;
             _moveTween.Kill();
             _moveTween = null;
             var distance = Vector3.Distance(transform.position, tilePosition);
-            _moveTween = transform.DOMove(tilePosition, distance / _gameSettings.playerSpeed);
+            _moveTween = transform.DOMove(tilePosition, distance / _gameSettings.playerSpeed).SetEase(Ease.Linear);
             await _moveTween.ToUniTask();
         }
 
@@ -190,8 +176,9 @@ namespace RollerSplat
             //Rotate to the right direction
             transform.rotation = RotationsByDirection[dir];
             
-            //If no wall was hit, return
+            //Get all possible hits in player direction
             var levelBlocks = Physics.RaycastAll(new Ray(transform.position, transform.forward)).Select(h => h.collider.GetComponentInParent<LevelBlock>()).ToList();
+            //If no hits, don't move
             if (levelBlocks.Count == 0) return false;
             
             //Sort blocks by player distance
@@ -216,6 +203,19 @@ namespace RollerSplat
             return true;
         }
 
+        /// <summary>
+        /// Play teleport animation
+        /// </summary>
+        /// <param name="teleport">Teleport on or off</param>
+        /// <returns></returns>
+        public async UniTask Teleport(bool teleport)
+        {
+            _animator.SetBool(TeleportBool, teleport);
+            await UniTask.WaitUntil(() => 
+                _animator.GetCurrentAnimatorStateInfo(0).IsTag("Teleport") && 
+                _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f);
+        }
+        
         #endregion
         
         #region Private Methods
@@ -245,7 +245,7 @@ namespace RollerSplat
         /// Called when bounce is executed
         /// </summary>
         /// <returns></returns>
-        private async UniTask ExecuteBounce()
+        public async UniTask Bounce()
         {
             _animator.SetTrigger(BounceTrigger);
             await UniTask.Delay(TimeSpan.FromSeconds(3f));

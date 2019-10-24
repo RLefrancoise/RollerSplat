@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PlayerSphere
   m_Shader: {fileID: 4800000, guid: 133dbd66dec36aa40a1beadb85f201a2, type: 3}
-  m_ShaderKeywords: _COLOR_ON
+  m_ShaderKeywords: _ALPHABLEND_ON _COLOR_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -71,13 +71,13 @@ Material:
     - _DetailNormalMapScale: 1
     - _DetailTex: 0
     - _DiffuseThreshold: 0.1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _LitOutlineThickness: 0.1
     - _Metallic: 0
-    - _Mode: 0
+    - _Mode: 2
     - _OcclusionStrength: 1
     - _Outline: 0.01
     - _OutlineMode: 0
@@ -88,12 +88,12 @@ Material:
     - _Shininess: 5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 1
+    - _SrcBlend: 5
     - _TintColor: 1
     - _UVSec: 0
     - _UnlitOutlineThickness: 0.4
     - _VertexColor: 0
-    - _ZWrite: 1
+    - _ZWrite: 0
     - _outline_tint: 1
     - _outline_width: 0.2
     m_Colors:
