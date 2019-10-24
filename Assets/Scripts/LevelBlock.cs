@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using RollerSplat.Data;
 using UnityEngine;
 using Zenject;
@@ -46,6 +47,26 @@ namespace RollerSplat
         public void Construct(GameSettings gameSettings)
         {
             GameSettings = gameSettings;
+        }
+    }
+
+    public class LevelBlockDistanceComparer : IComparer<LevelBlock>
+    {
+        private readonly Vector3 _referencePosition;
+
+        public LevelBlockDistanceComparer(Vector3 referencePosition)
+        {
+            _referencePosition = referencePosition;
+        }
+        
+        public int Compare(LevelBlock x, LevelBlock y)
+        {
+            var xDistance = Vector3.Distance(_referencePosition, x.Root.position);
+            var yDistance = Vector3.Distance(_referencePosition, y.Root.position);
+
+            if (xDistance < yDistance) return -1;
+            if (xDistance > yDistance) return 1;
+            return 0;
         }
     }
 }

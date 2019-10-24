@@ -17,6 +17,7 @@ namespace RollerSplat
         /// Border renderer
         /// </summary>
         [SerializeField] private Renderer border;
+        /*
         /// <summary>
         /// Tile animator
         /// </summary>
@@ -24,7 +25,10 @@ namespace RollerSplat
         /// <summary>
         /// Renderers for paint player animation
         /// </summary>
-        [SerializeField] private Renderer[] paintPlayerRenderers;
+        [SerializeField] private Renderer[] paintPlayerRenderers;*/
+
+        [SerializeField] private Renderer splat;
+        
         /// <summary>
         /// Is tile painted by player ?
         /// </summary>
@@ -64,6 +68,7 @@ namespace RollerSplat
         private void Start()
         {
             color.Subscribe(ListenColorChanged);
+            expectedColor.Subscribe(ListenExpectedColorChanged);
             isPaintingPlayer.Subscribe(ListenIsPaintingPlayer);
             
             if(!isPaintedByPlayer.Value) color.Value = GameSettings.defaultGroundColor;
@@ -74,14 +79,14 @@ namespace RollerSplat
             border.material.color = expectedColor.Value;
             border.material.SetColor(EmissionColor, expectedColor.Value * Mathf.PingPong(Time.time, 1f));
 
-            if (isPaintingPlayer.Value)
+            /*if (isPaintingPlayer.Value)
             {
                 foreach (var paintPlayerRenderer in paintPlayerRenderers)
                 {
                     paintPlayerRenderer.material.color = expectedColor.Value;
                     paintPlayerRenderer.material.SetColor(EmissionColor, expectedColor.Value * Mathf.PingPong(Time.time, 1f));
                 }
-            }
+            }*/
         }
         
         private void OnTriggerEnter(Collider other)
@@ -121,9 +126,20 @@ namespace RollerSplat
             renderer.material.DOColor(c, GameSettings.groundColorationDuration);
         }
 
+        /// <summary>
+        /// Called when expected color is changed
+        /// </summary>
+        /// <param name="c"></param>
+        private void ListenExpectedColorChanged(Color c)
+        {
+            splat.material.color = c;
+            splat.material.SetColor(EmissionColor, c);
+        }
+        
         private void ListenIsPaintingPlayer(bool painting)
         {
-            animator.SetBool(PaintPlayer, painting);
+            splat.gameObject.SetActive(painting);
+            //animator.SetBool(PaintPlayer, painting);
         }
         
         #endregion

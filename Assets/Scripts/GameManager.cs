@@ -268,11 +268,12 @@ namespace RollerSplat
         /// <param name="direction">Direction of the movement</param>
         private async void MovePlayer(Player.MoveDirection direction)
         {
-            _player.Move.Execute(direction);
-            await UniTask.WaitUntil(() => _player.Move.CanExecute.Value);
-            
-            //Update number of moves
-            currentMoves.Value = Mathf.Max(0, currentMoves.Value - 1);
+            var moveSuccess = await _player.Move(direction);
+            if (moveSuccess)
+            {
+                //Update number of moves
+                currentMoves.Value = Mathf.Max(0, currentMoves.Value - 1);
+            }
         }
         
         #endregion

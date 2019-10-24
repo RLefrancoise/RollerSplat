@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
 using NaughtyAttributes;
+using RollerSplat.Data;
 using UniRx;
 using UniRx.Async;
 using UnityEngine;
@@ -63,10 +65,6 @@ namespace RollerSplat
         /// </summary>
         private TweenerCore<Vector3, Vector3, VectorOptions> _moveTween;
         /// <summary>
-        /// Move command
-        /// </summary>
-        private AsyncReactiveCommand<MoveDirection> _moveCommand;
-        /// <summary>
         /// Place on tile command
         /// </summary>
         private ReactiveCommand<Vector2> _placeOnTile;
@@ -83,6 +81,8 @@ namespace RollerSplat
         /// Was the player teleported ?
         /// </summary>
         [SerializeField] private BoolReactiveProperty wasTeleported;
+
+        private bool _stopMove;
 
 
         private static readonly int BounceTrigger = Animator.StringToHash("Bounce");
@@ -105,23 +105,6 @@ namespace RollerSplat
         /// Was the player teleported ?
         /// </summary>
         public BoolReactiveProperty WasTeleported => wasTeleported;
-        
-        /// <summary>
-        /// Move the player in the given direction
-        /// </summary>
-        public AsyncReactiveCommand<MoveDirection> Move
-        {
-            get
-            {
-                if (_moveCommand == null)
-                {
-                    _moveCommand = new AsyncReactiveCommand<MoveDirection>();
-                    _moveCommand.Subscribe(direction => ExecuteMove(direction).ToObservable().AsUnitObservable());
-                }
-
-                return _moveCommand;
-            }
-        }
 
         /// <summary>
         /// Place the player on the given tile position
@@ -158,7 +141,9 @@ namespace RollerSplat
         }
 
         #endregion
-        
+
+        #region Public Methods
+
         [Inject]
         public void Construct(
             GameSettings gameSettings, 
@@ -180,6 +165,7 @@ namespace RollerSplat
 
         public async UniTask StopMove(Vector3 tilePosition)
         {
+            _stopMove = true;
             _moveTween.Kill();
             _moveTween = null;
             var distance = Vector3.Distance(transform.position, tilePosition);
@@ -187,45 +173,53 @@ namespace RollerSplat
             await _moveTween.ToUniTask();
         }
 
-        #region Private Methods
-        
         /// <summary>
         /// Called when the move command is executed
         /// </summary>
         /// <param name="dir">Direction of the movement</param>
-        private async UniTask ExecuteMove(MoveDirection dir)
+        public async UniTask<bool> Move(MoveDirection dir)
         {
-            if (!CanMove) return;
+            if (!CanMove) return false;
 
-            //Remove teleported flag
+            //Reset teleported flag
             wasTeleported.Value = false;
+
+            //Reset stop move flag
+            _stopMove = false;
             
             //Rotate to the right direction
             transform.rotation = RotationsByDirection[dir];
             
             //If no wall was hit, return
-            if (!Physics.Raycast(
-                new Ray(transform.position, transform.forward),
-                out var hit,
-                1000f,
-                LayerMask.GetMask("Walls"),
-                QueryTriggerInteraction.Ignore)) return;
+            var levelBlocks = Physics.RaycastAll(new Ray(transform.position, transform.forward)).Select(h => h.collider.GetComponentInParent<LevelBlock>()).ToList();
+            if (levelBlocks.Count == 0) return false;
             
-            //Get wall that has been hit
-            var wall = hit.collider.gameObject.GetComponentInParent<Wall>();
-            if (wall)
+            //Sort blocks by player distance
+            levelBlocks.Sort(new LevelBlockDistanceComparer(transform.position));
+            
+            //If first hit is a wall, don't move
+            if (levelBlocks[0].CellType == LevelData.CellType.Wall) return false;
+
+            foreach (var levelBlock in levelBlocks)
             {
-                //Get move direction
-                var moveDirection = (wall.transform.position - transform.position).normalized;
-                //Because we have the wall position for now, we need to subtract the wall size to have the final point for the player to move at
-                var destination = wall.transform.position - moveDirection * _gameSettings.blockSize;
-                var distance = Vector3.Distance(transform.position, destination);
+                //If stop move requested, stop iterating
+                if(_stopMove) break;
+                
+                //Move until we find a wall
+                if (levelBlock.CellType == LevelData.CellType.Wall) break;
+                
                 //Apply the movement
-                _moveTween = transform.DOMove(destination, distance / _gameSettings.playerSpeed);
+                _moveTween = transform.DOMove(levelBlock.Root.position, _gameSettings.blockSize / _gameSettings.playerSpeed).SetEase(Ease.Linear);
                 await _moveTween.ToUniTask();
             }
+
+            return true;
         }
 
+        #endregion
+        
+        #region Private Methods
+        
         /// <summary>
         /// Called when the place on tile command is executed
         /// </summary>
