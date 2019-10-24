@@ -156,8 +156,9 @@ namespace RollerSplat
             _stopMove = true;
             _moveTween.Kill();
             _moveTween = null;
-            var distance = Vector3.Distance(transform.position, tilePosition);
-            _moveTween = transform.DOMove(tilePosition, distance / _gameSettings.playerSpeed).SetEase(Ease.Linear);
+            var destination = tilePosition.WithY(transform.position.y);
+            var distance = Vector3.Distance(transform.position, destination);
+            _moveTween = transform.DOMove(destination, distance / _gameSettings.playerSpeed).SetEase(Ease.Linear);
             await _moveTween.ToUniTask();
         }
 
@@ -198,7 +199,7 @@ namespace RollerSplat
                 if (levelBlock.CellType == LevelData.CellType.Wall) break;
                 
                 //Apply the movement
-                _moveTween = transform.DOMove(levelBlock.Root.position, _gameSettings.blockSize / _gameSettings.playerSpeed).SetEase(Ease.Linear);
+                _moveTween = transform.DOMove(levelBlock.Root.position.WithY(transform.position.y), _gameSettings.blockSize / _gameSettings.playerSpeed).SetEase(Ease.Linear);
                 await _moveTween.ToUniTask();
             }
 
