@@ -179,7 +179,7 @@ namespace RollerSplat
                 _hud.LevelComplete = true;
                 
                 //If level completed, make the player bounce & go to the next level
-                await _player.StopMove(_level.LastGroundTilePaintedByPlayer.Root.position);
+                await _player.StopMove(_level.LastGroundTilePaintedByPlayer.Root.position, false);
                 await _player.Bounce();
                 //Go to next level
                 currentLevel.Value = currentLevel.Value + 1;

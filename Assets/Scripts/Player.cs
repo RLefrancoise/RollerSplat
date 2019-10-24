@@ -156,8 +156,9 @@ namespace RollerSplat
         /// Stop the player at tile position
         /// </summary>
         /// <param name="tilePosition">Position in world space</param>
+        /// <param name="brake">Brake after stop move</param>
         /// <returns></returns>
-        public async UniTask StopMove(Vector3 tilePosition)
+        public async UniTask StopMove(Vector3 tilePosition, bool brake = true)
         {
             _stopMove = true;
             _moveTween.Kill();
@@ -166,6 +167,7 @@ namespace RollerSplat
             var distance = Vector3.Distance(transform.position, destination);
             _moveTween = transform.DOMove(destination, distance / _gameSettings.playerSpeed).SetEase(Ease.Linear);
             await _moveTween.ToUniTask();
+            if(brake) await Brake();
         }
 
         /// <summary>
@@ -209,6 +211,11 @@ namespace RollerSplat
                 await _moveTween.ToUniTask();
             }
 
+            if (!_stopMove)
+            {
+                await Brake();
+            }
+
             return true;
         }
 
@@ -228,6 +235,13 @@ namespace RollerSplat
         #endregion
         
         #region Private Methods
+
+        private async UniTask Brake()
+        {
+            _collider.enabled = false;
+            await transform.DOPunchPosition(transform.forward * (_gameSettings.blockSize - _renderer.transform.localScale.x), 0.25f, 5).ToUniTask();
+            _collider.enabled = true;
+        }
         
         /// <summary>
         /// Called when the place on tile command is executed

@@ -19,7 +19,7 @@ namespace RollerSplat
                 if(player.WasTeleported.Value) return;
 
                 //Stop player
-                await player.StopMove(transform.position);
+                await player.StopMove(transform.position, false);
                 //Play teleport on
                 await player.Teleport(true);
                 //Teleport player to destination
