@@ -792,7 +792,7 @@ MonoBehaviour:
   currentMoves:
     value: 0
   currentLevel:
-    value: 3
+    value: 0
 --- !u!114 &993930445
 MonoBehaviour:
   m_ObjectHideFlags: 0

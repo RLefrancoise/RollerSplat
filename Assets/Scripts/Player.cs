@@ -70,6 +70,10 @@ namespace RollerSplat
         /// </summary>
         private bool _stopMove;
         /// <summary>
+        /// Braking flag
+        /// </summary>
+        private bool _isBraking;
+        /// <summary>
         /// Player move tween
         /// </summary>
         private TweenerCore<Vector3, Vector3, VectorOptions> _moveTween;
@@ -98,7 +102,7 @@ namespace RollerSplat
         /// <summary>
         /// Can the player move ?
         /// </summary>
-        [ShowNativeProperty] public bool CanMove => _moveTween == null || !_moveTween.active;
+        [ShowNativeProperty] public bool CanMove => !_isBraking && _animator.GetCurrentAnimatorStateInfo(0).IsTag("Idle") && (_moveTween == null || !_moveTween.active);
         
         /// <summary>
         /// Current player color
@@ -238,9 +242,11 @@ namespace RollerSplat
 
         private async UniTask Brake()
         {
+            _isBraking = true;
             _collider.enabled = false;
             await transform.DOPunchPosition(transform.forward * (_gameSettings.blockSize - _renderer.transform.localScale.x), 0.25f, 5).ToUniTask();
             _collider.enabled = true;
+            _isBraking = false;
         }
         
         /// <summary>
