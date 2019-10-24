@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdac08d06b214de690976ad323e78071, type: 3}
+  m_Name: Level 04
+  m_EditorClassIdentifier: 
+  cameraPosition: {x: 4, y: 18, z: -7}
+  cameraRotation: {x: 80, y: 0, z: 0}
+  levelName: Level 4
+  startPosition: {x: 3, y: 3}
+  numberOfMoves: 20
+  cells:
+  - {fileID: 11400000, guid: b1008c3a073bb5944bea40473f4696ab, type: 2}
+  - {fileID: 11400000, guid: e6a1afb6d0c8ab948835e8f4cbbecae0, type: 2}
+  levelFile: {fileID: 4900000, guid: 1bc7470e2cde9124e87b95ea33ecae75, type: 3}
+  levelPrefab: {fileID: 7426067204215692, guid: 92c07f8613b7c954a84bc1564ab5f0fb,
+    type: 3}
