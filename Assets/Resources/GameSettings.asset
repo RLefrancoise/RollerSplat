@@ -15,7 +15,7 @@ MonoBehaviour:
   defaultGroundColor: {r: 1, g: 1, b: 1, a: 1}
   defaultWallColor: {r: 0.81501424, g: 0.9184473, b: 0.9339623, a: 1}
   playerSpeed: 20
-  playerTrail: 0
+  playerTrail: 1
   blockSize: 1
   groundColorationDuration: 0.5
   moveNumberGaugeFillDuration: 0.5

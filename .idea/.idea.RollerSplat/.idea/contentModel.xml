@@ -2127,7 +2127,6 @@
             <e p="FlatLitToonCoreLite.cginc" t="Include" />
             <e p="FlatLitToonShadows.cginc" t="Include" />
           </e>
-          <e p="customLit.shader" t="Include" />
           <e p="Flat Lit Toon Lite" t="Include">
             <e p="Flat Lit Toon Lite Cutout.shader" t="Include" />
             <e p="Flat Lit Toon Lite Fade.shader" t="Include" />
@@ -2143,8 +2142,7 @@
             <e p="Simple Gradient Sky.shader" t="Include" />
             <e p="Unit Shadowed.shader" t="Include" />
           </e>
-          <e p="Player.shader" t="Include" />
-          <e p="Toon.shader" t="Include" />
+          <e p="ToonShader.shader" t="Include" />
         </e>
       </e>
       <e p="DOTween.Modules.csproj" t="IncludeRecursive" />

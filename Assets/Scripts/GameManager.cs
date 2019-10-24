@@ -36,6 +36,8 @@ namespace RollerSplat
         /// Swipe gesture start position. Used to compute swipe gesture
         /// </summary>
         private Vector2 _swipeStartScreenPosition;
+
+        private bool _swipeDetected;
         /// <summary>
         /// Swipe gesture listener
         /// </summary>
@@ -73,13 +75,13 @@ namespace RollerSplat
         private void OnEnable()
         {
             swipeGesture.TransformStarted += StartSwipe;
-            swipeGesture.StateChanged += SwipeGesture;
+            swipeGesture.Transformed += SwipeGesture;
         }
 
         private void OnDisable()
         {
             swipeGesture.TransformStarted -= StartSwipe;
-            swipeGesture.StateChanged -= SwipeGesture;
+            swipeGesture.Transformed -= SwipeGesture;
         }
         
         private void Start()
@@ -221,6 +223,7 @@ namespace RollerSplat
         private void StartSwipe(object sender, EventArgs e)
         {
             if(!CanPlayerMove) return;
+            _swipeDetected = false;
             _swipeStartScreenPosition = swipeGesture.NormalizedScreenPosition;
         }
         
@@ -229,14 +232,16 @@ namespace RollerSplat
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void SwipeGesture(object sender, GestureStateChangeEventArgs e)
+        private void SwipeGesture(object sender, EventArgs e)
         {
             if(!CanPlayerMove) return;
-            if (e.State != Gesture.GestureState.Recognized) return;
+            if(_swipeDetected) return;
             
             var swipeLength = swipeGesture.NormalizedScreenPosition - _swipeStartScreenPosition;
             if(Mathf.Abs(swipeLength.x) < 0.05f && Mathf.Abs(swipeLength.y) <= 0.05f) return;
-                
+
+            _swipeDetected = true;
+            
             if(Mathf.Abs(swipeLength.x) > Mathf.Abs(swipeLength.y))
             {
                 if (swipeLength.x >= 0.05f)
