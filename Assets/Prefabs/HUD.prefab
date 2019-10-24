@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 764972686723385854}
   - component: {fileID: 5053095415785211724}
   - component: {fileID: 982706922698920546}
+  - component: {fileID: 3793765519796760359}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -76,6 +77,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!95 &3793765519796760359
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849304296392759298}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e1e648ad76673841bd031f0fa6d2296, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2663906341130729119
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,16 +163,16 @@ MonoBehaviour:
 
     Completed!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 40fa1ac714452054ab9d4dd2ea82d00c, type: 2}
-  m_sharedMaterial: {fileID: 21325229576504052, guid: 40fa1ac714452054ab9d4dd2ea82d00c,
+  m_fontAsset: {fileID: 11400000, guid: db098f7acc14a0c4aaf6df42087debb2, type: 2}
+  m_sharedMaterial: {fileID: 21020904659315414, guid: db098f7acc14a0c4aaf6df42087debb2,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294932992
+  m_fontColor: {r: 0, g: 0.47843137, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -300,8 +320,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tap to continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 40fa1ac714452054ab9d4dd2ea82d00c, type: 2}
-  m_sharedMaterial: {fileID: 21325229576504052, guid: 40fa1ac714452054ab9d4dd2ea82d00c,
+  m_fontAsset: {fileID: 11400000, guid: 2c3e79c711b3f22428a3110546358abd, type: 2}
+  m_sharedMaterial: {fileID: 21745997273877904, guid: 2c3e79c711b3f22428a3110546358abd,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -327,7 +347,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 125.6
+  m_fontSize: 121.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -819,8 +839,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Level 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 40fa1ac714452054ab9d4dd2ea82d00c, type: 2}
-  m_sharedMaterial: {fileID: 21325229576504052, guid: 40fa1ac714452054ab9d4dd2ea82d00c,
+  m_fontAsset: {fileID: 11400000, guid: 2c3e79c711b3f22428a3110546358abd, type: 2}
+  m_sharedMaterial: {fileID: 21745997273877904, guid: 2c3e79c711b3f22428a3110546358abd,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1716,16 +1736,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: You Lose
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 40fa1ac714452054ab9d4dd2ea82d00c, type: 2}
-  m_sharedMaterial: {fileID: 21325229576504052, guid: 40fa1ac714452054ab9d4dd2ea82d00c,
+  m_fontAsset: {fileID: 11400000, guid: db098f7acc14a0c4aaf6df42087debb2, type: 2}
+  m_sharedMaterial: {fileID: 21020904659315414, guid: db098f7acc14a0c4aaf6df42087debb2,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294932992
+  m_fontColor: {r: 0, g: 0.47969294, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1875,7 +1895,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 3.95
+  m_padding: 0
   m_canvasRenderer: {fileID: 7281206820825307062}
   m_TextComponent: {fileID: 3158234926775853619}
   m_materialReferenceIndex: 1
