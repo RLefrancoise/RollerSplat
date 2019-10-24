@@ -236,9 +236,11 @@ namespace RollerSplat
         {
             if(!CanPlayerMove) return;
             if(_swipeDetected) return;
+
+            var screenRatio = (float) Screen.width / Screen.height;
             
             var swipeLength = swipeGesture.NormalizedScreenPosition - _swipeStartScreenPosition;
-            if(Mathf.Abs(swipeLength.x) < 0.05f && Mathf.Abs(swipeLength.y) <= 0.05f) return;
+            if(Mathf.Abs(swipeLength.x) < 0.05f && Mathf.Abs(swipeLength.y) <= 0.05f * screenRatio) return;
 
             _swipeDetected = true;
             
@@ -255,11 +257,11 @@ namespace RollerSplat
             }
             else
             {
-                if (swipeLength.y >= 0.05f)
+                if (swipeLength.y >= 0.05f * screenRatio)
                 {
                     MovePlayer(Player.MoveDirection.Up);
                 }
-                else if (swipeLength.y <= -0.05f)
+                else if (swipeLength.y <= -0.05f * screenRatio)
                 {
                     MovePlayer(Player.MoveDirection.Down);
                 }

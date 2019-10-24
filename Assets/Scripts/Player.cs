@@ -58,6 +58,10 @@ namespace RollerSplat
         /// </summary>
         private Animator _animator;
         /// <summary>
+        /// Sphere collider
+        /// </summary>
+        private SphereCollider _collider;
+        /// <summary>
         /// Player trail
         /// </summary>
         private TrailRenderer _trail;
@@ -133,12 +137,14 @@ namespace RollerSplat
             Renderer r, 
             Rigidbody rigidBody,
             Animator animator,
+            SphereCollider col,
             TrailRenderer trail)
         {
             _gameSettings = gameSettings;
             _renderer = r;
             _rigidBody = rigidBody;
             _animator = animator;
+            _collider = col;
             _trail = trail;
 
             color.Subscribe(ListenColor);
@@ -236,7 +242,7 @@ namespace RollerSplat
             
             transform.localPosition = Vector3.right * tile.x * _gameSettings.blockSize +
                                       -Vector3.forward * tile.y * _gameSettings.blockSize +
-                                      Vector3.up * _gameSettings.blockSize / 2f;
+                                      Vector3.up * _collider.radius * _gameSettings.blockSize;
             _rigidBody.position = transform.position;
             _rigidBody.velocity = Vector3.zero;
             _rigidBody.angularVelocity = Vector3.zero;
