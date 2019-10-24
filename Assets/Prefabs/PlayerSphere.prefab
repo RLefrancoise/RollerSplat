@@ -281,6 +281,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color:
     value: {r: 0.28627452, g: 0.61960787, b: 0.6431373, a: 1}
+  wasTeleported:
+    value: 0
 --- !u!114 &5928481024084614939
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,772 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00718bd1-8fec-4a80-a043-90b726876146" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/Common.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/Common/ExtractChannel.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/Common/ExtractChannel.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/Common/FillColor.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/Common/FillColor.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/Common/ReadPackedData.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/Common/ReadPackedData.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Abs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Abs/SFN_Abs.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Abs/SFN_Abs.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_2.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_2.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_3.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_3.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_4.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_4.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_5.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_5.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_AmbientLight.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_AmbientLight/SFN_AmbientLight.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_AmbientLight/SFN_AmbientLight.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Append.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Append/SFN_Append.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Append/SFN_Append.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcCos.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcCos/SFN_ArcCos.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcCos/SFN_ArcCos.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcSin.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcSin/SFN_ArcSin.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcSin/SFN_ArcSin.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan/SFN_ArcTan.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan/SFN_ArcTan.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_NOTO.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_NOTO.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_NPTP.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_NPTP.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_ZTO.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_ZTO.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_ZTOW.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_ZTOW.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Bitangent.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Bitangent/SFN_Bitangent.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Bitangent/SFN_Bitangent.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_ColorBurn.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_ColorBurn.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_ColorDodge.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_ColorDodge.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Darken.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Darken.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Difference.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Difference.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Divide.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Divide.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Exclusion.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Exclusion.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_HardLight.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_HardLight.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_HardMix.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_HardMix.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Lighten.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Lighten.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearBurn.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearBurn.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearDodge.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearDodge.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearLight.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearLight.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Multiply.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Multiply.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Overlay.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Overlay.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_PinLight.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_PinLight.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Screen.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Screen.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Subtract.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Subtract.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_VividLight.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_VividLight.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Ceil.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Ceil/SFN_Ceil.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Ceil/SFN_Ceil.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ChannelBlend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ChannelBlend/SFN_ChannelBlend.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ChannelBlend/SFN_ChannelBlend.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp/SFN_Clamp.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp/SFN_Clamp.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp01.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp01/SFN_Clamp01.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp01/SFN_Clamp01.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Code.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Code/SFN_Code.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Code/SFN_Code.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC1.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC1.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC2.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC2.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC3.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC3.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC4.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC4.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantClamp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantClamp/SFN_ConstantClamp.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantClamp/SFN_ConstantClamp.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantLerp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantLerp/SFN_ConstantLerp.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantLerp/SFN_ConstantLerp.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cos.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cos/SFN_Cos.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cos/SFN_Cos.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cross.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cross/SFN_Cross.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cross/SFN_Cross.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cubemap.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cubemap/SFN_Cubemap.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cubemap/SFN_Cubemap.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDX/SFN_DDX.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDX/SFN_DDX.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDXY.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDXY/SFN_DDXY.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDXY/SFN_DDXY.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDY.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDY/SFN_DDY.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDY/SFN_DDY.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Depth.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Depth/SFN_Depth.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Depth/SFN_Depth.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DepthBlend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DepthBlend/SFN_DepthBlend.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DepthBlend/SFN_DepthBlend.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate/SFN_Desaturate_DES.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate/SFN_Desaturate_DES.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate/SFN_Desaturate_REQONLY.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate/SFN_Desaturate_REQONLY.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Distance.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Distance/SFN_Distance.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Distance/SFN_Distance.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Divide.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Divide/SFN_Divide.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Divide/SFN_Divide.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_ABS.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_ABS.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_NEG.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_NEG.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_NRM.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_NRM.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_POS.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_POS.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_STD.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_STD.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Exp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Exp/SFN_Exp.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Exp/SFN_Exp.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FaceSign.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FaceSign/SFN_FaceSign.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FaceSign/SFN_FaceSign.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Floor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Floor/SFN_Floor.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Floor/SFN_Floor.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fmod.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fmod/SFN_Fmod.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fmod/SFN_Fmod.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FogColor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FogColor/SFN_FogColor.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FogColor/SFN_FogColor.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Frac.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Frac/SFN_Frac.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Frac/SFN_Frac.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FragmentPosition.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FragmentPosition/SFN_FragmentPosition.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FragmentPosition/SFN_FragmentPosition.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_EXP.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_EXP.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_NRM.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_NRM.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_NRM_EXP.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_NRM_EXP.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_REQONLY.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_REQONLY.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Get.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Get/SFN_Get.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Get/SFN_Get.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HalfVector.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HalfVector/SFN_HalfVector.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HalfVector/SFN_HalfVector.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HsvToRgb.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HsvToRgb/SFN_HsvToRgb.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HsvToRgb/SFN_HsvToRgb.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Hue.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Hue/SFN_Hue.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Hue/SFN_Hue.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_If.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_If/SFN_If.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_If/SFN_If.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_InverseLerp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_InverseLerp/SFN_InverseLerp.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_InverseLerp/SFN_InverseLerp.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Length.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Length/SFN_Length.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Length/SFN_Length.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Lerp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Lerp/SFN_Lerp.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Lerp/SFN_Lerp.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightAttenuation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightAttenuation/SFN_LightAttenuation.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightAttenuation/SFN_LightAttenuation.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightColor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightColor/SFN_LightColor.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightColor/SFN_LightColor.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightPosition.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightPosition/SFN_LightPosition.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightPosition/SFN_LightPosition.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightVector.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightVector/SFN_LightVector.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightVector/SFN_LightVector.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG10.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG10.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG2.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG2.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4/SFN_Matrix4x4.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4/SFN_Matrix4x4.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4Property.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4Property/SFN_Matrix4x4Property.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4Property/SFN_Matrix4x4Property.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_2.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_2.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_3.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_3.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_4.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_4.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_5.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_5.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_2.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_2.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_3.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_3.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_4.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_4.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_5.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_5.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_2.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_2.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_3.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_3.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_4.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_4.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_5.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_5.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_MultiplyMatrix.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_MultiplyMatrix/SFN_MultiplyMatrix.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_MultiplyMatrix/SFN_MultiplyMatrix.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Negate.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Negate/SFN_Negate.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Negate/SFN_Negate.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Noise.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Noise/SFN_Noise.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Noise/SFN_Noise.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalBlend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalBlend/SFN_NormalBlend.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalBlend/SFN_NormalBlend.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalVector.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalVector/SFN_NormalVector.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalVector/SFN_NormalVector.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Normalize.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Normalize/SFN_Normalize.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Normalize/SFN_Normalize.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectPosition.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectPosition/SFN_ObjectPosition.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectPosition/SFN_ObjectPosition.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale/SFN_ObjectScale_Default.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale/SFN_ObjectScale_Default.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale/SFN_ObjectScale_Reciprocal.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale/SFN_ObjectScale_Reciprocal.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_OneMinus.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_OneMinus/SFN_OneMinus.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_OneMinus/SFN_OneMinus.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner/SFN_Panner_DIST.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner/SFN_Panner_DIST.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner/SFN_Panner_REQONLY.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner/SFN_Panner_REQONLY.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_DEP.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_DEP.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_DEP_REF.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_DEP_REF.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_REF.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_REF.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_REQONLY.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_REQONLY.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_DEP.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_DEP.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_DEP_REF.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_DEP_REF.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_REF.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_REF.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_PixelSize.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_PixelSize/SFN_PixelSize.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_PixelSize/SFN_PixelSize.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Posterize.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Posterize/SFN_Posterize.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Posterize/SFN_Posterize.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Power.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Power/SFN_Power.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Power/SFN_Power.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ProjectionParameters.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ProjectionParameters/SFN_ProjectionParameters.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ProjectionParameters/SFN_ProjectionParameters.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reciprocal.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reciprocal/SFN_Reciprocal.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reciprocal/SFN_Reciprocal.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reflect.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reflect/SFN_Reflect.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reflect/SFN_Reflect.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Relay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Relay/SFN_Relay.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Relay/SFN_Relay.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRange.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRange/SFN_RemapRange.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRange/SFN_RemapRange.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRangeAdvanced.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRangeAdvanced/SFN_RemapRangeAdvanced.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRangeAdvanced/SFN_RemapRangeAdvanced.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RgbToHsv.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RgbToHsv/SFN_RgbToHsv.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RgbToHsv/SFN_RgbToHsv.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_ANG.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_ANG.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_ANG.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_ANG.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_SPD.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_SPD.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_SPD_ANG.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_SPD_ANG.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_REQONLY.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_REQONLY.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_SPD.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_SPD.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_SPD_ANG.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_SPD_ANG.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Round.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Round/SFN_Round.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Round/SFN_Round.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneColor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneColor/SFN_SceneColor.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneColor/SFN_SceneColor.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneDepth.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneDepth/SFN_SceneDepth.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneDepth/SFN_SceneDepth.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenParameters.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenParameters/SFN_ScreenParameters.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenParameters/SFN_ScreenParameters.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenPos.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenPos/SFN_ScreenPos.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenPos/SFN_ScreenPos.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Set.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Set/SFN_Set.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Set/SFN_Set.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sign.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sign/SFN_Sign.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sign/SFN_Sign.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sin.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sin/SFN_Sin.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sin/SFN_Sin.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Smoothstep.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Smoothstep/SFN_Smoothstep.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Smoothstep/SFN_Smoothstep.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sqrt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sqrt/SFN_Sqrt.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sqrt/SFN_Sqrt.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Step.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Step/SFN_Step.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Step/SFN_Step.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Subtract.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Subtract/SFN_Subtract.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Subtract/SFN_Subtract.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SwitchProperty.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SwitchProperty/SFN_SwitchProperty.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SwitchProperty/SFN_SwitchProperty.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tan.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tan/SFN_Tan.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tan/SFN_Tan.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tangent.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tangent/SFN_Tangent.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tangent/SFN_Tangent.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_MIP.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_MIP.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_NoInputs.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_NoInputs.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_UV.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_UV.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_UV_MIP.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_UV_MIP.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2dAsset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2dAsset/SFN_Tex2dAsset.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2dAsset/SFN_Tex2dAsset.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_TexCoord.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_TexCoord/SFN_TexCoord.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_TexCoord/SFN_TexCoord.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Time.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Time/SFN_Time.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Time/SFN_Time.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transform.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transform/SFN_Transform.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transform/SFN_Transform.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transpose.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transpose/SFN_Transpose.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transpose/SFN_Transpose.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Trunc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Trunc/SFN_Trunc.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Trunc/SFN_Trunc.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_UVTile.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_UVTile/SFN_UVTile.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_UVTile/SFN_UVTile.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorProjection.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorProjection/SFN_VectorProjection.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorProjection/SFN_VectorProjection.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorRejection.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorRejection/SFN_VectorRejection.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorRejection/SFN_VectorRejection.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VertexColor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VertexColor/SFN_VertexColor.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VertexColor/SFN_VertexColor.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewPosition.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewPosition/SFN_ViewPosition.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewPosition/SFN_ViewPosition.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewReflectionVector.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewReflectionVector/SFN_ViewReflectionVector.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewReflectionVector/SFN_ViewReflectionVector.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewVector.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewVector/SFN_ViewVector.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewVector/SFN_ViewVector.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Inspectors.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeInspector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeInspector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeMaterialInspector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeMaterialInspector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Bold-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Bold-Italic.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Bold.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Italic.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/node_3d_data_mask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/node_3d_data_mask.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_bitangent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_bitangent.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_depth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_depth.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_fragmentposition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_fragmentposition.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_fresnel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_fresnel.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_halfvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_halfvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightattenuation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightattenuation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightcolor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightcolor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_normalvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_normalvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_normalvector_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_normalvector_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_tangent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_tangent.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_viewreflectionvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_viewreflectionvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_viewvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_viewvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_ambientlight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_ambientlight.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_bitangent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_bitangent.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_depth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_depth.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_e.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_facesign.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_facesign.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_facesign_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_facesign_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_final.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_final.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fogcolor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fogcolor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fogcolor_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fogcolor_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fragmentposition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fragmentposition.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_halfvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_halfvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightattenuation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightattenuation.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightcolor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightcolor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightposition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightposition.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_normalvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_normalvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_normalvector_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_normalvector_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_objectposition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_objectposition.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_objectscale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_objectscale.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_phi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_phi.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_pi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_pi.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_projectionparameters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_projectionparameters.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_root2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_root2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenparameters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenparameters.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_tangent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_tangent.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_tau.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_tau.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_time.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_time.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_vertexcolor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_vertexcolor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewposition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewposition.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewreflectionvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewreflectionvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewvector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewvector.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/chk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/chk.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/chk_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/chk_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/handle_drag.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/handle_drag.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/icon_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/icon_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/icon_normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/icon_normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_frag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_frag.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_frag_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_frag_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_frag_tex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_frag_tex.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_frag_tex_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_frag_tex_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_vert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_vert.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_vert_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_vert_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_vert_tex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_vert_tex.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_vert_tex_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/inst_vert_tex_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/logo_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/logo_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_custom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_custom.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_highlight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_highlight.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_litbasic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_litbasic.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_litpbr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_litpbr.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particleadditive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particleadditive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particleadditive_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particleadditive_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particlealphablended.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particlealphablended.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particlealphablended_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particlealphablended_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particlemultiplicative.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particlemultiplicative.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particlemultiplicative_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_particlemultiplicative_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_posteffect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_posteffect.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_sky.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_sky.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_sprite.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_unlit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/preset_unlit.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/screenshot_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/screenshot_icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/screenshot_icon_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Interface/screenshot_icon_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Meshes/sf_meshes.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Meshes/sf_meshes.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetBasic.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetBasic.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetCustomLighting.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetCustomLighting.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetPBR.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetPBR.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleAdditive.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleAdditive.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleAlphaBlended.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleAlphaBlended.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleMultiplicative.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleMultiplicative.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetPostEffect.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetPostEffect.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetSky.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetSky.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetSprite.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetSprite.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetUnlit.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Shader Presets/PresetUnlit.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/ShaderForge.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/ShaderForge.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Meshes/sf_example_meshes.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Meshes/sf_example_meshes.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Scripts/EditorLabel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Scripts/EditorLabel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Scripts/EnableCameraDepthInForward.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Scripts/EnableCameraDepthInForward.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Scripts/SoftNormalsToVertexColor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Scripts/SoftNormalsToVertexColor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/CustomLighting.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/CustomLighting.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/CustomLighting.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/CustomLighting.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/LightWrapping.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/LightWrapping.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/LightWrapping.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/LightWrapping.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Parallax.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Parallax.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Parallax.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Parallax.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/PixelRotator.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/PixelRotator.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/PixelRotator.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/PixelRotator.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Refraction.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Refraction.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Refraction.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Refraction.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/TessellationDisplacement.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/TessellationDisplacement.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/TessellationDisplacement.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/TessellationDisplacement.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Tiles.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Tiles.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Tiles.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Tiles.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Vegetation.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Vegetation.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Vegetation.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/Vegetation.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexAnimation.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexAnimation.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexAnimation.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexAnimation.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexAnimation_blue.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexAnimation_blue.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexColorRounding.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexColorRounding.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexColorRounding.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Shaders/VertexColorRounding.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_alpha_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_alpha_circle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_alpha_circle_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_alpha_circle_02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_conc_floor_01_d.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_conc_floor_01_d.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_conc_floor_01_n.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_conc_floor_01_n.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_gradient_light_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_gradient_light_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_gradient_ramp_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_gradient_ramp_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_gradient_ramp_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_gradient_ramp_02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_leaves_01_d.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_leaves_01_d.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_leaves_01_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_leaves_01_n.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_noise_clouds_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_noise_clouds_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_noise_grain_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_noise_grain_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_parallax_test_ao_height.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_parallax_test_ao_height.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_parallax_test_normals.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_parallax_test_normals.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_rgb_overlap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_rgb_overlap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_texcoords.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_texcoords.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_tile_01_d.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_tile_01_d.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_tile_01_n.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Assets/Textures/sf_tile_01_n.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Example Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Readme.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerBounce.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerBounce.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerIdle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/PlayerSphere.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/PlayerSphere.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Wall.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GroundTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GroundTile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GroundTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GroundTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerSphere.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerSphere.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WallBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WallBlock.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportTile.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -802,57 +44,57 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="177" column="12" lean-forward="true" selection-start-line="177" selection-start-column="12" selection-end-line="177" selection-end-column="12" />
+            <state relative-caret-position="403">
+              <caret line="263" lean-forward="true" selection-start-line="263" selection-end-line="263" />
               <folding>
-                <marker date="1571922559976" expanded="false" signature="6:259" ph="..." />
-                <marker date="1571922559976" expanded="true" signature="282:9057" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="289:403" ph="/// The player. It moves in the level in straight line until it finds a wall. ... " />
-                <marker date="1571922559976" expanded="true" signature="443:9055" ph="{...}" />
-                <marker date="1571922559976" expanded="false" signature="458:682" ph="Enums" />
-                <marker date="1571922559976" expanded="true" signature="489:566" ph="/// Move direction of the player ... " />
-                <marker date="1571922559976" expanded="true" signature="600:654" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="692:2696" ph="Fields" />
-                <marker date="1571922559976" expanded="true" signature="859:1218" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="1237:1299" ph="/// Game settings ... " />
-                <marker date="1571922559976" expanded="true" signature="1352:1416" ph="/// Player renderer ... " />
-                <marker date="1571922559976" expanded="true" signature="1461:1527" ph="/// Player rigid body ... " />
-                <marker date="1571922559976" expanded="true" signature="1574:1638" ph="/// Player animator ... " />
-                <marker date="1571922559976" expanded="true" signature="1683:1744" ph="/// Player trail ... " />
-                <marker date="1571922559976" expanded="true" signature="1791:1854" ph="///  ... " />
-                <marker date="1571922559976" expanded="true" signature="1895:1961" ph="/// Player move tween ... " />
-                <marker date="1571922559976" expanded="true" signature="2043:2113" ph="/// Place on tile command ... " />
-                <marker date="1571922559976" expanded="true" signature="2177:2246" ph="/// Player current color ... " />
-                <marker date="1571922559976" expanded="true" signature="2359:2435" ph="/// Was the player teleported ? ... " />
-                <marker date="1571922559976" expanded="true" signature="2706:3693" ph="Properties" />
-                <marker date="1571922559976" expanded="true" signature="2742:2812" ph="/// Can the player move ? ... " />
-                <marker date="1571922559976" expanded="true" signature="2924:2993" ph="/// Current player color ... " />
-                <marker date="1571922559976" expanded="true" signature="3064:3140" ph="/// Was the player teleported ? ... " />
-                <marker date="1571922559976" expanded="true" signature="3218:3310" ph="/// Place the player on the given tile position ... " />
-                <marker date="1571922559976" expanded="true" signature="3362:3673" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="3388:3663" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="3444:3611" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="3703:7101" ph="Public Methods" />
-                <marker date="1571922559976" expanded="true" signature="3936:4223" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="4233:4417" ph="///  ... " />
-                <marker date="1571922559976" expanded="true" signature="4477:4826" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="4836:4989" ph="/// Called when the move command is executed ... " />
-                <marker date="1571922559976" expanded="true" signature="5048:6564" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="6023:6528" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="6574:6740" ph="///  ... " />
-                <marker date="1571922559976" expanded="true" signature="6793:7073" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="7119:9049" ph="Private Methods" />
-                <marker date="1571922559976" expanded="true" signature="7160:7311" ph="/// Called when the place on tile command is executed ... " />
-                <marker date="1571922559976" expanded="true" signature="7365:8044" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="8054:8165" ph="/// Called when bounce is executed ... " />
-                <marker date="1571922559976" expanded="true" signature="8203:8331" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="8341:8462" ph="/// Called when player color is changed ... " />
-                <marker date="1571922559976" expanded="true" signature="8504:9021" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="8617:9011" ph="{...}" />
-                <marker date="1571922559976" expanded="true" signature="8697:8937" ph="{...}" />
+                <marker date="1571930463085" expanded="false" signature="6:277" ph="..." />
+                <marker date="1571930463085" expanded="true" signature="300:9259" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="307:421" ph="/// The player. It moves in the level in straight line until it finds a wall. ... " />
+                <marker date="1571930463085" expanded="true" signature="461:9257" ph="{...}" />
+                <marker date="1571930463085" expanded="false" signature="476:700" ph="Enums" />
+                <marker date="1571930463085" expanded="true" signature="507:584" ph="/// Move direction of the player ... " />
+                <marker date="1571930463085" expanded="true" signature="618:672" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="710:2803" ph="Fields" />
+                <marker date="1571930463085" expanded="true" signature="877:1236" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="1255:1317" ph="/// Game settings ... " />
+                <marker date="1571930463085" expanded="true" signature="1370:1434" ph="/// Player renderer ... " />
+                <marker date="1571930463085" expanded="true" signature="1479:1545" ph="/// Player rigid body ... " />
+                <marker date="1571930463085" expanded="true" signature="1592:1656" ph="/// Player animator ... " />
+                <marker date="1571930463085" expanded="true" signature="1701:1762" ph="/// Player trail ... " />
+                <marker date="1571930463085" expanded="true" signature="1809:1872" ph="///  ... " />
+                <marker date="1571930463085" expanded="true" signature="1913:1979" ph="/// Player move tween ... " />
+                <marker date="1571930463085" expanded="true" signature="2061:2131" ph="/// Place on tile command ... " />
+                <marker date="1571930463085" expanded="true" signature="2195:2264" ph="/// Player current color ... " />
+                <marker date="1571930463085" expanded="true" signature="2377:2453" ph="/// Was the player teleported ? ... " />
+                <marker date="1571930463085" expanded="true" signature="2813:3800" ph="Properties" />
+                <marker date="1571930463085" expanded="true" signature="2849:2919" ph="/// Can the player move ? ... " />
+                <marker date="1571930463085" expanded="true" signature="3031:3100" ph="/// Current player color ... " />
+                <marker date="1571930463085" expanded="true" signature="3171:3247" ph="/// Was the player teleported ? ... " />
+                <marker date="1571930463085" expanded="true" signature="3325:3417" ph="/// Place the player on the given tile position ... " />
+                <marker date="1571930463085" expanded="true" signature="3469:3780" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="3495:3770" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="3551:3718" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="3810:7208" ph="Public Methods" />
+                <marker date="1571930463085" expanded="true" signature="4043:4330" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="4340:4524" ph="///  ... " />
+                <marker date="1571930463085" expanded="true" signature="4584:4933" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="4943:5096" ph="/// Called when the move command is executed ... " />
+                <marker date="1571930463085" expanded="true" signature="5155:6671" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="6130:6635" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="6681:6847" ph="///  ... " />
+                <marker date="1571930463085" expanded="true" signature="6900:7180" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="7226:9251" ph="Private Methods" />
+                <marker date="1571930463085" expanded="true" signature="7267:7418" ph="/// Called when the place on tile command is executed ... " />
+                <marker date="1571930463085" expanded="true" signature="7472:8151" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="8161:8272" ph="/// Called when bounce is executed ... " />
+                <marker date="1571930463085" expanded="true" signature="8310:8438" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="8448:8569" ph="/// Called when player color is changed ... " />
+                <marker date="1571930463085" expanded="true" signature="8611:9223" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="8819:9213" ph="{...}" />
+                <marker date="1571930463085" expanded="true" signature="8899:9139" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -983,10 +225,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GroundTile.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
+            <state relative-caret-position="2070">
               <caret line="148" column="54" selection-start-line="148" selection-start-column="54" selection-end-line="148" selection-end-column="54" />
               <folding>
                 <marker date="1571925181434" expanded="true" signature="6:125" ph="..." />
@@ -1028,8 +270,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelBlock.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+            <state relative-caret-position="403">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <marker date="1571915683750" expanded="true" signature="6:91" ph="..." />
                 <marker date="1571915683750" expanded="true" signature="114:1799" ph="{...}" />
@@ -1054,7 +296,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="360">
               <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <marker date="1571865736088" expanded="false" signature="6:43" ph="..." />
@@ -1082,18 +324,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level01.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/HUD.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
+            <state relative-caret-position="600">
               <caret line="127" selection-start-line="127" selection-end-line="127" />
               <folding>
                 <marker date="1571845917161" expanded="false" signature="6:192" ph="..." />
@@ -1155,6 +388,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelDataReactiveProperty.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/PlayerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/CellData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Player.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DBD3A770-660A-456E-8DB8-894556CF3CAD/38/4f9d334e/TweenerCore`3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/HUDInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Editor/ExtendInspectorDisplayDrawer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -1193,8 +427,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelBlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportTile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GroundTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       </list>
     </option>
   </component>
@@ -1222,7 +456,7 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Shaders" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -1288,12 +522,12 @@
       <workItem from="1571740745959" duration="29878000" />
       <workItem from="1571832729176" duration="295000" />
       <workItem from="1571834570151" duration="19151000" />
-      <workItem from="1571909826233" duration="11417000" />
+      <workItem from="1571909826233" duration="13615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87404000" />
+    <option name="totallyTimeSpent" value="89602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1573,29 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSettings.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <marker date="1571864082029" expanded="false" signature="6:43" ph="..." />
-            <marker date="1571864082029" expanded="true" signature="66:1441" ph="{...}" />
-            <marker date="1571864082029" expanded="true" signature="73:127" ph="/// Game settings ... " />
-            <marker date="1571864082029" expanded="true" signature="277:1439" ph="{...}" />
-            <marker date="1571864082029" expanded="false" signature="292:639" ph="Colors" />
-            <marker date="1571864082029" expanded="true" signature="324:403" ph="/// Default color for ground tiles ... " />
-            <marker date="1571864082029" expanded="true" signature="474:551" ph="/// Default color for wall tiles ... " />
-            <marker date="1571864082029" expanded="true" signature="649:967" ph="Player" />
-            <marker date="1571864082029" expanded="true" signature="673:734" ph="/// Player speed ... " />
-            <marker date="1571864082029" expanded="true" signature="806:878" ph="/// Player is using trail ? ... " />
-            <marker date="1571864082029" expanded="false" signature="977:1308" ph="Level" />
-            <marker date="1571864082029" expanded="true" signature="1000:1065" ph="/// Level block size ... " />
-            <marker date="1571864082029" expanded="true" signature="1131:1206" ph="/// Ground coloration duration ... " />
-            <marker date="1571864082029" expanded="false" signature="1318:1433" ph="HUD" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1638,105 +849,6 @@
             <marker date="1571854553137" expanded="true" signature="6476:6552" ph="{...}" />
             <marker date="1571854553137" expanded="true" signature="6672:7656" ph="{...}" />
             <marker date="1571854553137" expanded="true" signature="6769:7576" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <marker date="1571865736088" expanded="false" signature="6:43" ph="..." />
-            <marker date="1571865736088" expanded="true" signature="71:2478" ph="{...}" />
-            <marker date="1571865736088" expanded="true" signature="78:129" ph="/// Level data ... " />
-            <marker date="1571865736088" expanded="true" signature="276:2476" ph="{...}" />
-            <marker date="1571865736088" expanded="true" signature="291:358" ph="/// Type of level cell ... " />
-            <marker date="1571865736088" expanded="true" signature="387:694" ph="{...}" />
-            <marker date="1571865736088" expanded="true" signature="410:471" ph="/// Wall ... " />
-            <marker date="1571865736088" expanded="true" signature="502:565" ph="/// Ground ... " />
-            <marker date="1571865736088" expanded="true" signature="598:663" ph="/// Teleport ... " />
-            <marker date="1571865736088" expanded="false" signature="704:1147" ph="Camera" />
-            <marker date="1571865736088" expanded="true" signature="728:805" ph="/// Position of the level camera ... " />
-            <marker date="1571865736088" expanded="true" signature="932:1009" ph="/// Rotation of the level camera ... " />
-            <marker date="1571865736088" expanded="false" signature="1157:2470" ph="Level" />
-            <marker date="1571865736088" expanded="true" signature="1180:1246" ph="/// Name of the level ... " />
-            <marker date="1571865736088" expanded="true" signature="1355:1445" ph="/// Player start position in tile coordinates ... " />
-            <marker date="1571865736088" expanded="true" signature="1583:1677" ph="/// Number of allowed moves to complete the level ... " />
-            <marker date="1571865736088" expanded="true" signature="1815:1898" ph="/// Cells data used to build the level ... " />
-            <marker date="1571865736088" expanded="true" signature="2024:2108" ph="/// File containing the level structure ... " />
-            <marker date="1571865736088" expanded="true" signature="2238:2324" ph="/// Prefab containing the level structure ... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level01.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HUD.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-          <folding>
-            <marker date="1571845917161" expanded="false" signature="6:192" ph="..." />
-            <marker date="1571845917161" expanded="true" signature="215:4635" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="222:281" ph="/// Human User Display ... " />
-            <marker date="1571845917161" expanded="true" signature="318:4633" ph="{...}" />
-            <marker date="1571845917161" expanded="false" signature="333:1529" ph="Fields" />
-            <marker date="1571845917161" expanded="true" signature="410:475" ph="/// Level name label ... " />
-            <marker date="1571845917161" expanded="true" signature="521:591" ph="/// Number of moves label ... " />
-            <marker date="1571845917161" expanded="true" signature="641:716" ph="/// Number of moves left gauge ... " />
-            <marker date="1571845917161" expanded="true" signature="755:824" ph="/// Level complete label ... " />
-            <marker date="1571845917161" expanded="true" signature="878:960" ph="/// Event trigger for tap to continue ... " />
-            <marker date="1571845917161" expanded="true" signature="1110:1176" ph="/// Game over display ... " />
-            <marker date="1571845917161" expanded="true" signature="1239:1310" ph="/// Level complete display ... " />
-            <marker date="1571845917161" expanded="true" signature="1378:1450" ph="/// Tap to continue display ... " />
-            <marker date="1571845917161" expanded="false" signature="1539:2459" ph="Properties" />
-            <marker date="1571845917161" expanded="true" signature="1567:1626" ph="/// Level name ... " />
-            <marker date="1571845917161" expanded="true" signature="1658:1829" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="1684:1819" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="1839:1907" ph="/// Display game over ? ... " />
-            <marker date="1571845917161" expanded="true" signature="1936:2002" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="2012:2085" ph="/// Display level complete ? ... " />
-            <marker date="1571845917161" expanded="true" signature="2119:2190" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="2200:2274" ph="/// Display tap to continue ? ... " />
-            <marker date="1571845917161" expanded="true" signature="2308:2431" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="2880:3525" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="3396:3513" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="3593:3657" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="3675:3935" ph="/* private void Update() ... */" />
-            <marker date="1571845917161" expanded="false" signature="3953:4627" ph="Public Methods" />
-            <marker date="1571845917161" expanded="true" signature="3993:4176" ph="/// Set the number of moves ... " />
-            <marker date="1571845917161" expanded="true" signature="4245:4599" ph="{...}" />
-            <marker date="1571845917161" expanded="true" signature="4388:4461" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelBlock.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-          <folding>
-            <marker date="1571915683750" expanded="true" signature="6:91" ph="..." />
-            <marker date="1571915683750" expanded="true" signature="114:1799" ph="{...}" />
-            <marker date="1571915683750" expanded="true" signature="121:189" ph="/// Base class for level blocks ... " />
-            <marker date="1571915683750" expanded="true" signature="242:1149" ph="{...}" />
-            <marker date="1571915683750" expanded="false" signature="257:690" ph="Fields" />
-            <marker date="1571915683750" expanded="true" signature="289:355" ph="/// Root of the block ... " />
-            <marker date="1571915683750" expanded="true" signature="424:486" ph="/// Game settings ... " />
-            <marker date="1571915683750" expanded="true" signature="549:612" ph="/// Block renderer ... " />
-            <marker date="1571915683750" expanded="true" signature="700:999" ph="Properties" />
-            <marker date="1571915683750" expanded="true" signature="728:787" ph="/// Block type ... " />
-            <marker date="1571915683750" expanded="true" signature="866:932" ph="/// Root of the block ... " />
-            <marker date="1571915683750" expanded="true" signature="1082:1143" ph="{...}" />
-            <marker date="1571915683750" expanded="true" signature="1218:1797" ph="{...}" />
-            <marker date="1571915683750" expanded="true" signature="1347:1419" ph="{...}" />
-            <marker date="1571915683750" expanded="true" signature="1483:1791" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1800,6 +912,150 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelBlock.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <marker date="1571915683750" expanded="true" signature="6:91" ph="..." />
+            <marker date="1571915683750" expanded="true" signature="114:1799" ph="{...}" />
+            <marker date="1571915683750" expanded="true" signature="121:189" ph="/// Base class for level blocks ... " />
+            <marker date="1571915683750" expanded="true" signature="242:1149" ph="{...}" />
+            <marker date="1571915683750" expanded="false" signature="257:690" ph="Fields" />
+            <marker date="1571915683750" expanded="true" signature="289:355" ph="/// Root of the block ... " />
+            <marker date="1571915683750" expanded="true" signature="424:486" ph="/// Game settings ... " />
+            <marker date="1571915683750" expanded="true" signature="549:612" ph="/// Block renderer ... " />
+            <marker date="1571915683750" expanded="true" signature="700:999" ph="Properties" />
+            <marker date="1571915683750" expanded="true" signature="728:787" ph="/// Block type ... " />
+            <marker date="1571915683750" expanded="true" signature="866:932" ph="/// Root of the block ... " />
+            <marker date="1571915683750" expanded="true" signature="1082:1143" ph="{...}" />
+            <marker date="1571915683750" expanded="true" signature="1218:1797" ph="{...}" />
+            <marker date="1571915683750" expanded="true" signature="1347:1419" ph="{...}" />
+            <marker date="1571915683750" expanded="true" signature="1483:1791" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <marker date="1571865736088" expanded="false" signature="6:43" ph="..." />
+            <marker date="1571865736088" expanded="true" signature="71:2478" ph="{...}" />
+            <marker date="1571865736088" expanded="true" signature="78:129" ph="/// Level data ... " />
+            <marker date="1571865736088" expanded="true" signature="276:2476" ph="{...}" />
+            <marker date="1571865736088" expanded="true" signature="291:358" ph="/// Type of level cell ... " />
+            <marker date="1571865736088" expanded="true" signature="387:694" ph="{...}" />
+            <marker date="1571865736088" expanded="true" signature="410:471" ph="/// Wall ... " />
+            <marker date="1571865736088" expanded="true" signature="502:565" ph="/// Ground ... " />
+            <marker date="1571865736088" expanded="true" signature="598:663" ph="/// Teleport ... " />
+            <marker date="1571865736088" expanded="false" signature="704:1147" ph="Camera" />
+            <marker date="1571865736088" expanded="true" signature="728:805" ph="/// Position of the level camera ... " />
+            <marker date="1571865736088" expanded="true" signature="932:1009" ph="/// Rotation of the level camera ... " />
+            <marker date="1571865736088" expanded="false" signature="1157:2470" ph="Level" />
+            <marker date="1571865736088" expanded="true" signature="1180:1246" ph="/// Name of the level ... " />
+            <marker date="1571865736088" expanded="true" signature="1355:1445" ph="/// Player start position in tile coordinates ... " />
+            <marker date="1571865736088" expanded="true" signature="1583:1677" ph="/// Number of allowed moves to complete the level ... " />
+            <marker date="1571865736088" expanded="true" signature="1815:1898" ph="/// Cells data used to build the level ... " />
+            <marker date="1571865736088" expanded="true" signature="2024:2108" ph="/// File containing the level structure ... " />
+            <marker date="1571865736088" expanded="true" signature="2238:2324" ph="/// Prefab containing the level structure ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HUD.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <marker date="1571845917161" expanded="false" signature="6:192" ph="..." />
+            <marker date="1571845917161" expanded="true" signature="215:4635" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="222:281" ph="/// Human User Display ... " />
+            <marker date="1571845917161" expanded="true" signature="318:4633" ph="{...}" />
+            <marker date="1571845917161" expanded="false" signature="333:1529" ph="Fields" />
+            <marker date="1571845917161" expanded="true" signature="410:475" ph="/// Level name label ... " />
+            <marker date="1571845917161" expanded="true" signature="521:591" ph="/// Number of moves label ... " />
+            <marker date="1571845917161" expanded="true" signature="641:716" ph="/// Number of moves left gauge ... " />
+            <marker date="1571845917161" expanded="true" signature="755:824" ph="/// Level complete label ... " />
+            <marker date="1571845917161" expanded="true" signature="878:960" ph="/// Event trigger for tap to continue ... " />
+            <marker date="1571845917161" expanded="true" signature="1110:1176" ph="/// Game over display ... " />
+            <marker date="1571845917161" expanded="true" signature="1239:1310" ph="/// Level complete display ... " />
+            <marker date="1571845917161" expanded="true" signature="1378:1450" ph="/// Tap to continue display ... " />
+            <marker date="1571845917161" expanded="false" signature="1539:2459" ph="Properties" />
+            <marker date="1571845917161" expanded="true" signature="1567:1626" ph="/// Level name ... " />
+            <marker date="1571845917161" expanded="true" signature="1658:1829" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="1684:1819" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="1839:1907" ph="/// Display game over ? ... " />
+            <marker date="1571845917161" expanded="true" signature="1936:2002" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="2012:2085" ph="/// Display level complete ? ... " />
+            <marker date="1571845917161" expanded="true" signature="2119:2190" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="2200:2274" ph="/// Display tap to continue ? ... " />
+            <marker date="1571845917161" expanded="true" signature="2308:2431" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="2880:3525" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="3396:3513" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="3593:3657" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="3675:3935" ph="/* private void Update() ... */" />
+            <marker date="1571845917161" expanded="false" signature="3953:4627" ph="Public Methods" />
+            <marker date="1571845917161" expanded="true" signature="3993:4176" ph="/// Set the number of moves ... " />
+            <marker date="1571845917161" expanded="true" signature="4245:4599" ph="{...}" />
+            <marker date="1571845917161" expanded="true" signature="4388:4461" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <marker date="1571864082029" expanded="false" signature="6:43" ph="..." />
+            <marker date="1571864082029" expanded="true" signature="66:1441" ph="{...}" />
+            <marker date="1571864082029" expanded="true" signature="73:127" ph="/// Game settings ... " />
+            <marker date="1571864082029" expanded="true" signature="277:1439" ph="{...}" />
+            <marker date="1571864082029" expanded="false" signature="292:639" ph="Colors" />
+            <marker date="1571864082029" expanded="true" signature="324:403" ph="/// Default color for ground tiles ... " />
+            <marker date="1571864082029" expanded="true" signature="474:551" ph="/// Default color for wall tiles ... " />
+            <marker date="1571864082029" expanded="true" signature="649:967" ph="Player" />
+            <marker date="1571864082029" expanded="true" signature="673:734" ph="/// Player speed ... " />
+            <marker date="1571864082029" expanded="true" signature="806:878" ph="/// Player is using trail ? ... " />
+            <marker date="1571864082029" expanded="false" signature="977:1308" ph="Level" />
+            <marker date="1571864082029" expanded="true" signature="1000:1065" ph="/// Level block size ... " />
+            <marker date="1571864082029" expanded="true" signature="1131:1206" ph="/// Ground coloration duration ... " />
+            <marker date="1571864082029" expanded="false" signature="1318:1433" ph="HUD" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/Player.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1571927832086" expanded="true" signature="0:199" ph="/* Shader created with Shader Forge v1.38 ... */" />
+            <marker date="1571927832086" expanded="true" signature="2614:10125" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="2631:3007" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="3022:10052" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="3037:3158" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="3172:4407" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="3218:3233" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="3291:4392" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="4421:7204" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="4467:4524" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="4626:7189" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="7218:10046" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="7270:7326" ph="{...}" />
+            <marker date="1571927832086" expanded="true" signature="7410:10031" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TeleportTile.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1814,63 +1070,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="177" column="12" lean-forward="true" selection-start-line="177" selection-start-column="12" selection-end-line="177" selection-end-column="12" />
-          <folding>
-            <marker date="1571922559976" expanded="false" signature="6:259" ph="..." />
-            <marker date="1571922559976" expanded="true" signature="282:9057" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="289:403" ph="/// The player. It moves in the level in straight line until it finds a wall. ... " />
-            <marker date="1571922559976" expanded="true" signature="443:9055" ph="{...}" />
-            <marker date="1571922559976" expanded="false" signature="458:682" ph="Enums" />
-            <marker date="1571922559976" expanded="true" signature="489:566" ph="/// Move direction of the player ... " />
-            <marker date="1571922559976" expanded="true" signature="600:654" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="692:2696" ph="Fields" />
-            <marker date="1571922559976" expanded="true" signature="859:1218" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="1237:1299" ph="/// Game settings ... " />
-            <marker date="1571922559976" expanded="true" signature="1352:1416" ph="/// Player renderer ... " />
-            <marker date="1571922559976" expanded="true" signature="1461:1527" ph="/// Player rigid body ... " />
-            <marker date="1571922559976" expanded="true" signature="1574:1638" ph="/// Player animator ... " />
-            <marker date="1571922559976" expanded="true" signature="1683:1744" ph="/// Player trail ... " />
-            <marker date="1571922559976" expanded="true" signature="1791:1854" ph="///  ... " />
-            <marker date="1571922559976" expanded="true" signature="1895:1961" ph="/// Player move tween ... " />
-            <marker date="1571922559976" expanded="true" signature="2043:2113" ph="/// Place on tile command ... " />
-            <marker date="1571922559976" expanded="true" signature="2177:2246" ph="/// Player current color ... " />
-            <marker date="1571922559976" expanded="true" signature="2359:2435" ph="/// Was the player teleported ? ... " />
-            <marker date="1571922559976" expanded="true" signature="2706:3693" ph="Properties" />
-            <marker date="1571922559976" expanded="true" signature="2742:2812" ph="/// Can the player move ? ... " />
-            <marker date="1571922559976" expanded="true" signature="2924:2993" ph="/// Current player color ... " />
-            <marker date="1571922559976" expanded="true" signature="3064:3140" ph="/// Was the player teleported ? ... " />
-            <marker date="1571922559976" expanded="true" signature="3218:3310" ph="/// Place the player on the given tile position ... " />
-            <marker date="1571922559976" expanded="true" signature="3362:3673" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="3388:3663" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="3444:3611" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="3703:7101" ph="Public Methods" />
-            <marker date="1571922559976" expanded="true" signature="3936:4223" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="4233:4417" ph="///  ... " />
-            <marker date="1571922559976" expanded="true" signature="4477:4826" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="4836:4989" ph="/// Called when the move command is executed ... " />
-            <marker date="1571922559976" expanded="true" signature="5048:6564" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="6023:6528" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="6574:6740" ph="///  ... " />
-            <marker date="1571922559976" expanded="true" signature="6793:7073" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="7119:9049" ph="Private Methods" />
-            <marker date="1571922559976" expanded="true" signature="7160:7311" ph="/// Called when the place on tile command is executed ... " />
-            <marker date="1571922559976" expanded="true" signature="7365:8044" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="8054:8165" ph="/// Called when bounce is executed ... " />
-            <marker date="1571922559976" expanded="true" signature="8203:8331" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="8341:8462" ph="/// Called when player color is changed ... " />
-            <marker date="1571922559976" expanded="true" signature="8504:9021" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="8617:9011" ph="{...}" />
-            <marker date="1571922559976" expanded="true" signature="8697:8937" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GroundTile.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
+        <state relative-caret-position="2070">
           <caret line="148" column="54" selection-start-line="148" selection-start-column="54" selection-end-line="148" selection-end-column="54" />
           <folding>
             <marker date="1571925181434" expanded="true" signature="6:125" ph="..." />
@@ -1904,6 +1106,60 @@
             <marker date="1571925181434" expanded="true" signature="4704:4774" ph="{...}" />
             <marker date="1571925181434" expanded="true" signature="4784:4924" ph="///  ... " />
             <marker date="1571925181434" expanded="true" signature="4983:5061" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="263" lean-forward="true" selection-start-line="263" selection-end-line="263" />
+          <folding>
+            <marker date="1571930463085" expanded="false" signature="6:277" ph="..." />
+            <marker date="1571930463085" expanded="true" signature="300:9259" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="307:421" ph="/// The player. It moves in the level in straight line until it finds a wall. ... " />
+            <marker date="1571930463085" expanded="true" signature="461:9257" ph="{...}" />
+            <marker date="1571930463085" expanded="false" signature="476:700" ph="Enums" />
+            <marker date="1571930463085" expanded="true" signature="507:584" ph="/// Move direction of the player ... " />
+            <marker date="1571930463085" expanded="true" signature="618:672" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="710:2803" ph="Fields" />
+            <marker date="1571930463085" expanded="true" signature="877:1236" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="1255:1317" ph="/// Game settings ... " />
+            <marker date="1571930463085" expanded="true" signature="1370:1434" ph="/// Player renderer ... " />
+            <marker date="1571930463085" expanded="true" signature="1479:1545" ph="/// Player rigid body ... " />
+            <marker date="1571930463085" expanded="true" signature="1592:1656" ph="/// Player animator ... " />
+            <marker date="1571930463085" expanded="true" signature="1701:1762" ph="/// Player trail ... " />
+            <marker date="1571930463085" expanded="true" signature="1809:1872" ph="///  ... " />
+            <marker date="1571930463085" expanded="true" signature="1913:1979" ph="/// Player move tween ... " />
+            <marker date="1571930463085" expanded="true" signature="2061:2131" ph="/// Place on tile command ... " />
+            <marker date="1571930463085" expanded="true" signature="2195:2264" ph="/// Player current color ... " />
+            <marker date="1571930463085" expanded="true" signature="2377:2453" ph="/// Was the player teleported ? ... " />
+            <marker date="1571930463085" expanded="true" signature="2813:3800" ph="Properties" />
+            <marker date="1571930463085" expanded="true" signature="2849:2919" ph="/// Can the player move ? ... " />
+            <marker date="1571930463085" expanded="true" signature="3031:3100" ph="/// Current player color ... " />
+            <marker date="1571930463085" expanded="true" signature="3171:3247" ph="/// Was the player teleported ? ... " />
+            <marker date="1571930463085" expanded="true" signature="3325:3417" ph="/// Place the player on the given tile position ... " />
+            <marker date="1571930463085" expanded="true" signature="3469:3780" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="3495:3770" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="3551:3718" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="3810:7208" ph="Public Methods" />
+            <marker date="1571930463085" expanded="true" signature="4043:4330" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="4340:4524" ph="///  ... " />
+            <marker date="1571930463085" expanded="true" signature="4584:4933" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="4943:5096" ph="/// Called when the move command is executed ... " />
+            <marker date="1571930463085" expanded="true" signature="5155:6671" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="6130:6635" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="6681:6847" ph="///  ... " />
+            <marker date="1571930463085" expanded="true" signature="6900:7180" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="7226:9251" ph="Private Methods" />
+            <marker date="1571930463085" expanded="true" signature="7267:7418" ph="/// Called when the place on tile command is executed ... " />
+            <marker date="1571930463085" expanded="true" signature="7472:8151" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="8161:8272" ph="/// Called when bounce is executed ... " />
+            <marker date="1571930463085" expanded="true" signature="8310:8438" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="8448:8569" ph="/// Called when player color is changed ... " />
+            <marker date="1571930463085" expanded="true" signature="8611:9223" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="8819:9213" ph="{...}" />
+            <marker date="1571930463085" expanded="true" signature="8899:9139" ph="{...}" />
           </folding>
         </state>
       </provider>

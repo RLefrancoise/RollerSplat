@@ -9,6 +9,7 @@ using RollerSplat.Data;
 using UniRx;
 using UniRx.Async;
 using UnityEngine;
+using UnityQuery;
 using Zenject;
 
 namespace RollerSplat
@@ -82,6 +83,7 @@ namespace RollerSplat
         /// </summary>
         [SerializeField] private BoolReactiveProperty wasTeleported;
 
+        private static readonly int FresnelColor = Shader.PropertyToID("_FresnelColor");
         private static readonly int BounceTrigger = Animator.StringToHash("Bounce");
         private static readonly int TeleportBool = Animator.StringToHash("Teleport");
 
@@ -258,6 +260,7 @@ namespace RollerSplat
         private void ListenColor(Color c)
         {
             _renderer.material.DOColor(color.Value, 0.25f);
+            _renderer.material.DOColor((color.Value / 2f).WithAlpha(1f), FresnelColor, 0.25f);
 
             if(_gameSettings.playerTrail)
             {
