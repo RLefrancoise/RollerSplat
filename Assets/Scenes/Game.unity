@@ -793,7 +793,7 @@ MonoBehaviour:
   currentMoves:
     value: 0
   currentLevel:
-    value: 7
+    value: 8
 --- !u!114 &993930445
 MonoBehaviour:
   m_ObjectHideFlags: 0
