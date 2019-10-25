@@ -32,16 +32,9 @@ namespace RollerSplat
         /// The level
         /// </summary>
         private Level _level;
-        /// <summary>
-        /// Swipe gesture start position. Used to compute swipe gesture
-        /// </summary>
-        private Vector2 _swipeStartScreenPosition;
 
-        private bool _swipeDetected;
-        /// <summary>
-        /// Swipe gesture listener
-        /// </summary>
-        [SerializeField] private ScreenTransformGesture swipeGesture;
+        private ITouchManager _touchManager;
+        
         /// <summary>
         /// Current number of moves left
         /// </summary>
@@ -63,26 +56,15 @@ namespace RollerSplat
         #endregion
         
         [Inject]
-        public void Construct(Player player, HUD hud, Level level)
+        public void Construct(Player player, HUD hud, Level level, ITouchManager touchManager)
         {
             _player = player;
             _hud = hud;
             _level = level;
+            _touchManager = touchManager;
         }
 
         #region Monobehaviour Callbacks
-        
-        private void OnEnable()
-        {
-            swipeGesture.TransformStarted += StartSwipe;
-            swipeGesture.Transformed += SwipeGesture;
-        }
-
-        private void OnDisable()
-        {
-            swipeGesture.TransformStarted -= StartSwipe;
-            swipeGesture.Transformed -= SwipeGesture;
-        }
         
         private void Start()
         {
@@ -107,6 +89,9 @@ namespace RollerSplat
             
             //Listen current level index
             currentLevel.Subscribe(GoToLevel);
+
+            //Listen swipe gestures
+            _touchManager.SwipeDetected += SwipeGesture;
         }
 
 #if UNITY_EDITOR
@@ -214,57 +199,28 @@ namespace RollerSplat
                 _hud.GameOver = false;
             }
         }
-
-        /// <summary>
-        /// Called when the swipe gesture detection has started
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void StartSwipe(object sender, EventArgs e)
-        {
-            if(!CanPlayerMove) return;
-            _swipeDetected = false;
-            _swipeStartScreenPosition = swipeGesture.NormalizedScreenPosition;
-        }
         
         /// <summary>
         /// Called when the swipe gesture has ended
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void SwipeGesture(object sender, EventArgs e)
+        private void SwipeGesture(SwipeDirection direction)
         {
             if(!CanPlayerMove) return;
-            if(_swipeDetected) return;
 
-            var screenRatio = (float) Screen.width / Screen.height;
-            
-            var swipeLength = swipeGesture.NormalizedScreenPosition - _swipeStartScreenPosition;
-            if(Mathf.Abs(swipeLength.x) < 0.05f && Mathf.Abs(swipeLength.y) <= 0.05f * screenRatio) return;
-
-            _swipeDetected = true;
-            
-            if(Mathf.Abs(swipeLength.x) > Mathf.Abs(swipeLength.y))
+            switch (direction)
             {
-                if (swipeLength.x >= 0.05f)
-                {
-                    MovePlayer(Player.MoveDirection.Right);
-                }
-                else if (swipeLength.x <= -0.05f)
-                {
+                case SwipeDirection.Left:
                     MovePlayer(Player.MoveDirection.Left);
-                }
-            }
-            else
-            {
-                if (swipeLength.y >= 0.05f * screenRatio)
-                {
+                    break;
+                case SwipeDirection.Right:
+                    MovePlayer(Player.MoveDirection.Right);
+                    break;
+                case SwipeDirection.Up:
                     MovePlayer(Player.MoveDirection.Up);
-                }
-                else if (swipeLength.y <= -0.05f * screenRatio)
-                {
+                    break;
+                case SwipeDirection.Down:
                     MovePlayer(Player.MoveDirection.Down);
-                }
+                    break;
             }
         }
 
@@ -274,6 +230,8 @@ namespace RollerSplat
         /// <param name="direction">Direction of the movement</param>
         private async void MovePlayer(Player.MoveDirection direction)
         {
+            if(!CanPlayerMove) return;
+            
             var moveSuccess = await _player.Move(direction);
             if (moveSuccess)
             {

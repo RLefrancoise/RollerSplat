@@ -8,7 +8,7 @@ namespace RollerSplat.Installers
         public new Renderer renderer;
         public Rigidbody rigidBody;
         public Animator animator;
-        public SphereCollider collider;
+        public new SphereCollider collider;
         public TrailRenderer trail;
         
         public override void InstallBindings()

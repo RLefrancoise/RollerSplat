@@ -720,6 +720,7 @@ GameObject:
   - component: {fileID: 993930444}
   - component: {fileID: 993930445}
   - component: {fileID: 993930446}
+  - component: {fileID: 993930447}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -776,6 +777,7 @@ MonoBehaviour:
   level: {fileID: 50202146}
   player: {fileID: 511979277}
   hud: {fileID: 5539945834905645595}
+  touchManager: {fileID: 993930447}
 --- !u!114 &993930444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,7 +790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba8d08520f0a6d4c8d92ba718c5844e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swipeGesture: {fileID: 993930446}
   currentMoves:
     value: 0
   currentLevel:
@@ -848,6 +849,20 @@ MonoBehaviour:
   type: 1
   screenTransformThreshold: 0.1
   minScreenPointsDistance: 0.5
+--- !u!114 &993930447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993930440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ad525ed6f92154cb1cf5483598326c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swipeGesture: {fileID: 993930446}
+  swipeThreshold: 0.05
 --- !u!1 &1713260312
 GameObject:
   m_ObjectHideFlags: 0

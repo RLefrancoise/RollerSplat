@@ -8,6 +8,7 @@ namespace RollerSplat.Installers
         public Level level;
         public Player player;
         public HUD hud;
+        public TouchManager touchManager;
         
         public override void InstallBindings()
         {
@@ -15,6 +16,7 @@ namespace RollerSplat.Installers
             Container.Bind<Level>().FromInstance(level).AsSingle();
             Container.Bind<Player>().FromInstance(player).AsSingle();
             Container.Bind<HUD>().FromInstance(hud).AsSingle();
+            Container.BindInterfacesAndSelfTo<ITouchManager>().FromInstance(touchManager);
         }
     }
 }

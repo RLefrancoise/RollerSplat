@@ -1026,12 +1026,6 @@
               <e p="DebugNoDepthTest.shader" t="Include" />
             </e>
           </e>
-          <e p="TSF" t="Include">
-            <e p="Shaders" t="Include">
-              <e p="TSF.shader" t="Include" />
-              <e p="TSFOutline.shader" t="Include" />
-            </e>
-          </e>
           <e p="UnityQuery" t="Include">
             <e p="Scripts" t="Include">
               <e p="Collections.cs" t="Include" />
@@ -2114,34 +2108,16 @@
             <e p="PlayerInstaller.cs" t="Include" />
             <e p="WallInstaller.cs" t="Include" />
           </e>
+          <e p="ITouchManager.cs" t="Include" />
           <e p="Level.cs" t="Include" />
           <e p="LevelBlock.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="TeleportTile.cs" t="Include" />
+          <e p="TouchManager.cs" t="Include" />
           <e p="TweenExtensions.cs" t="Include" />
           <e p="Wall.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
-          <e p="CGIncludes" t="Include">
-            <e p="FlatLitToonCore.cginc" t="Include" />
-            <e p="FlatLitToonCoreLite.cginc" t="Include" />
-            <e p="FlatLitToonShadows.cginc" t="Include" />
-          </e>
-          <e p="Flat Lit Toon Lite" t="Include">
-            <e p="Flat Lit Toon Lite Cutout.shader" t="Include" />
-            <e p="Flat Lit Toon Lite Fade.shader" t="Include" />
-            <e p="Flat Lit Toon Lite Transparent.shader" t="Include" />
-            <e p="Flat Lit Toon Lite.shader" t="Include" />
-          </e>
-          <e p="Flat Lite Toon" t="Include">
-            <e p="Flat Lit Toon.shader" t="Include" />
-          </e>
-          <e p="Misc Shaders" t="Include">
-            <e p="Flat Lit Toon Distance Fade.shader" t="Include" />
-            <e p="Flat Lit Toon Rainbow.shader" t="Include" />
-            <e p="Simple Gradient Sky.shader" t="Include" />
-            <e p="Unit Shadowed.shader" t="Include" />
-          </e>
           <e p="ToonShader.shader" t="Include" />
         </e>
       </e>
