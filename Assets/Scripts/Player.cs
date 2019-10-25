@@ -154,6 +154,10 @@ namespace RollerSplat
             color.Subscribe(ListenColor);
 
             _trail.enabled = _gameSettings.playerTrail;
+            var widthCurve = new AnimationCurve(
+                new Keyframe(0f, _gameSettings.playerTrailStartWidth),
+                new Keyframe(1f, _gameSettings.playerTrailEndWidth));
+            _trail.widthCurve = widthCurve;
         }
 
         /// <summary>
@@ -240,11 +244,19 @@ namespace RollerSplat
         
         #region Private Methods
 
+        /// <summary>
+        /// Make the player brake
+        /// </summary>
+        /// <returns></returns>
         private async UniTask Brake()
         {
             _isBraking = true;
             _collider.enabled = false;
-            await transform.DOPunchPosition(transform.forward * (_gameSettings.blockSize - _renderer.transform.localScale.x), 0.25f, 5).ToUniTask();
+            await transform.DOPunchPosition(
+                transform.forward * (_gameSettings.blockSize - _renderer.transform.localScale.z), 
+                _gameSettings.playerBrakeDuration, 
+                _gameSettings.playerBrakeVibrato,
+                _gameSettings.playerBrakeElasticity).ToUniTask();
             _collider.enabled = true;
             _isBraking = false;
         }
@@ -294,7 +306,7 @@ namespace RollerSplat
                 var trailGradient = new Gradient
                 {
                     colorKeys = new[] {new GradientColorKey(c, 0f), new GradientColorKey(c / 2f, 1f)},
-                    alphaKeys = new[] {new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0.5f, 1f)}
+                    alphaKeys = new[] {new GradientAlphaKey(_gameSettings.playerTrailStartAlpha, 0f), new GradientAlphaKey(_gameSettings.playerTrailEndAlpha, 1f)}
                 };
     
                 _trail.colorGradient = trailGradient;
