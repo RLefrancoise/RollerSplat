@@ -17,8 +17,10 @@ namespace RollerSplat
     {
         #region Fields
 
+        /// <summary>
+        /// Game settings
+        /// </summary>
         private GameSettings _gameSettings;
-        
         /// <summary>
         /// Level name label
         /// </summary>
@@ -39,7 +41,9 @@ namespace RollerSplat
         /// Event trigger for tap to continue
         /// </summary>
         private EventTrigger _tapToContinueEventTrigger;
-        
+        /// <summary>
+        /// Tween for moves gauge fill
+        /// </summary>
         private TweenerCore<float, float, FloatOptions> _fillAmountTween;
 
         /// <summary>
@@ -130,16 +134,6 @@ namespace RollerSplat
         {
             TapToContinueTouched?.Invoke();
         }
-        
-        /*private void Update()
-        {
-            if(!tapToContinue.activeInHierarchy) return;
-            
-            if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
-            {
-                TapToContinueTouched?.Invoke();
-            }
-        }*/
         
         #region Public Methods
         

@@ -32,7 +32,9 @@ namespace RollerSplat
         /// The level
         /// </summary>
         private Level _level;
-
+        /// <summary>
+        /// Touch manager
+        /// </summary>
         private ITouchManager _touchManager;
         
         /// <summary>

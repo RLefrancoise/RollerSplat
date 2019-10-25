@@ -66,18 +66,6 @@ namespace RollerSplat.Data
         [Tooltip("Number of allowed moves to complete the level")]
         public int numberOfMoves;
         /// <summary>
-        /// Cells data used to build the level
-        /// </summary>
-        [BoxGroup("Level")]
-        [Tooltip("Cells data used to build the level")]
-        public CellData[] cells;
-        /// <summary>
-        /// File containing the level structure
-        /// </summary>
-        [BoxGroup("Level")]
-        [Tooltip("File containing the level structure")]
-        public TextAsset levelFile;
-        /// <summary>
         /// Prefab containing the level structure
         /// </summary>
         [BoxGroup("Level")]

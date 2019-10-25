@@ -1,8 +1,5 @@
-using System.Collections.Generic;
 using System.Linq;
-using Lean.Pool;
 using RollerSplat.Data;
-using TouchScript.Gestures.TransformGestures;
 using UnityEngine;
 using Zenject;
 using UniRx;
@@ -15,11 +12,6 @@ namespace RollerSplat
     public class Level : MonoBehaviour
     {
         #region Fields
-        
-        /// <summary>
-        /// Game settings
-        /// </summary>
-        private GameSettings _gameSettings;
         
         /// <summary>
         /// The camera used to display the level
@@ -67,8 +59,7 @@ namespace RollerSplat
                 if (_loadCommand == null)
                 {
                     _loadCommand = new ReactiveCommand<LevelData>();
-                    //_loadCommand.Subscribe(ExecuteLoad);
-                    _loadCommand.Subscribe(ExecuteLoadPrefab);
+                    _loadCommand.Subscribe(ExecuteLoad);
                 }
 
                 return _loadCommand;
@@ -78,9 +69,8 @@ namespace RollerSplat
         #endregion
 
         [Inject]
-        public void Construct(GameSettings gameSettings, Camera levelCamera)
+        public void Construct(Camera levelCamera)
         {
-            _gameSettings = gameSettings;
             _levelCamera = levelCamera;
             
             _isLevelComplete = new BoolReactiveProperty();
@@ -99,6 +89,7 @@ namespace RollerSplat
             switch (block.CellType)
             {
                 case LevelData.CellType.Wall:
+                case LevelData.CellType.Teleport:
                     break;
                 case LevelData.CellType.Ground:
                     var groundBlock = (GroundTile) block;
@@ -129,7 +120,11 @@ namespace RollerSplat
             }
         }
 
-        private void ExecuteLoadPrefab(LevelData levelData)
+        /// <summary>
+        /// Called when load is executed
+        /// </summary>
+        /// <param name="levelData">Data of the level to load</param>
+        private void ExecuteLoad(LevelData levelData)
         {
             Data = levelData;
             
@@ -159,76 +154,6 @@ namespace RollerSplat
             {
                 Blocks.Add(levelBlock);
             }
-        }
-        
-        /// <summary>
-        /// Called when load command is executed
-        /// </summary>
-        /// <param name="levelData">Level data to load</param>
-        private void ExecuteLoad(LevelData levelData)
-        {
-            Data = levelData;
-            
-            if (levelData == null)
-            {
-                Debug.LogErrorFormat("Level:ExecuteLoad - Level data is null");
-                return;
-            }
-
-            _levelCamera.transform.position = levelData.cameraPosition;
-            _levelCamera.transform.rotation = Quaternion.Euler(levelData.cameraRotation);
-            
-            //read level file
-            var levelContent = levelData.levelFile.text.Trim().Split('\n');
-            //level size
-            var levelSize = new Vector2(levelContent[0].Trim().Length, levelContent.Length);
-            
-            var currentColumn = 0;
-            var currentRow = 0;
-
-            //assign each level file letter to the right prefab
-            var levelPrefabs = new Dictionary<char, GameObject>
-            {
-                {'G', levelData.cells.First(c => c.type == LevelData.CellType.Ground).prefab},
-                {'W', levelData.cells.First(c => c.type == LevelData.CellType.Wall).prefab},
-            };
-            
-            //Clear blocks list
-            foreach (var block in Blocks)
-            {
-                Destroy(block.Root.gameObject);
-            }
-            Blocks.Clear();
-            
-            //for each column
-            foreach (var column in levelContent)
-            {
-                //for each row
-                foreach (var cell in column.Trim())
-                {
-                    //instantiate the level block
-                    var levelBlock = Instantiate(
-                        levelPrefabs[cell], 
-                        transform.position + (-Vector3.forward * currentColumn * _gameSettings.blockSize) + (Vector3.right * currentRow * _gameSettings.blockSize), 
-                        Quaternion.identity,
-                        transform).GetComponentInChildren<LevelBlock>();
-                    
-                    //apply the right scale to the level block
-                    levelBlock.Root.localScale = Vector3.one * _gameSettings.blockSize;
-
-                    //add the block to the list of blocks of the level
-                    Blocks.Add(levelBlock);
-                    
-                    currentRow++;
-                }
-
-                currentRow = 0;
-                currentColumn++;
-            }
-            
-            //Adjust the level position according to its size to center it on the screen
-            transform.position = (Vector3.forward * Mathf.FloorToInt(levelSize.y / 2f)) 
-                                 - (Vector3.right * (levelSize.x - 1f) / 2f);
         }
     }
 }
