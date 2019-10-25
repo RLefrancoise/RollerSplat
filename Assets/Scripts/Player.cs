@@ -102,7 +102,7 @@ namespace RollerSplat
         /// <summary>
         /// Can the player move ?
         /// </summary>
-        [ShowNativeProperty] public bool CanMove => !_isBraking && _animator.GetCurrentAnimatorStateInfo(0).IsTag("Idle") && (_moveTween == null || !_moveTween.active);
+        public bool CanMove => !_isBraking && _animator.GetCurrentAnimatorStateInfo(0).IsTag("Idle") && (_moveTween == null || !_moveTween.active);
         
         /// <summary>
         /// Current player color
@@ -238,6 +238,15 @@ namespace RollerSplat
             await UniTask.WaitUntil(() => 
                 _animator.GetCurrentAnimatorStateInfo(0).IsTag("Teleport") && 
                 _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f);
+        }
+
+        /// <summary>
+        /// Called when bounce animation hit the ground. Used to vibrate phone
+        /// </summary>
+        public void BounceHitGround()
+        {
+            Debug.Log("Player:BounceHitGround");
+            Handheld.Vibrate();
         }
         
         #endregion

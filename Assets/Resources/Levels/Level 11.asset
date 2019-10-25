@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdac08d06b214de690976ad323e78071, type: 3}
   m_Name: Level 11
   m_EditorClassIdentifier: 
-  cameraPosition: {x: 4, y: 18, z: -7}
+  cameraPosition: {x: 4.5, y: 18, z: -7}
   cameraRotation: {x: 80, y: 0, z: 0}
   levelName: Level 11
   startPosition: {x: 2, y: 8}
