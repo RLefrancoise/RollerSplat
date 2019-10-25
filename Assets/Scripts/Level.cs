@@ -47,6 +47,9 @@ namespace RollerSplat
         /// </summary>
         public LevelData Data { get; private set; }
         
+        /// <summary>
+        /// Last ground tile that has been painted by the player
+        /// </summary>
         public GroundTile LastGroundTilePaintedByPlayer { get; private set; }
         
         /// <summary>
