@@ -22,6 +22,10 @@ namespace RollerSplat
         /// </summary>
         private GameSettings _gameSettings;
         /// <summary>
+        /// Sound player
+        /// </summary>
+        private ISoundPlayer _soundPlayer;
+        /// <summary>
         /// Level name label
         /// </summary>
         private TMP_Text _levelName;
@@ -53,7 +57,15 @@ namespace RollerSplat
         /// Tween for moves gauge fill
         /// </summary>
         private TweenerCore<float, float, FloatOptions> _fillAmountTween;
-
+        
+        /// <summary>
+        /// Win sound
+        /// </summary>
+        [SerializeField] private AudioSource winSound;
+        /// <summary>
+        /// Fail sound
+        /// </summary>
+        [SerializeField] private AudioSource failSound;
         /// <summary>
         /// Game over display
         /// </summary>
@@ -88,7 +100,11 @@ namespace RollerSplat
         /// </summary>
         public bool GameOver
         {
-            set => gameOver.SetActive(value);
+            set
+            {
+                gameOver.SetActive(value);
+                if(value) _soundPlayer.PlaySound(failSound);
+            }
         }
 
         /// <summary>
@@ -96,7 +112,11 @@ namespace RollerSplat
         /// </summary>
         public bool LevelComplete
         {
-            set => levelComplete.SetActive(value);
+            set
+            {
+                levelComplete.SetActive(value);
+                if(value) _soundPlayer.PlaySound(winSound);
+            }
         }
 
         /// <summary>
@@ -108,12 +128,18 @@ namespace RollerSplat
             set => tapToContinue.SetActive(value);
         }
 
+        /// <summary>
+        /// Vibration option
+        /// </summary>
         public bool Vibration
         {
             get => _vibrationToggle.IsOn;
             set => _vibrationToggle.IsOn = value;
         }
 
+        /// <summary>
+        /// Sound option
+        /// </summary>
         public bool Sound
         {
             get => _soundToggle.IsOn;
@@ -129,6 +155,7 @@ namespace RollerSplat
         [Inject]
         public void Construct(
             GameSettings gameSettings,
+            ISoundPlayer soundPlayer,
             [Inject(Id = "LevelName")] TMP_Text levelName,
             [Inject(Id = "NumberOfMoves")] TMP_Text numberOfMoves,
             Image gauge,
@@ -138,6 +165,7 @@ namespace RollerSplat
             [Inject(Id = "Sound")] OptionToggle soundToggle)
         {
             _gameSettings = gameSettings;
+            _soundPlayer = soundPlayer;
             _levelName = levelName;
             _numberOfMoves = numberOfMoves;
             _gauge = gauge;

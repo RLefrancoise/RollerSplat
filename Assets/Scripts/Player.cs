@@ -265,13 +265,13 @@ namespace RollerSplat
         private async UniTask Brake()
         {
             _isBraking = true;
-            _collider.enabled = false;
+            
             await transform.DOPunchPosition(
                 transform.forward * (_gameSettings.blockSize - _renderer.transform.localScale.z), 
                 _gameSettings.playerBrakeDuration, 
                 _gameSettings.playerBrakeVibrato,
                 _gameSettings.playerBrakeElasticity).ToUniTask();
-            _collider.enabled = true;
+            
             _isBraking = false;
         }
         

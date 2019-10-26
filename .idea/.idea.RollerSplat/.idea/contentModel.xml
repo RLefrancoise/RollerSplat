@@ -2104,12 +2104,14 @@
             <e p="WallInstaller.cs" t="Include" />
           </e>
           <e p="IOptionsManager.cs" t="Include" />
+          <e p="ISoundPlayer.cs" t="Include" />
           <e p="ITouchManager.cs" t="Include" />
           <e p="Level.cs" t="Include" />
           <e p="LevelBlock.cs" t="Include" />
           <e p="OptionsManager.cs" t="Include" />
           <e p="OptionToggle.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="SoundPlayer.cs" t="Include" />
           <e p="TeleportTile.cs" t="Include" />
           <e p="TouchManager.cs" t="Include" />
           <e p="TweenExtensions.cs" t="Include" />

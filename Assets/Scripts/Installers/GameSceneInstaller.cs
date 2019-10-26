@@ -10,6 +10,7 @@ namespace RollerSplat.Installers
         public HUD hud;
         public TouchManager touchManager;
         public OptionsManager optionsManager;
+        public SoundPlayer soundPlayer;
         
         public override void InstallBindings()
         {
@@ -20,6 +21,7 @@ namespace RollerSplat.Installers
             Container.BindInterfacesAndSelfTo<ITouchManager>().FromInstance(touchManager);
             Container.BindInterfacesAndSelfTo<IOptionsManager>().FromInstance(optionsManager);
             Container.BindInterfacesAndSelfTo<IHapticManager>().FromInstance(new HapticManager()).AsSingle();
+            Container.BindInterfacesAndSelfTo<ISoundPlayer>().FromInstance(soundPlayer);
         }
     }
 }

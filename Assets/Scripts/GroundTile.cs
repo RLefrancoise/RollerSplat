@@ -5,6 +5,7 @@ using UniRx;
 using UniRx.Async;
 using UnityEngine;
 using UnityQuery;
+using Zenject;
 
 namespace RollerSplat
 {
@@ -15,6 +16,14 @@ namespace RollerSplat
     {
         #region Fields
 
+        /// <summary>
+        /// Sound player
+        /// </summary>
+        private ISoundPlayer _soundPlayer;
+        /// <summary>
+        /// Splat sound
+        /// </summary>
+        [SerializeField] private AudioSource splatSound;
         /// <summary>
         /// Border renderer
         /// </summary>
@@ -60,6 +69,12 @@ namespace RollerSplat
 
         #endregion
 
+        [Inject]
+        public void Construct(ISoundPlayer soundPlayer)
+        {
+            _soundPlayer = soundPlayer;
+        }
+        
         #region Monobehaviour Callbacks
         
         private void Start()
@@ -83,7 +98,13 @@ namespace RollerSplat
             //If player rolls on tile, apply player color to tile
             if (other.CompareTag("Player"))
             {
-                if (isPaintingPlayer.Value) other.GetComponent<Player>().Color.Value = expectedColor.Value;
+                //If tile is painting player, paint the player
+                if (isPaintingPlayer.Value)
+                {
+                    other.GetComponent<Player>().Color.Value = expectedColor.Value;
+                    //Play splat sound
+                    _soundPlayer.PlaySound(splatSound);
+                }
                 
                 color.Value = other.GetComponent<Player>().Color.Value;
                 isPaintedByPlayer.Value = true;
@@ -138,6 +159,7 @@ namespace RollerSplat
         private void ListenIsPaintingPlayer(bool painting)
         {
             splat.gameObject.SetActive(painting);
+            
         }
 
         /// <summary>
