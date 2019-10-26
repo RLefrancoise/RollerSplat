@@ -42,6 +42,14 @@ namespace RollerSplat
         /// </summary>
         private EventTrigger _tapToContinueEventTrigger;
         /// <summary>
+        /// Toggle for vibration option
+        /// </summary>
+        private OptionToggle _vibrationToggle;
+        /// <summary>
+        /// Toggle for sound option
+        /// </summary>
+        private OptionToggle _soundToggle;
+        /// <summary>
         /// Tween for moves gauge fill
         /// </summary>
         private TweenerCore<float, float, FloatOptions> _fillAmountTween;
@@ -99,10 +107,24 @@ namespace RollerSplat
             get => tapToContinue.activeInHierarchy;
             set => tapToContinue.SetActive(value);
         }
+
+        public bool Vibration
+        {
+            get => _vibrationToggle.IsOn;
+            set => _vibrationToggle.IsOn = value;
+        }
+
+        public bool Sound
+        {
+            get => _soundToggle.IsOn;
+            set => _soundToggle.IsOn = value;
+        }
         
         #endregion
 
         public event Action TapToContinueTouched;
+        public event Action<bool> ToggleVibration;
+        public event Action<bool> ToggleSound; 
         
         [Inject]
         public void Construct(
@@ -111,7 +133,9 @@ namespace RollerSplat
             [Inject(Id = "NumberOfMoves")] TMP_Text numberOfMoves,
             Image gauge,
             [Inject(Id = "LevelComplete")] TMP_Text levelCompleteText,
-            EventTrigger tapToContinueEventTrigger)
+            EventTrigger tapToContinueEventTrigger,
+            [Inject(Id = "Vibration")] OptionToggle vibrationToggle,
+            [Inject(Id = "Sound")] OptionToggle soundToggle)
         {
             _gameSettings = gameSettings;
             _levelName = levelName;
@@ -119,7 +143,9 @@ namespace RollerSplat
             _gauge = gauge;
             _levelCompleteText = levelCompleteText;
             _tapToContinueEventTrigger = tapToContinueEventTrigger;
-
+            _vibrationToggle = vibrationToggle;
+            _soundToggle = soundToggle;
+            
             var pointerClickEvent = new EventTrigger.TriggerEvent();
             pointerClickEvent.AddListener(TapToContinueClicked);
             
@@ -128,6 +154,9 @@ namespace RollerSplat
                 eventID = EventTriggerType.PointerClick,
                 callback = pointerClickEvent
             });
+            
+            _vibrationToggle.OptionToggled += isOn => ToggleVibration?.Invoke(isOn);
+            _soundToggle.OptionToggled += isOn => ToggleSound?.Invoke(isOn);
         }
 
         private void TapToContinueClicked(BaseEventData eventData)

@@ -46,6 +46,10 @@ namespace RollerSplat
         /// </summary>
         private GameSettings _gameSettings;
         /// <summary>
+        /// Haptic manager
+        /// </summary>
+        private IHapticManager _hapticManager;
+        /// <summary>
         /// Player renderer
         /// </summary>
         private Renderer _renderer;
@@ -138,6 +142,7 @@ namespace RollerSplat
         [Inject]
         public void Construct(
             GameSettings gameSettings, 
+            IHapticManager hapticManager,
             Renderer r, 
             Rigidbody rigidBody,
             Animator animator,
@@ -145,6 +150,7 @@ namespace RollerSplat
             TrailRenderer trail)
         {
             _gameSettings = gameSettings;
+            _hapticManager = hapticManager;
             _renderer = r;
             _rigidBody = rigidBody;
             _animator = animator;
@@ -245,8 +251,7 @@ namespace RollerSplat
         /// </summary>
         public void BounceHitGround()
         {
-            Debug.Log("Player:BounceHitGround");
-            Handheld.Vibrate();
+            _hapticManager.Vibrate();
         }
         
         #endregion

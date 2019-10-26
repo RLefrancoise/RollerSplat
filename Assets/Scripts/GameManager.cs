@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using RollerSplat.Data;
 using TouchScript.Gestures;
 using TouchScript.Gestures.TransformGestures;
@@ -36,6 +37,14 @@ namespace RollerSplat
         /// Touch manager
         /// </summary>
         private ITouchManager _touchManager;
+        /// <summary>
+        /// Options manager
+        /// </summary>
+        private IOptionsManager _optionsManager;
+        /// <summary>
+        /// Haptic manager
+        /// </summary>
+        private IHapticManager _hapticManager;
         
         /// <summary>
         /// Current number of moves left
@@ -58,12 +67,14 @@ namespace RollerSplat
         #endregion
         
         [Inject]
-        public void Construct(Player player, HUD hud, Level level, ITouchManager touchManager)
+        public void Construct(Player player, HUD hud, Level level, ITouchManager touchManager, IOptionsManager optionsManager, IHapticManager hapticManager)
         {
             _player = player;
             _hud = hud;
             _level = level;
             _touchManager = touchManager;
+            _optionsManager = optionsManager;
+            _hapticManager = hapticManager;
         }
 
         #region Monobehaviour Callbacks
@@ -94,6 +105,20 @@ namespace RollerSplat
 
             //Listen swipe gestures
             _touchManager.SwipeDetected += SwipeGesture;
+            
+            //Load options if needed
+            if (_optionsManager.HasSavedOptions)
+            {
+                _optionsManager.LoadOptions();
+            }
+            
+            //Bind Options
+            _hud.ToggleVibration += ListenVibrationToggled;
+            _hud.ToggleSound += ListenSoundToggled;
+
+            //Init HUD options with options data
+            _hud.Vibration = _optionsManager.Options.Vibration;
+            _hud.Sound = _optionsManager.Options.Sound;
         }
 
 #if UNITY_EDITOR
@@ -108,6 +133,21 @@ namespace RollerSplat
         }
 #endif
 
+#if !UNITY_EDITOR && (UNITY_ANDROID || UNITY_IOS)
+        private void OnApplicationPause(bool pauseStatus)
+        {
+            if (pauseStatus)
+            {
+                _optionsManager.SaveOptions();
+            }
+        }
+#else
+        private void OnApplicationQuit()
+        {
+            _optionsManager.SaveOptions();
+        }
+#endif
+
         #endregion
 
         #region Private Methods
@@ -118,6 +158,26 @@ namespace RollerSplat
         private void ListenTapToContinueTouched()
         {
             _hud.TapToContinue = false;
+        }
+
+        /// <summary>
+        /// Called when vibration option button is toggled
+        /// </summary>
+        /// <param name="isOn"></param>
+        private void ListenVibrationToggled(bool isOn)
+        {
+            _optionsManager.Options.Vibration = isOn;
+            _hapticManager.VibrationEnabled = isOn;
+        }
+        
+        /// <summary>
+        /// Called when sound option button is toggled
+        /// </summary>
+        /// <param name="isOn"></param>
+
+        private void ListenSoundToggled(bool isOn)
+        {
+            _optionsManager.Options.Sound = isOn;
         }
         
         /// <summary>

@@ -721,6 +721,7 @@ GameObject:
   - component: {fileID: 993930445}
   - component: {fileID: 993930446}
   - component: {fileID: 993930447}
+  - component: {fileID: 993930448}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -778,6 +779,7 @@ MonoBehaviour:
   player: {fileID: 511979277}
   hud: {fileID: 5539945834905645595}
   touchManager: {fileID: 993930447}
+  optionsManager: {fileID: 993930448}
 --- !u!114 &993930444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -863,6 +865,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swipeGesture: {fileID: 993930446}
   swipeThreshold: 0.05
+--- !u!114 &993930448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993930440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1485decded6c6654faf2b55257941bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1713260312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,6 +1302,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5432658827822857668, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1666623031265798688, guid: e5eea5fe61313be469809d14bfd45d7a,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1336,6 +1355,76 @@ PrefabInstance:
     - target: {fileID: 2549321980829350698, guid: e5eea5fe61313be469809d14bfd45d7a,
         type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549321980829350698, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2186362247308269007, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2186362247308269007, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2186362247308269007, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2186362247308269007, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2186362247308269007, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310112826269526662, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310112826269526662, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310112826269526662, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310112826269526662, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811548832271964228, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811548832271964228, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811548832271964228, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811548832271964228, guid: e5eea5fe61313be469809d14bfd45d7a,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -2086,11 +2086,14 @@
             </e>
             <e p="LevelData.cs" t="Include" />
             <e p="LevelDataReactiveProperty.cs" t="Include" />
+            <e p="OptionsData.cs" t="Include" />
           </e>
           <e p="GameManager.cs" t="Include" />
           <e p="GameSettings.cs" t="Include" />
           <e p="GroundTile.cs" t="Include" />
+          <e p="HapticManager.cs" t="Include" />
           <e p="HUD.cs" t="Include" />
+          <e p="IHapticManager.cs" t="Include" />
           <e p="Installers" t="Include">
             <e p="GameInstaller.cs" t="Include" />
             <e p="GameSceneInstaller.cs" t="Include" />
@@ -2100,9 +2103,12 @@
             <e p="PlayerInstaller.cs" t="Include" />
             <e p="WallInstaller.cs" t="Include" />
           </e>
+          <e p="IOptionsManager.cs" t="Include" />
           <e p="ITouchManager.cs" t="Include" />
           <e p="Level.cs" t="Include" />
           <e p="LevelBlock.cs" t="Include" />
+          <e p="OptionsManager.cs" t="Include" />
+          <e p="OptionToggle.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="TeleportTile.cs" t="Include" />
           <e p="TouchManager.cs" t="Include" />

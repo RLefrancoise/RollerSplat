@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00718bd1-8fec-4a80-a043-90b726876146" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/HUDInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/HUDInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,112 +20,158 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSettings.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
-              <folding>
-                <marker date="1572008389131" expanded="false" signature="6:43" ph="..." />
-                <marker date="1572008389131" expanded="true" signature="66:2969" ph="{...}" />
-                <marker date="1572008389131" expanded="true" signature="73:127" ph="/// Game settings ... " />
-                <marker date="1572008389131" expanded="true" signature="277:2967" ph="{...}" />
-                <marker date="1572008389131" expanded="true" signature="292:639" ph="Colors" />
-                <marker date="1572008389131" expanded="true" signature="324:403" ph="/// Default color for ground tiles ... " />
-                <marker date="1572008389131" expanded="true" signature="474:551" ph="/// Default color for wall tiles ... " />
-                <marker date="1572008389131" expanded="true" signature="649:2349" ph="Player" />
-                <marker date="1572008389131" expanded="true" signature="673:734" ph="/// Player speed ... " />
-                <marker date="1572008389131" expanded="true" signature="869:941" ph="/// Player is using trail ? ... " />
-                <marker date="1572008389131" expanded="true" signature="1045:1118" ph="///  ... " />
-                <marker date="1572008389131" expanded="true" signature="1229:1300" ph="///  ... " />
-                <marker date="1572008389131" expanded="true" signature="1409:1482" ph="///  ... " />
-                <marker date="1572008389131" expanded="true" signature="1593:1664" ph="///  ... " />
-                <marker date="1572008389131" expanded="true" signature="1773:1843" ph="/// Player brake duration ... " />
-                <marker date="1572008389131" expanded="true" signature="1983:2052" ph="///  ... " />
-                <marker date="1572008389131" expanded="true" signature="2156:2228" ph="///  ... " />
-                <marker date="1572008389131" expanded="true" signature="2359:2721" ph="Level" />
-                <marker date="1572008389131" expanded="true" signature="2382:2447" ph="/// Level block size ... " />
-                <marker date="1572008389131" expanded="true" signature="2513:2588" ph="/// Ground coloration duration ... " />
-                <marker date="1572008389131" expanded="true" signature="2731:2961" ph="HUD" />
-                <marker date="1572008389131" expanded="true" signature="2752:2835" ph="///  ... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="243" column="78" selection-start-line="243" selection-start-column="78" selection-end-line="243" selection-end-column="78" />
+            <state relative-caret-position="360">
+              <caret line="253" selection-start-line="253" selection-end-line="253" />
               <folding>
-                <marker date="1572042450633" expanded="false" signature="6:277" ph="..." />
-                <marker date="1572042450633" expanded="true" signature="300:11026" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="307:421" ph="/// The player. It moves in the level in straight line until it finds a wall. ... " />
-                <marker date="1572042450633" expanded="true" signature="461:11024" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="476:700" ph="Enums" />
-                <marker date="1572042450633" expanded="true" signature="507:584" ph="/// Move direction of the player ... " />
-                <marker date="1572042450633" expanded="true" signature="618:672" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="710:3021" ph="Fields" />
-                <marker date="1572042450633" expanded="true" signature="877:1236" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="1255:1317" ph="/// Game settings ... " />
-                <marker date="1572042450633" expanded="true" signature="1370:1434" ph="/// Player renderer ... " />
-                <marker date="1572042450633" expanded="true" signature="1479:1545" ph="/// Player rigid body ... " />
-                <marker date="1572042450633" expanded="true" signature="1592:1656" ph="/// Player animator ... " />
-                <marker date="1572042450633" expanded="true" signature="1701:1765" ph="/// Sphere collider ... " />
-                <marker date="1572042450633" expanded="true" signature="1816:1877" ph="/// Player trail ... " />
-                <marker date="1572042450633" expanded="true" signature="1924:1987" ph="/// Stop move flag ... " />
-                <marker date="1572042450633" expanded="true" signature="2028:2089" ph="/// Braking flag ... " />
-                <marker date="1572042450633" expanded="true" signature="2131:2197" ph="/// Player move tween ... " />
-                <marker date="1572042450633" expanded="true" signature="2279:2349" ph="/// Place on tile command ... " />
-                <marker date="1572042450633" expanded="true" signature="2413:2482" ph="/// Player current color ... " />
-                <marker date="1572042450633" expanded="true" signature="2595:2671" ph="/// Was the player teleported ? ... " />
-                <marker date="1572042450633" expanded="true" signature="3031:4072" ph="Properties" />
-                <marker date="1572042450633" expanded="true" signature="3067:3137" ph="/// Can the player move ? ... " />
-                <marker date="1572042450633" expanded="true" signature="3303:3372" ph="/// Current player color ... " />
-                <marker date="1572042450633" expanded="true" signature="3443:3519" ph="/// Was the player teleported ? ... " />
-                <marker date="1572042450633" expanded="true" signature="3597:3689" ph="/// Place the player on the given tile position ... " />
-                <marker date="1572042450633" expanded="true" signature="3741:4052" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="3767:4042" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="3823:3990" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="4082:8294" ph="Public Methods" />
-                <marker date="1572042450633" expanded="true" signature="4347:4897" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="4907:5153" ph="/// Stop the player at tile position ... " />
-                <marker date="1572042450633" expanded="true" signature="5232:5688" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="5698:5851" ph="/// Called when the move command is executed ... " />
-                <marker date="1572042450633" expanded="true" signature="5910:7542" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="6885:7418" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="7447:7506" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="7552:7718" ph="/// Play teleport animation ... " />
-                <marker date="1572042450633" expanded="true" signature="7771:8051" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="8061:8176" ph="///  ... " />
-                <marker date="1572042450633" expanded="true" signature="8214:8266" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="8312:11018" ph="Private Methods" />
-                <marker date="1572042450633" expanded="true" signature="8345:8447" ph="/// Make the player brake ... " />
-                <marker date="1572042450633" expanded="true" signature="8485:8957" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="8975:9126" ph="/// Called when the place on tile command is executed ... " />
-                <marker date="1572042450633" expanded="true" signature="9180:9873" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="9883:9994" ph="/// Called when bounce is executed ... " />
-                <marker date="1572042450633" expanded="true" signature="10032:10160" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="10170:10291" ph="/// Called when player color is changed ... " />
-                <marker date="1572042450633" expanded="true" signature="10333:10990" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="10541:10980" ph="{...}" />
-                <marker date="1572042450633" expanded="true" signature="10621:10906" ph="{...}" />
+                <marker date="1572096123075" expanded="false" signature="6:277" ph="..." />
+                <marker date="1572096123075" expanded="true" signature="300:11237" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="307:421" ph="/// The player. It moves in the level in straight line until it finds a wall. ... " />
+                <marker date="1572096123075" expanded="true" signature="461:11235" ph="{...}" />
+                <marker date="1572096123075" expanded="false" signature="476:700" ph="Enums" />
+                <marker date="1572096123075" expanded="true" signature="507:584" ph="/// Move direction of the player ... " />
+                <marker date="1572096123075" expanded="true" signature="618:672" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="710:3140" ph="Fields" />
+                <marker date="1572096123075" expanded="true" signature="877:1236" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="1255:1317" ph="/// Game settings ... " />
+                <marker date="1572096123075" expanded="true" signature="1370:1433" ph="///  ... " />
+                <marker date="1572096123075" expanded="true" signature="1489:1553" ph="/// Player renderer ... " />
+                <marker date="1572096123075" expanded="true" signature="1598:1664" ph="/// Player rigid body ... " />
+                <marker date="1572096123075" expanded="true" signature="1711:1775" ph="/// Player animator ... " />
+                <marker date="1572096123075" expanded="true" signature="1820:1884" ph="/// Sphere collider ... " />
+                <marker date="1572096123075" expanded="true" signature="1935:1996" ph="/// Player trail ... " />
+                <marker date="1572096123075" expanded="true" signature="2043:2106" ph="/// Stop move flag ... " />
+                <marker date="1572096123075" expanded="true" signature="2147:2208" ph="/// Braking flag ... " />
+                <marker date="1572096123075" expanded="true" signature="2250:2316" ph="/// Player move tween ... " />
+                <marker date="1572096123075" expanded="true" signature="2398:2468" ph="/// Place on tile command ... " />
+                <marker date="1572096123075" expanded="true" signature="2532:2601" ph="/// Player current color ... " />
+                <marker date="1572096123075" expanded="true" signature="2714:2790" ph="/// Was the player teleported ? ... " />
+                <marker date="1572096123075" expanded="true" signature="3150:4191" ph="Properties" />
+                <marker date="1572096123075" expanded="true" signature="3186:3256" ph="/// Can the player move ? ... " />
+                <marker date="1572096123075" expanded="true" signature="3422:3491" ph="/// Current player color ... " />
+                <marker date="1572096123075" expanded="true" signature="3562:3638" ph="/// Was the player teleported ? ... " />
+                <marker date="1572096123075" expanded="true" signature="3716:3808" ph="/// Place the player on the given tile position ... " />
+                <marker date="1572096123075" expanded="true" signature="3860:4171" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="3886:4161" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="3942:4109" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="4201:8505" ph="Public Methods" />
+                <marker date="1572096123075" expanded="true" signature="4508:5102" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="5112:5358" ph="/// Stop the player at tile position ... " />
+                <marker date="1572096123075" expanded="true" signature="5437:5893" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="5903:6056" ph="/// Called when the move command is executed ... " />
+                <marker date="1572096123075" expanded="true" signature="6115:7747" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="7090:7623" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="7652:7711" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="7757:7923" ph="/// Play teleport animation ... " />
+                <marker date="1572096123075" expanded="true" signature="7976:8256" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="8266:8381" ph="/// Called when bounce animation hit the ground. Used to vibrate phone ... " />
+                <marker date="1572096123075" expanded="true" signature="8419:8477" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="8523:11229" ph="Private Methods" />
+                <marker date="1572096123075" expanded="true" signature="8556:8658" ph="/// Make the player brake ... " />
+                <marker date="1572096123075" expanded="true" signature="8696:9168" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="9186:9337" ph="/// Called when the place on tile command is executed ... " />
+                <marker date="1572096123075" expanded="true" signature="9391:10084" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="10094:10205" ph="/// Called when bounce is executed ... " />
+                <marker date="1572096123075" expanded="true" signature="10243:10371" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="10381:10502" ph="/// Called when player color is changed ... " />
+                <marker date="1572096123075" expanded="true" signature="10544:11201" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="10752:11191" ph="{...}" />
+                <marker date="1572096123075" expanded="true" signature="10832:11117" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TeleportTile.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/IHapticManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding>
+                <marker date="1572096007728" expanded="true" signature="21:141" ph="{...}" />
+                <marker date="1572096007728" expanded="true" signature="59:139" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/HapticManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <folding>
+                <marker date="1572096007897" expanded="true" signature="41:281" ph="{...}" />
+                <marker date="1572096007897" expanded="true" signature="91:279" ph="{...}" />
+                <marker date="1572096007897" expanded="true" signature="179:273" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+              <caret line="21" column="109" selection-start-line="21" selection-start-column="109" selection-end-line="21" selection-end-column="109" />
               <folding>
-                <marker date="1571954441829" expanded="false" signature="6:42" ph="..." />
-                <marker date="1571954441829" expanded="true" signature="65:1004" ph="{...}" />
-                <marker date="1571954441829" expanded="true" signature="110:1002" ph="{...}" />
-                <marker date="1571954441829" expanded="true" signature="304:996" ph="{...}" />
-                <marker date="1571954441829" expanded="true" signature="358:986" ph="{...}" />
+                <marker date="1572096007827" expanded="false" signature="6:33" ph="..." />
+                <marker date="1572096007827" expanded="true" signature="67:974" ph="{...}" />
+                <marker date="1572096007827" expanded="true" signature="141:972" ph="{...}" />
+                <marker date="1572096007827" expanded="true" signature="373:966" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/OptionsManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <marker date="1572098490883" expanded="true" signature="6:103" ph="..." />
+                <marker date="1572098490883" expanded="true" signature="126:2032" ph="{...}" />
+                <marker date="1572098490883" expanded="true" signature="193:2030" ph="{...}" />
+                <marker date="1572098490883" expanded="true" signature="399:549" ph="{...}" />
+                <marker date="1572098490883" expanded="true" signature="592:1278" ph="{...}" />
+                <marker date="1572098490883" expanded="true" signature="635:778" ph="{...}" />
+                <marker date="1572098490883" expanded="true" signature="807:1062" ph="{...}" />
+                <marker date="1572098490883" expanded="true" signature="1096:1242" ph="{...}" />
+                <marker date="1572098490883" expanded="true" signature="1313:2024" ph="{...}" />
+                <marker date="1572098490883" expanded="true" signature="1388:1783" ph="{...}" />
+                <marker date="1572098490883" expanded="true" signature="1817:1965" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/IOptionsManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+              <folding>
+                <marker date="1572098183050" expanded="true" signature="41:243" ph="{...}" />
+                <marker date="1572098183050" expanded="true" signature="80:241" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/OptionToggle.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+              <folding>
+                <marker date="1572097394796" expanded="true" signature="6:67" ph="..." />
+                <marker date="1572097394796" expanded="true" signature="90:784" ph="{...}" />
+                <marker date="1572097394796" expanded="true" signature="177:782" ph="{...}" />
+                <marker date="1572097394796" expanded="true" signature="302:396" ph="{...}" />
+                <marker date="1572097394796" expanded="true" signature="494:776" ph="{...}" />
+                <marker date="1572097394796" expanded="true" signature="617:764" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -127,49 +180,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1333">
-              <caret line="203" column="8" selection-start-line="203" selection-start-column="8" selection-end-line="203" selection-end-column="8" />
+            <state relative-caret-position="72">
+              <caret line="113" column="12" lean-forward="true" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
               <folding>
-                <marker date="1572009085090" expanded="false" signature="6:177" ph="..." />
-                <marker date="1572009085090" expanded="true" signature="200:7889" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="207:330" ph="/// The game manager. It makes all the pieces (Player, Level, HUD, ...) work together  ... " />
-                <marker date="1572009085090" expanded="true" signature="375:7887" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="390:1256" ph="Fields" />
-                <marker date="1572009085090" expanded="true" signature="414:489" ph="/// All the levels of the game ... " />
-                <marker date="1572009085090" expanded="true" signature="535:594" ph="/// The player ... " />
-                <marker date="1572009085090" expanded="true" signature="635:691" ph="/// The HUD ... " />
-                <marker date="1572009085090" expanded="true" signature="726:784" ph="/// The level ... " />
-                <marker date="1572009085090" expanded="true" signature="823:885" ph="/// Touch manager ... " />
-                <marker date="1572009085090" expanded="true" signature="948:1025" ph="/// Current number of moves left ... " />
-                <marker date="1572009085090" expanded="true" signature="1101:1169" ph="/// Current level index ... " />
-                <marker date="1572009085090" expanded="true" signature="1266:1521" ph="Properties" />
-                <marker date="1572009085090" expanded="true" signature="1294:1364" ph="/// Can the player move ? ... " />
-                <marker date="1572009085090" expanded="true" signature="1642:1786" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="1796:3351" ph="Monobehaviour Callbacks" />
-                <marker date="1572009085090" expanded="true" signature="1865:2838" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="2886:3324" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="3361:7881" ph="Private Methods" />
-                <marker date="1572009085090" expanded="true" signature="3394:3485" ph="/// Called when HUD tap to continue is touched ... " />
-                <marker date="1572009085090" expanded="true" signature="3535:3595" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="3613:3777" ph="/// Called when current level index is changed ... " />
-                <marker date="1572009085090" expanded="true" signature="3824:4806" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="3880:4054" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="4071:4796" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="4816:4986" ph="/// Called when the level completed flag is changed ... " />
-                <marker date="1572009085090" expanded="true" signature="5055:5553" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="5097:5543" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="5571:5717" ph="/// Called when the number of moves left has changed ... " />
-                <marker date="1572009085090" expanded="true" signature="5777:6508" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="5958:6414" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="6023:6400" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="6238:6380" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="6431:6498" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="6526:6614" ph="/// Called when the swipe gesture has ended ... " />
-                <marker date="1572009085090" expanded="true" signature="6674:7303" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="6755:7293" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="7313:7477" ph="/// Move the player and decreases remaining moves ... " />
-                <marker date="1572009085090" expanded="true" signature="7547:7853" ph="{...}" />
-                <marker date="1572009085090" expanded="true" signature="7699:7843" ph="{...}" />
+                <marker date="1572098182980" expanded="false" signature="6:203" ph="..." />
+                <marker date="1572098182980" expanded="true" signature="226:9951" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="233:356" ph="/// The game manager. It makes all the pieces (Player, Level, HUD, ...) work together  ... " />
+                <marker date="1572098182980" expanded="true" signature="401:9949" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="416:1523" ph="Fields" />
+                <marker date="1572098182980" expanded="true" signature="440:515" ph="/// All the levels of the game ... " />
+                <marker date="1572098182980" expanded="true" signature="561:620" ph="/// The player ... " />
+                <marker date="1572098182980" expanded="true" signature="661:717" ph="/// The HUD ... " />
+                <marker date="1572098182980" expanded="true" signature="752:810" ph="/// The level ... " />
+                <marker date="1572098182980" expanded="true" signature="849:911" ph="/// Touch manager ... " />
+                <marker date="1572098182980" expanded="true" signature="965:1029" ph="/// Options manager ... " />
+                <marker date="1572098182980" expanded="true" signature="1087:1150" ph="///  ... " />
+                <marker date="1572098182980" expanded="true" signature="1215:1292" ph="/// Current number of moves left ... " />
+                <marker date="1572098182980" expanded="true" signature="1368:1436" ph="/// Current level index ... " />
+                <marker date="1572098182980" expanded="false" signature="1533:1788" ph="Properties" />
+                <marker date="1572098182980" expanded="true" signature="1561:1631" ph="/// Can the player move ? ... " />
+                <marker date="1572098182980" expanded="true" signature="1971:2205" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="2215:4816" ph="Monobehaviour Callbacks" />
+                <marker date="1572098182980" expanded="true" signature="2284:3753" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="3346:3421" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="3801:4239" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="4532:4789" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="4661:4779" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="4826:9943" ph="Private Methods" />
+                <marker date="1572098182980" expanded="true" signature="4859:4950" ph="/// Called when HUD tap to continue is touched ... " />
+                <marker date="1572098182980" expanded="true" signature="5000:5060" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="5070:5205" ph="/// Called when vibration option button is toggled ... " />
+                <marker date="1572098182980" expanded="true" signature="5260:5386" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="5404:5535" ph="/// Called when sound option button is toggled ... " />
+                <marker date="1572098182980" expanded="true" signature="5587:5657" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="5675:5839" ph="/// Called when current level index is changed ... " />
+                <marker date="1572098182980" expanded="true" signature="5886:6868" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="5942:6116" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="6133:6858" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="6878:7048" ph="/// Called when the level completed flag is changed ... " />
+                <marker date="1572098182980" expanded="true" signature="7117:7615" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="7159:7605" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="7633:7779" ph="/// Called when the number of moves left has changed ... " />
+                <marker date="1572098182980" expanded="true" signature="7839:8570" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="8020:8476" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="8085:8462" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="8300:8442" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="8493:8560" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="8588:8676" ph="/// Called when the swipe gesture has ended ... " />
+                <marker date="1572098182980" expanded="true" signature="8736:9365" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="8817:9355" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="9375:9539" ph="/// Move the player and decreases remaining moves ... " />
+                <marker date="1572098182980" expanded="true" signature="9609:9915" ph="{...}" />
+                <marker date="1572098182980" expanded="true" signature="9761:9905" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -178,111 +240,60 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/HUD.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="135" column="9" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
+            <state relative-caret-position="421">
+              <caret line="119" column="45" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
               <folding>
-                <marker date="1572009085033" expanded="false" signature="6:192" ph="..." />
-                <marker date="1572009085033" expanded="true" signature="215:4494" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="222:281" ph="/// Human User Display ... " />
-                <marker date="1572009085033" expanded="true" signature="318:4492" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="333:1666" ph="Fields" />
-                <marker date="1572009085033" expanded="true" signature="357:419" ph="///  ... " />
-                <marker date="1572009085033" expanded="true" signature="472:537" ph="/// Level name label ... " />
-                <marker date="1572009085033" expanded="true" signature="583:653" ph="/// Number of moves label ... " />
-                <marker date="1572009085033" expanded="true" signature="703:778" ph="/// Number of moves left gauge ... " />
-                <marker date="1572009085033" expanded="true" signature="817:886" ph="/// Level complete label ... " />
-                <marker date="1572009085033" expanded="true" signature="940:1022" ph="/// Event trigger for tap to continue ... " />
-                <marker date="1572009085033" expanded="true" signature="1088:1163" ph="///  ... " />
-                <marker date="1572009085033" expanded="true" signature="1247:1313" ph="/// Game over display ... " />
-                <marker date="1572009085033" expanded="true" signature="1376:1447" ph="/// Level complete display ... " />
-                <marker date="1572009085033" expanded="true" signature="1515:1587" ph="/// Tap to continue display ... " />
-                <marker date="1572009085033" expanded="true" signature="1676:2596" ph="Properties" />
-                <marker date="1572009085033" expanded="true" signature="1704:1763" ph="/// Level name ... " />
-                <marker date="1572009085033" expanded="true" signature="1795:1966" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="1821:1956" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="1976:2044" ph="/// Display game over ? ... " />
-                <marker date="1572009085033" expanded="true" signature="2073:2139" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="2149:2222" ph="/// Display level complete ? ... " />
-                <marker date="1572009085033" expanded="true" signature="2256:2327" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="2337:2411" ph="/// Display tap to continue ? ... " />
-                <marker date="1572009085033" expanded="true" signature="2445:2568" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="3017:3662" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="3533:3650" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="3730:3794" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="3812:4486" ph="Public Methods" />
-                <marker date="1572009085033" expanded="true" signature="3852:4035" ph="/// Set the number of moves ... " />
-                <marker date="1572009085033" expanded="true" signature="4104:4458" ph="{...}" />
-                <marker date="1572009085033" expanded="true" signature="4247:4320" ph="{...}" />
+                <marker date="1572097394766" expanded="false" signature="6:192" ph="..." />
+                <marker date="1572097394766" expanded="true" signature="215:5528" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="222:281" ph="/// Human User Display ... " />
+                <marker date="1572097394766" expanded="true" signature="318:5526" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="333:1922" ph="Fields" />
+                <marker date="1572097394766" expanded="true" signature="357:419" ph="/// Game settings ... " />
+                <marker date="1572097394766" expanded="true" signature="472:537" ph="/// Level name label ... " />
+                <marker date="1572097394766" expanded="true" signature="583:653" ph="/// Number of moves label ... " />
+                <marker date="1572097394766" expanded="true" signature="703:778" ph="/// Number of moves left gauge ... " />
+                <marker date="1572097394766" expanded="true" signature="817:886" ph="/// Level complete label ... " />
+                <marker date="1572097394766" expanded="true" signature="940:1022" ph="/// Event trigger for tap to continue ... " />
+                <marker date="1572097394766" expanded="true" signature="1088:1164" ph="/// Toggle for vibration option ... " />
+                <marker date="1572097394766" expanded="true" signature="1220:1292" ph="/// Toggle for sound option ... " />
+                <marker date="1572097394766" expanded="true" signature="1344:1419" ph="/// Tween for moves gauge fill ... " />
+                <marker date="1572097394766" expanded="true" signature="1503:1569" ph="/// Game over display ... " />
+                <marker date="1572097394766" expanded="true" signature="1632:1703" ph="/// Level complete display ... " />
+                <marker date="1572097394766" expanded="true" signature="1771:1843" ph="/// Tap to continue display ... " />
+                <marker date="1572097394766" expanded="true" signature="1932:3126" ph="Properties" />
+                <marker date="1572097394766" expanded="true" signature="1960:2019" ph="/// Level name ... " />
+                <marker date="1572097394766" expanded="true" signature="2051:2222" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="2077:2212" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="2232:2300" ph="/// Display game over ? ... " />
+                <marker date="1572097394766" expanded="true" signature="2329:2395" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="2405:2478" ph="/// Display level complete ? ... " />
+                <marker date="1572097394766" expanded="true" signature="2512:2583" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="2593:2667" ph="/// Display tap to continue ? ... " />
+                <marker date="1572097394766" expanded="true" signature="2701:2824" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="2855:2967" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="2994:3098" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="3776:4696" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="4392:4509" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="4764:4828" ph="{...}" />
+                <marker date="1572097394766" expanded="false" signature="4846:5520" ph="Public Methods" />
+                <marker date="1572097394766" expanded="true" signature="4886:5069" ph="/// Set the number of moves ... " />
+                <marker date="1572097394766" expanded="true" signature="5138:5492" ph="{...}" />
+                <marker date="1572097394766" expanded="true" signature="5281:5354" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Installers/HUDInstaller.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+            <state relative-caret-position="330">
+              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
               <folding>
-                <marker date="1572009284270" expanded="false" signature="6:43" ph="..." />
-                <marker date="1572009284270" expanded="true" signature="71:2055" ph="{...}" />
-                <marker date="1572009284270" expanded="true" signature="78:129" ph="/// Level data ... " />
-                <marker date="1572009284270" expanded="true" signature="276:2053" ph="{...}" />
-                <marker date="1572009284270" expanded="true" signature="291:358" ph="/// Type of level cell ... " />
-                <marker date="1572009284270" expanded="true" signature="387:694" ph="{...}" />
-                <marker date="1572009284270" expanded="true" signature="410:471" ph="/// Wall ... " />
-                <marker date="1572009284270" expanded="true" signature="502:565" ph="/// Ground ... " />
-                <marker date="1572009284270" expanded="true" signature="598:663" ph="/// Teleport ... " />
-                <marker date="1572009284270" expanded="true" signature="704:1147" ph="Camera" />
-                <marker date="1572009284270" expanded="true" signature="728:805" ph="/// Position of the level camera ... " />
-                <marker date="1572009284270" expanded="true" signature="932:1009" ph="/// Rotation of the level camera ... " />
-                <marker date="1572009284270" expanded="true" signature="1157:2047" ph="Level" />
-                <marker date="1572009284270" expanded="true" signature="1180:1246" ph="/// Name of the level ... " />
-                <marker date="1572009284270" expanded="true" signature="1355:1445" ph="/// Player start position in tile coordinates ... " />
-                <marker date="1572009284270" expanded="true" signature="1583:1677" ph="/// Number of allowed moves to complete the level ... " />
-                <marker date="1572009284270" expanded="true" signature="1815:1901" ph="/// Prefab containing the level structure ... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-452">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-              <folding>
-                <marker date="1572009762608" expanded="true" signature="6:89" ph="..." />
-                <marker date="1572009762608" expanded="true" signature="112:5086" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="119:174" ph="/// The game level ... " />
-                <marker date="1572009762608" expanded="true" signature="213:5084" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="228:705" ph="Fields" />
-                <marker date="1572009762608" expanded="true" signature="260:345" ph="/// The camera used to display the level ... " />
-                <marker date="1572009762608" expanded="true" signature="400:487" ph="/// Load command. It loads the given level ... " />
-                <marker date="1572009762608" expanded="true" signature="554:622" ph="/// Is level complete ? ... " />
-                <marker date="1572009762608" expanded="true" signature="715:1932" ph="Properties" />
-                <marker date="1572009762608" expanded="true" signature="751:848" ph="/// All the blocks of the level (Walls, Ground, ...) ... " />
-                <marker date="1572009762608" expanded="true" signature="933:1001" ph="/// Is level complete ? ... " />
-                <marker date="1572009762608" expanded="true" signature="1123:1197" ph="/// Data of the current level ... " />
-                <marker date="1572009762608" expanded="true" signature="1267:1368" ph="///  ... " />
-                <marker date="1572009762608" expanded="true" signature="1464:1551" ph="/// Load command. It loads the given level ... " />
-                <marker date="1572009762608" expanded="true" signature="1598:1904" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="1624:1894" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="1680:1842" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="2000:2265" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="2275:2430" ph="/// Called when a level block is added to the level ... " />
-                <marker date="1572009762608" expanded="true" signature="2509:3183" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="2595:3173" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="2909:3035" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="3201:3354" ph="/// Called when a ground block painted flag has changed ... " />
-                <marker date="1572009762608" expanded="true" signature="3422:3827" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="3457:3708" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="3725:3817" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="3837:3984" ph="///  ... " />
-                <marker date="1572009762608" expanded="true" signature="4038:5078" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="4126:4258" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="4553:4751" ph="{...}" />
-                <marker date="1572009762608" expanded="true" signature="5000:5068" ph="{...}" />
+                <marker date="1572095467487" expanded="false" signature="6:81" ph="..." />
+                <marker date="1572095467487" expanded="true" signature="115:1138" ph="{...}" />
+                <marker date="1572095467487" expanded="true" signature="177:1136" ph="{...}" />
+                <marker date="1572095467487" expanded="true" signature="521:1130" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -300,7 +311,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TeleportTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HapticManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IHapticManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GroundTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wall.cs" root0="FORCE_HIGHLIGHTING" />
@@ -308,16 +321,20 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/WallInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/3rdParties/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeInspector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OptionToggle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelDataReactiveProperty.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/PlayerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OptionsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TouchManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IOptionsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DBD3A770-660A-456E-8DB8-894556CF3CAD/38/4f9d334e/TweenerCore`3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/HUDInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ITouchManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Editor/ExtendInspectorDisplayDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/LevelBlockInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/OptionsData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level 02.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GroundTileInstaller.cs" root0="FORCE_HIGHLIGHTING" />
@@ -340,21 +357,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/LevelBlockInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GroundTileInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/LevelInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/HUDInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelBlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GroundTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TweenExtensions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/PlayerInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ITouchManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TouchManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/OptionsData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/HUDInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IHapticManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HapticManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OptionToggle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HUD.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IOptionsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OptionsManager.cs" />
       </list>
     </option>
   </component>
@@ -391,6 +414,12 @@
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="Data" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Installers" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -455,12 +484,13 @@
       <workItem from="1571832729176" duration="295000" />
       <workItem from="1571834570151" duration="19151000" />
       <workItem from="1571909826233" duration="21395000" />
-      <workItem from="1572004836478" duration="6265000" />
+      <workItem from="1572004836478" duration="6898000" />
+      <workItem from="1572089805590" duration="7134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103647000" />
+    <option name="totallyTimeSpent" value="111414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -475,7 +505,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -598,20 +628,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level03.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level02.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level03.txt" />
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level02.txt" />
     <entry file="file://$PROJECT_DIR$/Assets/Shaders/Toon.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Installers/WallInstaller.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -652,26 +670,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Installers/HUDInstaller.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
-          <folding>
-            <marker date="1571845950416" expanded="false" signature="6:81" ph="..." />
-            <marker date="1571845950416" expanded="true" signature="115:872" ph="{...}" />
-            <marker date="1571845950416" expanded="true" signature="177:870" ph="{...}" />
-            <marker date="1571845950416" expanded="true" signature="435:864" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level01.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/Levels/Level01.txt" />
     <entry file="file://$PROJECT_DIR$/Assets/Shaders/Player.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wall.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -876,99 +875,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TeleportTile.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-          <folding>
-            <marker date="1571954441829" expanded="false" signature="6:42" ph="..." />
-            <marker date="1571954441829" expanded="true" signature="65:1004" ph="{...}" />
-            <marker date="1571954441829" expanded="true" signature="110:1002" ph="{...}" />
-            <marker date="1571954441829" expanded="true" signature="304:996" ph="{...}" />
-            <marker date="1571954441829" expanded="true" signature="358:986" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HUD.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="135" column="9" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
-          <folding>
-            <marker date="1572009085033" expanded="false" signature="6:192" ph="..." />
-            <marker date="1572009085033" expanded="true" signature="215:4494" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="222:281" ph="/// Human User Display ... " />
-            <marker date="1572009085033" expanded="true" signature="318:4492" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="333:1666" ph="Fields" />
-            <marker date="1572009085033" expanded="true" signature="357:419" ph="///  ... " />
-            <marker date="1572009085033" expanded="true" signature="472:537" ph="/// Level name label ... " />
-            <marker date="1572009085033" expanded="true" signature="583:653" ph="/// Number of moves label ... " />
-            <marker date="1572009085033" expanded="true" signature="703:778" ph="/// Number of moves left gauge ... " />
-            <marker date="1572009085033" expanded="true" signature="817:886" ph="/// Level complete label ... " />
-            <marker date="1572009085033" expanded="true" signature="940:1022" ph="/// Event trigger for tap to continue ... " />
-            <marker date="1572009085033" expanded="true" signature="1088:1163" ph="///  ... " />
-            <marker date="1572009085033" expanded="true" signature="1247:1313" ph="/// Game over display ... " />
-            <marker date="1572009085033" expanded="true" signature="1376:1447" ph="/// Level complete display ... " />
-            <marker date="1572009085033" expanded="true" signature="1515:1587" ph="/// Tap to continue display ... " />
-            <marker date="1572009085033" expanded="true" signature="1676:2596" ph="Properties" />
-            <marker date="1572009085033" expanded="true" signature="1704:1763" ph="/// Level name ... " />
-            <marker date="1572009085033" expanded="true" signature="1795:1966" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="1821:1956" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="1976:2044" ph="/// Display game over ? ... " />
-            <marker date="1572009085033" expanded="true" signature="2073:2139" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="2149:2222" ph="/// Display level complete ? ... " />
-            <marker date="1572009085033" expanded="true" signature="2256:2327" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="2337:2411" ph="/// Display tap to continue ? ... " />
-            <marker date="1572009085033" expanded="true" signature="2445:2568" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="3017:3662" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="3533:3650" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="3730:3794" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="3812:4486" ph="Public Methods" />
-            <marker date="1572009085033" expanded="true" signature="3852:4035" ph="/// Set the number of moves ... " />
-            <marker date="1572009085033" expanded="true" signature="4104:4458" ph="{...}" />
-            <marker date="1572009085033" expanded="true" signature="4247:4320" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSettings.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
-          <folding>
-            <marker date="1572008389131" expanded="false" signature="6:43" ph="..." />
-            <marker date="1572008389131" expanded="true" signature="66:2969" ph="{...}" />
-            <marker date="1572008389131" expanded="true" signature="73:127" ph="/// Game settings ... " />
-            <marker date="1572008389131" expanded="true" signature="277:2967" ph="{...}" />
-            <marker date="1572008389131" expanded="true" signature="292:639" ph="Colors" />
-            <marker date="1572008389131" expanded="true" signature="324:403" ph="/// Default color for ground tiles ... " />
-            <marker date="1572008389131" expanded="true" signature="474:551" ph="/// Default color for wall tiles ... " />
-            <marker date="1572008389131" expanded="true" signature="649:2349" ph="Player" />
-            <marker date="1572008389131" expanded="true" signature="673:734" ph="/// Player speed ... " />
-            <marker date="1572008389131" expanded="true" signature="869:941" ph="/// Player is using trail ? ... " />
-            <marker date="1572008389131" expanded="true" signature="1045:1118" ph="///  ... " />
-            <marker date="1572008389131" expanded="true" signature="1229:1300" ph="///  ... " />
-            <marker date="1572008389131" expanded="true" signature="1409:1482" ph="///  ... " />
-            <marker date="1572008389131" expanded="true" signature="1593:1664" ph="///  ... " />
-            <marker date="1572008389131" expanded="true" signature="1773:1843" ph="/// Player brake duration ... " />
-            <marker date="1572008389131" expanded="true" signature="1983:2052" ph="///  ... " />
-            <marker date="1572008389131" expanded="true" signature="2156:2228" ph="///  ... " />
-            <marker date="1572008389131" expanded="true" signature="2359:2721" ph="Level" />
-            <marker date="1572008389131" expanded="true" signature="2382:2447" ph="/// Level block size ... " />
-            <marker date="1572008389131" expanded="true" signature="2513:2588" ph="/// Ground coloration duration ... " />
-            <marker date="1572008389131" expanded="true" signature="2731:2961" ph="HUD" />
-            <marker date="1572008389131" expanded="true" signature="2752:2835" ph="///  ... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/CellData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/CellData.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelBlock.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -993,10 +900,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+          <folding>
+            <marker date="1572008389131" expanded="false" signature="6:43" ph="..." />
+            <marker date="1572008389131" expanded="true" signature="66:2969" ph="{...}" />
+            <marker date="1572008389131" expanded="true" signature="73:127" ph="/// Game settings ... " />
+            <marker date="1572008389131" expanded="true" signature="277:2967" ph="{...}" />
+            <marker date="1572008389131" expanded="false" signature="292:639" ph="Colors" />
+            <marker date="1572008389131" expanded="true" signature="324:403" ph="/// Default color for ground tiles ... " />
+            <marker date="1572008389131" expanded="true" signature="474:551" ph="/// Default color for wall tiles ... " />
+            <marker date="1572008389131" expanded="true" signature="649:2349" ph="Player" />
+            <marker date="1572008389131" expanded="true" signature="673:734" ph="/// Player speed ... " />
+            <marker date="1572008389131" expanded="true" signature="869:941" ph="/// Player is using trail ? ... " />
+            <marker date="1572008389131" expanded="true" signature="1045:1118" ph="/// Player trail start width ... " />
+            <marker date="1572008389131" expanded="true" signature="1229:1300" ph="/// Player trail end width ... " />
+            <marker date="1572008389131" expanded="true" signature="1409:1482" ph="/// Player start start alpha ... " />
+            <marker date="1572008389131" expanded="true" signature="1593:1664" ph="/// Player trail end alpha ... " />
+            <marker date="1572008389131" expanded="true" signature="1773:1843" ph="/// Player brake duration ... " />
+            <marker date="1572008389131" expanded="true" signature="1983:2052" ph="/// Player brake vibrato ... " />
+            <marker date="1572008389131" expanded="true" signature="2156:2228" ph="/// Player brake elasticity ... " />
+            <marker date="1572008389131" expanded="false" signature="2359:2721" ph="Level" />
+            <marker date="1572008389131" expanded="true" signature="2382:2447" ph="/// Level block size ... " />
+            <marker date="1572008389131" expanded="true" signature="2513:2588" ph="/// Ground coloration duration ... " />
+            <marker date="1572008389131" expanded="false" signature="2731:2961" ph="HUD" />
+            <marker date="1572008389131" expanded="true" signature="2752:2835" ph="/// Duration of move number gauge fill ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TeleportTile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <folding>
+            <marker date="1571954441829" expanded="false" signature="6:42" ph="..." />
+            <marker date="1571954441829" expanded="true" signature="65:1004" ph="{...}" />
+            <marker date="1571954441829" expanded="true" signature="110:1002" ph="{...}" />
+            <marker date="1571954441829" expanded="true" signature="304:996" ph="{...}" />
+            <marker date="1571954441829" expanded="true" signature="358:986" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+        <state relative-caret-position="690">
+          <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
           <folding>
             <marker date="1572009284270" expanded="false" signature="6:43" ph="..." />
             <marker date="1572009284270" expanded="true" signature="71:2055" ph="{...}" />
@@ -1007,7 +959,7 @@
             <marker date="1572009284270" expanded="true" signature="410:471" ph="/// Wall ... " />
             <marker date="1572009284270" expanded="true" signature="502:565" ph="/// Ground ... " />
             <marker date="1572009284270" expanded="true" signature="598:663" ph="/// Teleport ... " />
-            <marker date="1572009284270" expanded="true" signature="704:1147" ph="Camera" />
+            <marker date="1572009284270" expanded="false" signature="704:1147" ph="Camera" />
             <marker date="1572009284270" expanded="true" signature="728:805" ph="/// Position of the level camera ... " />
             <marker date="1572009284270" expanded="true" signature="932:1009" ph="/// Rotation of the level camera ... " />
             <marker date="1572009284270" expanded="true" signature="1157:2047" ph="Level" />
@@ -1021,14 +973,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
+        <state relative-caret-position="345">
           <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding>
-            <marker date="1572009762608" expanded="true" signature="6:89" ph="..." />
+            <marker date="1572009762608" expanded="false" signature="6:89" ph="..." />
             <marker date="1572009762608" expanded="true" signature="112:5086" ph="{...}" />
             <marker date="1572009762608" expanded="true" signature="119:174" ph="/// The game level ... " />
             <marker date="1572009762608" expanded="true" signature="213:5084" ph="{...}" />
-            <marker date="1572009762608" expanded="true" signature="228:705" ph="Fields" />
+            <marker date="1572009762608" expanded="false" signature="228:705" ph="Fields" />
             <marker date="1572009762608" expanded="true" signature="260:345" ph="/// The camera used to display the level ... " />
             <marker date="1572009762608" expanded="true" signature="400:487" ph="/// Load command. It loads the given level ... " />
             <marker date="1572009762608" expanded="true" signature="554:622" ph="/// Is level complete ? ... " />
@@ -1036,7 +988,7 @@
             <marker date="1572009762608" expanded="true" signature="751:848" ph="/// All the blocks of the level (Walls, Ground, ...) ... " />
             <marker date="1572009762608" expanded="true" signature="933:1001" ph="/// Is level complete ? ... " />
             <marker date="1572009762608" expanded="true" signature="1123:1197" ph="/// Data of the current level ... " />
-            <marker date="1572009762608" expanded="true" signature="1267:1368" ph="///  ... " />
+            <marker date="1572009762608" expanded="true" signature="1267:1368" ph="/// Last ground tile that has been painted by the player ... " />
             <marker date="1572009762608" expanded="true" signature="1464:1551" ph="/// Load command. It loads the given level ... " />
             <marker date="1572009762608" expanded="true" signature="1598:1904" ph="{...}" />
             <marker date="1572009762608" expanded="true" signature="1624:1894" ph="{...}" />
@@ -1050,7 +1002,7 @@
             <marker date="1572009762608" expanded="true" signature="3422:3827" ph="{...}" />
             <marker date="1572009762608" expanded="true" signature="3457:3708" ph="{...}" />
             <marker date="1572009762608" expanded="true" signature="3725:3817" ph="{...}" />
-            <marker date="1572009762608" expanded="true" signature="3837:3984" ph="///  ... " />
+            <marker date="1572009762608" expanded="true" signature="3837:3984" ph="/// Called when load is executed ... " />
             <marker date="1572009762608" expanded="true" signature="4038:5078" ph="{...}" />
             <marker date="1572009762608" expanded="true" signature="4126:4258" ph="{...}" />
             <marker date="1572009762608" expanded="true" signature="4553:4751" ph="{...}" />
@@ -1059,125 +1011,273 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/OptionsData.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="90" selection-start-line="18" selection-start-column="90" selection-end-line="18" selection-end-column="90" />
+        <state relative-caret-position="75">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
           <folding>
-            <marker date="1572006469084" expanded="false" signature="6:33" ph="..." />
-            <marker date="1572006469084" expanded="true" signature="67:723" ph="{...}" />
-            <marker date="1572006469084" expanded="true" signature="141:721" ph="{...}" />
-            <marker date="1572006469084" expanded="true" signature="327:715" ph="{...}" />
+            <marker date="1572093631602" expanded="true" signature="21:138" ph="{...}" />
+            <marker date="1572093631602" expanded="true" signature="52:136" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1333">
-          <caret line="203" column="8" selection-start-line="203" selection-start-column="8" selection-end-line="203" selection-end-column="8" />
+        <state relative-caret-position="300">
+          <caret line="21" column="109" selection-start-line="21" selection-start-column="109" selection-end-line="21" selection-end-column="109" />
           <folding>
-            <marker date="1572009085090" expanded="false" signature="6:177" ph="..." />
-            <marker date="1572009085090" expanded="true" signature="200:7889" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="207:330" ph="/// The game manager. It makes all the pieces (Player, Level, HUD, ...) work together  ... " />
-            <marker date="1572009085090" expanded="true" signature="375:7887" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="390:1256" ph="Fields" />
-            <marker date="1572009085090" expanded="true" signature="414:489" ph="/// All the levels of the game ... " />
-            <marker date="1572009085090" expanded="true" signature="535:594" ph="/// The player ... " />
-            <marker date="1572009085090" expanded="true" signature="635:691" ph="/// The HUD ... " />
-            <marker date="1572009085090" expanded="true" signature="726:784" ph="/// The level ... " />
-            <marker date="1572009085090" expanded="true" signature="823:885" ph="/// Touch manager ... " />
-            <marker date="1572009085090" expanded="true" signature="948:1025" ph="/// Current number of moves left ... " />
-            <marker date="1572009085090" expanded="true" signature="1101:1169" ph="/// Current level index ... " />
-            <marker date="1572009085090" expanded="true" signature="1266:1521" ph="Properties" />
-            <marker date="1572009085090" expanded="true" signature="1294:1364" ph="/// Can the player move ? ... " />
-            <marker date="1572009085090" expanded="true" signature="1642:1786" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="1796:3351" ph="Monobehaviour Callbacks" />
-            <marker date="1572009085090" expanded="true" signature="1865:2838" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="2886:3324" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="3361:7881" ph="Private Methods" />
-            <marker date="1572009085090" expanded="true" signature="3394:3485" ph="/// Called when HUD tap to continue is touched ... " />
-            <marker date="1572009085090" expanded="true" signature="3535:3595" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="3613:3777" ph="/// Called when current level index is changed ... " />
-            <marker date="1572009085090" expanded="true" signature="3824:4806" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="3880:4054" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="4071:4796" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="4816:4986" ph="/// Called when the level completed flag is changed ... " />
-            <marker date="1572009085090" expanded="true" signature="5055:5553" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="5097:5543" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="5571:5717" ph="/// Called when the number of moves left has changed ... " />
-            <marker date="1572009085090" expanded="true" signature="5777:6508" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="5958:6414" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="6023:6400" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="6238:6380" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="6431:6498" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="6526:6614" ph="/// Called when the swipe gesture has ended ... " />
-            <marker date="1572009085090" expanded="true" signature="6674:7303" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="6755:7293" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="7313:7477" ph="/// Move the player and decreases remaining moves ... " />
-            <marker date="1572009085090" expanded="true" signature="7547:7853" ph="{...}" />
-            <marker date="1572009085090" expanded="true" signature="7699:7843" ph="{...}" />
+            <marker date="1572096007827" expanded="false" signature="6:33" ph="..." />
+            <marker date="1572096007827" expanded="true" signature="67:974" ph="{...}" />
+            <marker date="1572096007827" expanded="true" signature="141:972" ph="{...}" />
+            <marker date="1572096007827" expanded="true" signature="373:966" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/IHapticManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding>
+            <marker date="1572096007728" expanded="true" signature="21:141" ph="{...}" />
+            <marker date="1572096007728" expanded="true" signature="59:139" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HapticManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <marker date="1572096007897" expanded="true" signature="41:281" ph="{...}" />
+            <marker date="1572096007897" expanded="true" signature="91:279" ph="{...}" />
+            <marker date="1572096007897" expanded="true" signature="179:273" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="243" column="78" selection-start-line="243" selection-start-column="78" selection-end-line="243" selection-end-column="78" />
+        <state relative-caret-position="360">
+          <caret line="253" selection-start-line="253" selection-end-line="253" />
           <folding>
-            <marker date="1572042450633" expanded="false" signature="6:277" ph="..." />
-            <marker date="1572042450633" expanded="true" signature="300:11026" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="307:421" ph="/// The player. It moves in the level in straight line until it finds a wall. ... " />
-            <marker date="1572042450633" expanded="true" signature="461:11024" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="476:700" ph="Enums" />
-            <marker date="1572042450633" expanded="true" signature="507:584" ph="/// Move direction of the player ... " />
-            <marker date="1572042450633" expanded="true" signature="618:672" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="710:3021" ph="Fields" />
-            <marker date="1572042450633" expanded="true" signature="877:1236" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="1255:1317" ph="/// Game settings ... " />
-            <marker date="1572042450633" expanded="true" signature="1370:1434" ph="/// Player renderer ... " />
-            <marker date="1572042450633" expanded="true" signature="1479:1545" ph="/// Player rigid body ... " />
-            <marker date="1572042450633" expanded="true" signature="1592:1656" ph="/// Player animator ... " />
-            <marker date="1572042450633" expanded="true" signature="1701:1765" ph="/// Sphere collider ... " />
-            <marker date="1572042450633" expanded="true" signature="1816:1877" ph="/// Player trail ... " />
-            <marker date="1572042450633" expanded="true" signature="1924:1987" ph="/// Stop move flag ... " />
-            <marker date="1572042450633" expanded="true" signature="2028:2089" ph="/// Braking flag ... " />
-            <marker date="1572042450633" expanded="true" signature="2131:2197" ph="/// Player move tween ... " />
-            <marker date="1572042450633" expanded="true" signature="2279:2349" ph="/// Place on tile command ... " />
-            <marker date="1572042450633" expanded="true" signature="2413:2482" ph="/// Player current color ... " />
-            <marker date="1572042450633" expanded="true" signature="2595:2671" ph="/// Was the player teleported ? ... " />
-            <marker date="1572042450633" expanded="true" signature="3031:4072" ph="Properties" />
-            <marker date="1572042450633" expanded="true" signature="3067:3137" ph="/// Can the player move ? ... " />
-            <marker date="1572042450633" expanded="true" signature="3303:3372" ph="/// Current player color ... " />
-            <marker date="1572042450633" expanded="true" signature="3443:3519" ph="/// Was the player teleported ? ... " />
-            <marker date="1572042450633" expanded="true" signature="3597:3689" ph="/// Place the player on the given tile position ... " />
-            <marker date="1572042450633" expanded="true" signature="3741:4052" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="3767:4042" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="3823:3990" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="4082:8294" ph="Public Methods" />
-            <marker date="1572042450633" expanded="true" signature="4347:4897" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="4907:5153" ph="/// Stop the player at tile position ... " />
-            <marker date="1572042450633" expanded="true" signature="5232:5688" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="5698:5851" ph="/// Called when the move command is executed ... " />
-            <marker date="1572042450633" expanded="true" signature="5910:7542" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="6885:7418" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="7447:7506" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="7552:7718" ph="/// Play teleport animation ... " />
-            <marker date="1572042450633" expanded="true" signature="7771:8051" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="8061:8176" ph="///  ... " />
-            <marker date="1572042450633" expanded="true" signature="8214:8266" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="8312:11018" ph="Private Methods" />
-            <marker date="1572042450633" expanded="true" signature="8345:8447" ph="/// Make the player brake ... " />
-            <marker date="1572042450633" expanded="true" signature="8485:8957" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="8975:9126" ph="/// Called when the place on tile command is executed ... " />
-            <marker date="1572042450633" expanded="true" signature="9180:9873" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="9883:9994" ph="/// Called when bounce is executed ... " />
-            <marker date="1572042450633" expanded="true" signature="10032:10160" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="10170:10291" ph="/// Called when player color is changed ... " />
-            <marker date="1572042450633" expanded="true" signature="10333:10990" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="10541:10980" ph="{...}" />
-            <marker date="1572042450633" expanded="true" signature="10621:10906" ph="{...}" />
+            <marker date="1572096123075" expanded="false" signature="6:277" ph="..." />
+            <marker date="1572096123075" expanded="true" signature="300:11237" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="307:421" ph="/// The player. It moves in the level in straight line until it finds a wall. ... " />
+            <marker date="1572096123075" expanded="true" signature="461:11235" ph="{...}" />
+            <marker date="1572096123075" expanded="false" signature="476:700" ph="Enums" />
+            <marker date="1572096123075" expanded="true" signature="507:584" ph="/// Move direction of the player ... " />
+            <marker date="1572096123075" expanded="true" signature="618:672" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="710:3140" ph="Fields" />
+            <marker date="1572096123075" expanded="true" signature="877:1236" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="1255:1317" ph="/// Game settings ... " />
+            <marker date="1572096123075" expanded="true" signature="1370:1433" ph="///  ... " />
+            <marker date="1572096123075" expanded="true" signature="1489:1553" ph="/// Player renderer ... " />
+            <marker date="1572096123075" expanded="true" signature="1598:1664" ph="/// Player rigid body ... " />
+            <marker date="1572096123075" expanded="true" signature="1711:1775" ph="/// Player animator ... " />
+            <marker date="1572096123075" expanded="true" signature="1820:1884" ph="/// Sphere collider ... " />
+            <marker date="1572096123075" expanded="true" signature="1935:1996" ph="/// Player trail ... " />
+            <marker date="1572096123075" expanded="true" signature="2043:2106" ph="/// Stop move flag ... " />
+            <marker date="1572096123075" expanded="true" signature="2147:2208" ph="/// Braking flag ... " />
+            <marker date="1572096123075" expanded="true" signature="2250:2316" ph="/// Player move tween ... " />
+            <marker date="1572096123075" expanded="true" signature="2398:2468" ph="/// Place on tile command ... " />
+            <marker date="1572096123075" expanded="true" signature="2532:2601" ph="/// Player current color ... " />
+            <marker date="1572096123075" expanded="true" signature="2714:2790" ph="/// Was the player teleported ? ... " />
+            <marker date="1572096123075" expanded="true" signature="3150:4191" ph="Properties" />
+            <marker date="1572096123075" expanded="true" signature="3186:3256" ph="/// Can the player move ? ... " />
+            <marker date="1572096123075" expanded="true" signature="3422:3491" ph="/// Current player color ... " />
+            <marker date="1572096123075" expanded="true" signature="3562:3638" ph="/// Was the player teleported ? ... " />
+            <marker date="1572096123075" expanded="true" signature="3716:3808" ph="/// Place the player on the given tile position ... " />
+            <marker date="1572096123075" expanded="true" signature="3860:4171" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="3886:4161" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="3942:4109" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="4201:8505" ph="Public Methods" />
+            <marker date="1572096123075" expanded="true" signature="4508:5102" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="5112:5358" ph="/// Stop the player at tile position ... " />
+            <marker date="1572096123075" expanded="true" signature="5437:5893" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="5903:6056" ph="/// Called when the move command is executed ... " />
+            <marker date="1572096123075" expanded="true" signature="6115:7747" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="7090:7623" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="7652:7711" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="7757:7923" ph="/// Play teleport animation ... " />
+            <marker date="1572096123075" expanded="true" signature="7976:8256" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="8266:8381" ph="/// Called when bounce animation hit the ground. Used to vibrate phone ... " />
+            <marker date="1572096123075" expanded="true" signature="8419:8477" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="8523:11229" ph="Private Methods" />
+            <marker date="1572096123075" expanded="true" signature="8556:8658" ph="/// Make the player brake ... " />
+            <marker date="1572096123075" expanded="true" signature="8696:9168" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="9186:9337" ph="/// Called when the place on tile command is executed ... " />
+            <marker date="1572096123075" expanded="true" signature="9391:10084" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="10094:10205" ph="/// Called when bounce is executed ... " />
+            <marker date="1572096123075" expanded="true" signature="10243:10371" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="10381:10502" ph="/// Called when player color is changed ... " />
+            <marker date="1572096123075" expanded="true" signature="10544:11201" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="10752:11191" ph="{...}" />
+            <marker date="1572096123075" expanded="true" signature="10832:11117" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Installers/HUDInstaller.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <marker date="1572095467487" expanded="false" signature="6:81" ph="..." />
+            <marker date="1572095467487" expanded="true" signature="115:1138" ph="{...}" />
+            <marker date="1572095467487" expanded="true" signature="177:1136" ph="{...}" />
+            <marker date="1572095467487" expanded="true" signature="521:1130" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OptionToggle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding>
+            <marker date="1572097394796" expanded="true" signature="6:67" ph="..." />
+            <marker date="1572097394796" expanded="true" signature="90:784" ph="{...}" />
+            <marker date="1572097394796" expanded="true" signature="177:782" ph="{...}" />
+            <marker date="1572097394796" expanded="true" signature="302:396" ph="{...}" />
+            <marker date="1572097394796" expanded="true" signature="494:776" ph="{...}" />
+            <marker date="1572097394796" expanded="true" signature="617:764" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HUD.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="119" column="45" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
+          <folding>
+            <marker date="1572097394766" expanded="false" signature="6:192" ph="..." />
+            <marker date="1572097394766" expanded="true" signature="215:5528" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="222:281" ph="/// Human User Display ... " />
+            <marker date="1572097394766" expanded="true" signature="318:5526" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="333:1922" ph="Fields" />
+            <marker date="1572097394766" expanded="true" signature="357:419" ph="/// Game settings ... " />
+            <marker date="1572097394766" expanded="true" signature="472:537" ph="/// Level name label ... " />
+            <marker date="1572097394766" expanded="true" signature="583:653" ph="/// Number of moves label ... " />
+            <marker date="1572097394766" expanded="true" signature="703:778" ph="/// Number of moves left gauge ... " />
+            <marker date="1572097394766" expanded="true" signature="817:886" ph="/// Level complete label ... " />
+            <marker date="1572097394766" expanded="true" signature="940:1022" ph="/// Event trigger for tap to continue ... " />
+            <marker date="1572097394766" expanded="true" signature="1088:1164" ph="/// Toggle for vibration option ... " />
+            <marker date="1572097394766" expanded="true" signature="1220:1292" ph="/// Toggle for sound option ... " />
+            <marker date="1572097394766" expanded="true" signature="1344:1419" ph="/// Tween for moves gauge fill ... " />
+            <marker date="1572097394766" expanded="true" signature="1503:1569" ph="/// Game over display ... " />
+            <marker date="1572097394766" expanded="true" signature="1632:1703" ph="/// Level complete display ... " />
+            <marker date="1572097394766" expanded="true" signature="1771:1843" ph="/// Tap to continue display ... " />
+            <marker date="1572097394766" expanded="true" signature="1932:3126" ph="Properties" />
+            <marker date="1572097394766" expanded="true" signature="1960:2019" ph="/// Level name ... " />
+            <marker date="1572097394766" expanded="true" signature="2051:2222" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="2077:2212" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="2232:2300" ph="/// Display game over ? ... " />
+            <marker date="1572097394766" expanded="true" signature="2329:2395" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="2405:2478" ph="/// Display level complete ? ... " />
+            <marker date="1572097394766" expanded="true" signature="2512:2583" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="2593:2667" ph="/// Display tap to continue ? ... " />
+            <marker date="1572097394766" expanded="true" signature="2701:2824" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="2855:2967" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="2994:3098" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="3776:4696" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="4392:4509" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="4764:4828" ph="{...}" />
+            <marker date="1572097394766" expanded="false" signature="4846:5520" ph="Public Methods" />
+            <marker date="1572097394766" expanded="true" signature="4886:5069" ph="/// Set the number of moves ... " />
+            <marker date="1572097394766" expanded="true" signature="5138:5492" ph="{...}" />
+            <marker date="1572097394766" expanded="true" signature="5281:5354" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/IOptionsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <marker date="1572098183050" expanded="true" signature="41:243" ph="{...}" />
+            <marker date="1572098183050" expanded="true" signature="80:241" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="113" column="12" lean-forward="true" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
+          <folding>
+            <marker date="1572098182980" expanded="false" signature="6:203" ph="..." />
+            <marker date="1572098182980" expanded="true" signature="226:9951" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="233:356" ph="/// The game manager. It makes all the pieces (Player, Level, HUD, ...) work together  ... " />
+            <marker date="1572098182980" expanded="true" signature="401:9949" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="416:1523" ph="Fields" />
+            <marker date="1572098182980" expanded="true" signature="440:515" ph="/// All the levels of the game ... " />
+            <marker date="1572098182980" expanded="true" signature="561:620" ph="/// The player ... " />
+            <marker date="1572098182980" expanded="true" signature="661:717" ph="/// The HUD ... " />
+            <marker date="1572098182980" expanded="true" signature="752:810" ph="/// The level ... " />
+            <marker date="1572098182980" expanded="true" signature="849:911" ph="/// Touch manager ... " />
+            <marker date="1572098182980" expanded="true" signature="965:1029" ph="/// Options manager ... " />
+            <marker date="1572098182980" expanded="true" signature="1087:1150" ph="///  ... " />
+            <marker date="1572098182980" expanded="true" signature="1215:1292" ph="/// Current number of moves left ... " />
+            <marker date="1572098182980" expanded="true" signature="1368:1436" ph="/// Current level index ... " />
+            <marker date="1572098182980" expanded="false" signature="1533:1788" ph="Properties" />
+            <marker date="1572098182980" expanded="true" signature="1561:1631" ph="/// Can the player move ? ... " />
+            <marker date="1572098182980" expanded="true" signature="1971:2205" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="2215:4816" ph="Monobehaviour Callbacks" />
+            <marker date="1572098182980" expanded="true" signature="2284:3753" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="3346:3421" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="3801:4239" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="4532:4789" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="4661:4779" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="4826:9943" ph="Private Methods" />
+            <marker date="1572098182980" expanded="true" signature="4859:4950" ph="/// Called when HUD tap to continue is touched ... " />
+            <marker date="1572098182980" expanded="true" signature="5000:5060" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="5070:5205" ph="/// Called when vibration option button is toggled ... " />
+            <marker date="1572098182980" expanded="true" signature="5260:5386" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="5404:5535" ph="/// Called when sound option button is toggled ... " />
+            <marker date="1572098182980" expanded="true" signature="5587:5657" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="5675:5839" ph="/// Called when current level index is changed ... " />
+            <marker date="1572098182980" expanded="true" signature="5886:6868" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="5942:6116" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="6133:6858" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="6878:7048" ph="/// Called when the level completed flag is changed ... " />
+            <marker date="1572098182980" expanded="true" signature="7117:7615" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="7159:7605" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="7633:7779" ph="/// Called when the number of moves left has changed ... " />
+            <marker date="1572098182980" expanded="true" signature="7839:8570" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="8020:8476" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="8085:8462" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="8300:8442" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="8493:8560" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="8588:8676" ph="/// Called when the swipe gesture has ended ... " />
+            <marker date="1572098182980" expanded="true" signature="8736:9365" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="8817:9355" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="9375:9539" ph="/// Move the player and decreases remaining moves ... " />
+            <marker date="1572098182980" expanded="true" signature="9609:9915" ph="{...}" />
+            <marker date="1572098182980" expanded="true" signature="9761:9905" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OptionsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <marker date="1572098490883" expanded="true" signature="6:103" ph="..." />
+            <marker date="1572098490883" expanded="true" signature="126:2032" ph="{...}" />
+            <marker date="1572098490883" expanded="true" signature="193:2030" ph="{...}" />
+            <marker date="1572098490883" expanded="true" signature="399:549" ph="{...}" />
+            <marker date="1572098490883" expanded="true" signature="592:1278" ph="{...}" />
+            <marker date="1572098490883" expanded="true" signature="635:778" ph="{...}" />
+            <marker date="1572098490883" expanded="true" signature="807:1062" ph="{...}" />
+            <marker date="1572098490883" expanded="true" signature="1096:1242" ph="{...}" />
+            <marker date="1572098490883" expanded="true" signature="1313:2024" ph="{...}" />
+            <marker date="1572098490883" expanded="true" signature="1388:1783" ph="{...}" />
+            <marker date="1572098490883" expanded="true" signature="1817:1965" ph="{...}" />
           </folding>
         </state>
       </provider>
