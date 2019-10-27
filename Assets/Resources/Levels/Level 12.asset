@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdac08d06b214de690976ad323e78071, type: 3}
   m_Name: Level 12
   m_EditorClassIdentifier: 
-  cameraPosition: {x: 4.5, y: 20, z: -7}
+  cameraPosition: {x: 4, y: 18, z: -7}
   cameraRotation: {x: 80, y: 0, z: 0}
   levelName: Level 12
-  startPosition: {x: 4, y: 8}
-  numberOfMoves: 8
-  levelPrefab: {fileID: 7426067204215692, guid: 3f3dbfdadcd65934a95c0bac92e7a7ee,
+  startPosition: {x: 6, y: 5}
+  numberOfMoves: 19
+  levelPrefab: {fileID: 7426067204215692, guid: fceb247b8758ede42acda304991cfaf3,
     type: 3}

@@ -15,7 +15,7 @@ MonoBehaviour:
   cameraPosition: {x: 4, y: 18, z: -7}
   cameraRotation: {x: 80, y: 0, z: 0}
   levelName: Level 13
-  startPosition: {x: 6, y: 5}
-  numberOfMoves: 19
-  levelPrefab: {fileID: 7426067204215692, guid: fceb247b8758ede42acda304991cfaf3,
+  startPosition: {x: 4, y: 5}
+  numberOfMoves: 23
+  levelPrefab: {fileID: 7426067204215692, guid: 91ef9a5f683c2c742beac4a62301277d,
     type: 3}
