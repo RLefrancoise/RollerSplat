@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00718bd1-8fec-4a80-a043-90b726876146" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/GroundSplat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GroundSplat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GroundTile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GroundTile.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Wall.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GroundTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GroundTile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TeleportTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TeleportTile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level15.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level15.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WallBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WallBlock.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wall.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1183">
+            <state relative-caret-position="598">
               <caret line="181" column="13" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
               <folding>
                 <marker date="1572193571378" expanded="false" signature="6:89" ph="..." />
@@ -147,6 +148,21 @@
                 <marker date="1572193571378" expanded="true" signature="4791:4923" ph="{...}" />
                 <marker date="1572193571378" expanded="true" signature="5055:5253" ph="{...}" />
                 <marker date="1572193571378" expanded="true" signature="5718:5786" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wall.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <marker date="1572195566760" expanded="true" signature="46:369" ph="{...}" />
+                <marker date="1572195566760" expanded="true" signature="53:104" ph="/// Wall block ... " />
+                <marker date="1572195566760" expanded="true" signature="139:367" ph="{...}" />
+                <marker date="1572195566760" expanded="true" signature="271:360" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -259,7 +275,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="840">
@@ -424,7 +440,6 @@
         <option value="$PROJECT_DIR$/Assets/StreamingAssets/Level01.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Levels/Level01.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Wall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/CellData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelDataReactiveProperty.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Levels/Level02.txt" />
@@ -457,6 +472,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wall.cs" />
       </list>
     </option>
   </component>
@@ -563,7 +579,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120173000" />
+    <option name="totallyTimeSpent" value="122495000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1064,19 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wall.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1571845041198" expanded="true" signature="46:361" ph="{...}" />
-            <marker date="1571845041198" expanded="true" signature="53:104" ph="/// Wall block ... " />
-            <marker date="1571845041198" expanded="true" signature="139:359" ph="{...}" />
-            <marker date="1571845041198" expanded="true" signature="263:352" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
@@ -1355,9 +1358,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+          <folding>
+            <marker date="1572193568737" expanded="false" signature="6:43" ph="..." />
+            <marker date="1572193568737" expanded="true" signature="71:2055" ph="{...}" />
+            <marker date="1572193568737" expanded="true" signature="78:129" ph="/// Level data ... " />
+            <marker date="1572193568737" expanded="true" signature="276:2053" ph="{...}" />
+            <marker date="1572193568737" expanded="true" signature="291:358" ph="/// Type of level cell ... " />
+            <marker date="1572193568737" expanded="true" signature="387:694" ph="{...}" />
+            <marker date="1572193568737" expanded="true" signature="410:471" ph="/// Wall ... " />
+            <marker date="1572193568737" expanded="true" signature="502:565" ph="/// Ground ... " />
+            <marker date="1572193568737" expanded="true" signature="598:663" ph="/// Teleport ... " />
+            <marker date="1572193568737" expanded="false" signature="704:1147" ph="Camera" />
+            <marker date="1572193568737" expanded="true" signature="728:805" ph="/// Position of the level camera ... " />
+            <marker date="1572193568737" expanded="true" signature="932:1009" ph="/// Rotation of the level camera ... " />
+            <marker date="1572193568737" expanded="true" signature="1157:2047" ph="Level" />
+            <marker date="1572193568737" expanded="true" signature="1180:1246" ph="/// Name of the level ... " />
+            <marker date="1572193568737" expanded="true" signature="1355:1445" ph="/// Player start position in tile coordinates ... " />
+            <marker date="1572193568737" expanded="true" signature="1583:1677" ph="/// Number of allowed moves to complete the level ... " />
+            <marker date="1572193568737" expanded="true" signature="1815:1901" ph="/// Prefab containing the level structure ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1183">
+        <state relative-caret-position="598">
           <caret line="181" column="13" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
           <folding>
             <marker date="1572193571378" expanded="false" signature="6:89" ph="..." />
@@ -1399,28 +1428,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wall.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <marker date="1572193568737" expanded="false" signature="6:43" ph="..." />
-            <marker date="1572193568737" expanded="true" signature="71:2055" ph="{...}" />
-            <marker date="1572193568737" expanded="true" signature="78:129" ph="/// Level data ... " />
-            <marker date="1572193568737" expanded="true" signature="276:2053" ph="{...}" />
-            <marker date="1572193568737" expanded="true" signature="291:358" ph="/// Type of level cell ... " />
-            <marker date="1572193568737" expanded="true" signature="387:694" ph="{...}" />
-            <marker date="1572193568737" expanded="true" signature="410:471" ph="/// Wall ... " />
-            <marker date="1572193568737" expanded="true" signature="502:565" ph="/// Ground ... " />
-            <marker date="1572193568737" expanded="true" signature="598:663" ph="/// Teleport ... " />
-            <marker date="1572193568737" expanded="false" signature="704:1147" ph="Camera" />
-            <marker date="1572193568737" expanded="true" signature="728:805" ph="/// Position of the level camera ... " />
-            <marker date="1572193568737" expanded="true" signature="932:1009" ph="/// Rotation of the level camera ... " />
-            <marker date="1572193568737" expanded="true" signature="1157:2047" ph="Level" />
-            <marker date="1572193568737" expanded="true" signature="1180:1246" ph="/// Name of the level ... " />
-            <marker date="1572193568737" expanded="true" signature="1355:1445" ph="/// Player start position in tile coordinates ... " />
-            <marker date="1572193568737" expanded="true" signature="1583:1677" ph="/// Number of allowed moves to complete the level ... " />
-            <marker date="1572193568737" expanded="true" signature="1815:1901" ph="/// Prefab containing the level structure ... " />
+            <marker date="1572195566760" expanded="true" signature="46:369" ph="{...}" />
+            <marker date="1572195566760" expanded="true" signature="53:104" ph="/// Wall block ... " />
+            <marker date="1572195566760" expanded="true" signature="139:367" ph="{...}" />
+            <marker date="1572195566760" expanded="true" signature="271:360" ph="{...}" />
           </folding>
         </state>
       </provider>
