@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="00718bd1-8fec-4a80-a043-90b726876146" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RollerSplat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/splat_border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/splat_border.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/splat_border2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/splat_border2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/splat_border_emission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/splat_border_emission.png.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -534,7 +540,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
