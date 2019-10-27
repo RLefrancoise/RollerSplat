@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5663702961925377302
 Transform:
@@ -101,13 +101,13 @@ GameObject:
   m_Component:
   - component: {fileID: 654481957346605342}
   - component: {fileID: 3071637957673310805}
-  - component: {fileID: 6988844826346064895}
+  - component: {fileID: 2338409029255194573}
   m_Layer: 9
   m_Name: WallBlock
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &654481957346605342
 Transform:
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   root: {fileID: 654481957346605342}
   renderer: {fileID: 3887099726380806222}
---- !u!114 &6988844826346064895
+--- !u!114 &2338409029255194573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

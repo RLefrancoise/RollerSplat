@@ -3,6 +3,7 @@ using RollerSplat.Data;
 using UnityEngine;
 using Zenject;
 using UniRx;
+using UnityEngine.SceneManagement;
 
 namespace RollerSplat
 {
@@ -149,7 +150,7 @@ namespace RollerSplat
         /// </summary>
         /// <param name="levelData">Data of the level to load</param>
         private void ExecuteLoad(LevelData levelData)
-        {
+        {   
             Data = levelData;
             
             if (levelData == null)
@@ -157,9 +158,6 @@ namespace RollerSplat
                 Debug.LogErrorFormat("Level:ExecuteLoad - Level data is null");
                 return;
             }
-
-            _levelCamera.transform.position = levelData.cameraPosition;
-            _levelCamera.transform.rotation = Quaternion.Euler(levelData.cameraRotation);
 
             //Clear previous level content
             Blocks.Clear();
@@ -171,13 +169,17 @@ namespace RollerSplat
                 
                 Destroy(child.gameObject);
             }
+
+            _levelCamera.gameObject.SetActive(true);
+            _levelCamera.transform.position = levelData.cameraPosition;
+            _levelCamera.transform.rotation = Quaternion.Euler(levelData.cameraRotation);
             
             //Instantiate new level structure
             var level = Instantiate(levelData.levelPrefab, Vector3.zero, Quaternion.identity, transform);
             foreach (var levelBlock in level.GetComponentsInChildren<LevelBlock>())
             {
                 Blocks.Add(levelBlock);
-            }
+            }            
         }
     }
 }

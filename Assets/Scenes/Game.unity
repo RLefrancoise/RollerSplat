@@ -628,7 +628,8 @@ MonoBehaviour:
   _installerPrefabs: []
   _autoRun: 1
   _parentNewObjectsUnderSceneContext: 0
-  _contractNames: []
+  _contractNames:
+  - Game
   _parentContractNames: []
 --- !u!4 &993930442
 Transform:
@@ -677,7 +678,7 @@ MonoBehaviour:
   currentMoves:
     value: 0
   currentLevel:
-    value: 0
+    value: 13
 --- !u!114 &993930445
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -182,9 +182,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4643950621425004880}
   - component: {fileID: 8420294271901695550}
-  - component: {fileID: 2439626281613127228}
   - component: {fileID: 2182191682212440155}
   - component: {fileID: 5352060933106129680}
+  - component: {fileID: 2214473212794651061}
   m_Layer: 0
   m_Name: GroundTile
   m_TagString: Untagged
@@ -233,19 +233,6 @@ MonoBehaviour:
     value: {r: 0.28627452, g: 0.61960787, b: 0.6431373, a: 1}
   isPaintingPlayer:
     value: 0
---- !u!114 &2439626281613127228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3869523470471048607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _containerSource: 0
 --- !u!65 &2182191682212440155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -355,6 +342,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2214473212794651061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869523470471048607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _containerSource: 0
 --- !u!1 &5491441880154088714
 GameObject:
   m_ObjectHideFlags: 0
