@@ -13,7 +13,9 @@ namespace RollerSplat
         /// Swipe gesture start position. Used to compute swipe gesture
         /// </summary>
         private Vector2 _swipeStartScreenPosition;
-
+        /// <summary>
+        /// Swipe detected. Use to not trigger event multiple times for the same swipe
+        /// </summary>
         private bool _swipeDetected;
         
         /// <summary>

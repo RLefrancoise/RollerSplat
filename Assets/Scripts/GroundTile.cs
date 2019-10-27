@@ -1,8 +1,6 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using RollerSplat.Data;
 using UniRx;
-using UniRx.Async;
 using UnityEngine;
 using UnityQuery;
 using Zenject;

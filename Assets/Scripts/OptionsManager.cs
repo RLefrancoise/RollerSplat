@@ -1,13 +1,17 @@
 using System.IO;
 using System.Text;
-using UniRx.Async;
 using UnityEngine;
-using UnityEngine.Networking;
 
 namespace RollerSplat
 {
+    /// <summary>
+    /// Options manager
+    /// </summary>
     public class OptionsManager : MonoBehaviour, IOptionsManager
     {
+        /// <summary>
+        /// Options data file path
+        /// </summary>
         private string _optionsPath;
         
         public OptionsData Options { get; private set; }
