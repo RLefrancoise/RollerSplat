@@ -12,6 +12,11 @@ namespace RollerSplat
     public class Level : MonoBehaviour
     {
         #region Fields
+
+        /// <summary>
+        /// Sound player
+        /// </summary>
+        private ISoundPlayer _soundPlayer;
         
         /// <summary>
         /// The camera used to display the level
@@ -27,6 +32,11 @@ namespace RollerSplat
         /// Is level complete ?
         /// </summary>
         private BoolReactiveProperty _isLevelComplete;
+
+        /// <summary>
+        /// Background music
+        /// </summary>
+        [SerializeField] private AudioSource backgroundMusic;
         
         #endregion
 
@@ -41,7 +51,7 @@ namespace RollerSplat
         /// Is level complete ?
         /// </summary>
         public ReadOnlyReactiveProperty<bool> IsLevelComplete => _isLevelComplete.ToReadOnlyReactiveProperty();
-
+        
         /// <summary>
         /// Data of the current level
         /// </summary>
@@ -72,9 +82,10 @@ namespace RollerSplat
         #endregion
 
         [Inject]
-        public void Construct(Camera levelCamera)
+        public void Construct(Camera levelCamera, ISoundPlayer soundPlayer)
         {
             _levelCamera = levelCamera;
+            _soundPlayer = soundPlayer;
             
             _isLevelComplete = new BoolReactiveProperty();
             
@@ -82,6 +93,16 @@ namespace RollerSplat
             Blocks.ObserveAdd().Subscribe(ListenBlockAdded);
         }
 
+        /// <summary>
+        /// Play background music
+        /// </summary>
+        /// <param name="play"></param>
+        public void PlayBackgroundMusic(bool play)
+        {
+            if(play) _soundPlayer.PlaySound(backgroundMusic);
+            else backgroundMusic.Stop();
+        }
+        
         /// <summary>
         /// Called when a level block is added to the level
         /// </summary>

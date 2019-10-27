@@ -109,16 +109,25 @@ namespace RollerSplat
             //Load options if needed
             if (_optionsManager.HasSavedOptions)
             {
-                _optionsManager.LoadOptions();
+                if (!_optionsManager.LoadOptions())
+                {
+                    Debug.LogError("GameManager:Start - Failed to load options");
+                }
             }
             
             //Bind Options
             _hud.ToggleVibration += ListenVibrationToggled;
             _hud.ToggleSound += ListenSoundToggled;
 
-            //Init HUD options with options data
-            _hud.Vibration = _optionsManager.Options.Vibration;
-            _hud.Sound = _optionsManager.Options.Sound;
+            if (_optionsManager.Options != null)
+            {
+                //Init HUD options with options data
+                _hud.Vibration = _optionsManager.Options.Vibration;
+                _hud.Sound = _optionsManager.Options.Sound;
+                
+                //If sound enabled, play level background music
+                _level.PlayBackgroundMusic(_optionsManager.Options.Sound);
+            }
         }
 
 #if UNITY_EDITOR
@@ -166,7 +175,7 @@ namespace RollerSplat
         /// <param name="isOn"></param>
         private void ListenVibrationToggled(bool isOn)
         {
-            _optionsManager.Options.Vibration = isOn;
+            if(_optionsManager.Options != null) _optionsManager.Options.Vibration = isOn;
             _hapticManager.VibrationEnabled = isOn;
         }
         
@@ -177,7 +186,8 @@ namespace RollerSplat
 
         private void ListenSoundToggled(bool isOn)
         {
-            _optionsManager.Options.Sound = isOn;
+            if(_optionsManager.Options != null) _optionsManager.Options.Sound = isOn;
+            _level.PlayBackgroundMusic(isOn);
         }
         
         /// <summary>
